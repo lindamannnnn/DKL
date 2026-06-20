@@ -1,0 +1,54 @@
+services:
+  # PostgreSQL 数据库
+  postgres:
+    image: postgres:16-alpine
+    container_name: dkl-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: dkl
+      POSTGRES_PASSWORD: dkl_secret
+      POSTGRES_DB: dkl_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dkl -d dkl_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # Redis 缓存
+  redis:
+    image: redis:7-alpine
+    container_name: dkl-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+
+  # JudgeServer 判题沙箱
+  judge-server:
+    image: qingdaou/judge_server:latest
+    container_name: dkl-judge
+    restart: unless-stopped
+    privileged: true
+    entrypoint: ["/bin/sh", "-c", "mkdir -p /log && exec /code/entrypoint.sh"]
+    volumes:
+      - judge_server_data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - TOKEN=dkl_judge_token_change_me
+      - judge_server_data=/data
+      - judger_debug=0
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
+  redis_data:
+  judge_server_data:

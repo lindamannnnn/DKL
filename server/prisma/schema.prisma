@@ -1,0 +1,380 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// 多租户：机构/组织
+model Tenant {
+  id        String   @id @default(uuid())
+  name      String
+  slug      String   @unique
+  status    String   @default("active") // active, suspended
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  users    User[]
+  courses  Course[]
+  classes  Class[]
+  problems Problem[]
+  exams    Exam[]
+
+  @@map("tenants")
+}
+
+// 用户（学生/教师/管理员）
+model User {
+  id        String   @id @default(uuid())
+  tenantId  String   @map("tenant_id")
+  email     String
+  username  String
+  password  String
+  role      String   @default("student") // student, teacher, admin
+  avatar    String?
+  status    String   @default("active")
+  experience Int     @default(0) @map("experience")
+  level     Int      @default(1) @map("level")
+  streak    Int      @default(0) @map("streak")
+  lastStudyDate DateTime? @map("last_study_date")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  tenant     Tenant      @relation(fields: [tenantId], references: [id])
+  progress   LearningProgress[]
+  submissions Submission[]
+  aiChats    AIConversation[]
+  reports    FeedbackReport[]
+  achievements UserAchievement[]
+
+  // 教师创建的班级
+  teachingClasses Class[] @relation("TeacherClasses")
+  // 学生加入的班级
+  classMemberships ClassStudent[]
+
+  // 教师创建的考试
+  createdExams Exam[]
+  // 学生参加的考试
+  studentExams StudentExam[]
+
+  @@unique([tenantId, email])
+  @@map("users")
+}
+
+// 班级
+model Class {
+  id        String   @id @default(uuid())
+  tenantId  String   @map("tenant_id")
+  teacherId String   @map("teacher_id")
+  name      String
+  inviteCode String  @unique @map("invite_code")
+  status    String   @default("active")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  tenant    Tenant       @relation(fields: [tenantId], references: [id])
+  teacher   User         @relation("TeacherClasses", fields: [teacherId], references: [id])
+  students  ClassStudent[]
+  courses   ClassCourse[]
+
+  @@map("classes")
+}
+
+// 班级学生关系
+model ClassStudent {
+  id        String   @id @default(uuid())
+  classId   String   @map("class_id")
+  studentId String   @map("student_id")
+  joinedAt  DateTime @default(now()) @map("joined_at")
+
+  class     Class    @relation(fields: [classId], references: [id])
+  student   User     @relation(fields: [studentId], references: [id])
+
+  @@unique([classId, studentId])
+  @@map("class_students")
+}
+
+// 课程
+model Course {
+  id          String   @id @default(uuid())
+  tenantId    String   @map("tenant_id")
+  title       String
+  description String?
+  cover       String?
+  levelMin    Int      @default(1) @map("level_min") // GESP 起始级别
+  levelMax    Int      @default(8) @map("level_max") // GESP 结束级别
+  status      String   @default("draft") // draft, published, archived
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  tenant     Tenant      @relation(fields: [tenantId], references: [id])
+  chapters   Chapter[]
+  classLinks ClassCourse[]
+
+  @@map("courses")
+}
+
+// 班级课程关联
+model ClassCourse {
+  id        String   @id @default(uuid())
+  classId   String   @map("class_id")
+  courseId  String   @map("course_id")
+  assignedAt DateTime @default(now()) @map("assigned_at")
+
+  class     Class    @relation(fields: [classId], references: [id])
+  course    Course   @relation(fields: [courseId], references: [id])
+
+  @@unique([classId, courseId])
+  @@map("class_courses")
+}
+
+// 章节
+model Chapter {
+  id        String   @id @default(uuid())
+  courseId  String   @map("course_id")
+  title     String
+  sortOrder Int      @default(0) @map("sort_order")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  course    Course    @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  lessons   Lesson[]
+
+  @@map("chapters")
+}
+
+// 课时
+model Lesson {
+  id            String   @id @default(uuid())
+  chapterId     String   @map("chapter_id")
+  title         String
+  sortOrder     Int      @default(0) @map("sort_order")
+  content       Json?    // 解析后的课件内容块数组
+  rawMarkdown   String?  @map("raw_markdown") // 原始 Markdown
+  videoUrl      String?  @map("video_url")
+  duration      Int?     // 预计学习时长（分钟）
+  xpReward      Int      @default(10) @map("xp_reward") // 完成课时奖励经验
+  rewards       Json?    // 课时完成奖励配置（徽章、额外经验等）
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  chapter       Chapter          @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  progress      LearningProgress[]
+
+  @@map("lessons")
+}
+
+// 编程题
+model Problem {
+  id                String   @id @default(uuid())
+  tenantId          String   @map("tenant_id")
+  title             String
+  description       String   // 题面（Markdown）
+  inputDesc         String?  @map("input_desc")
+  outputDesc        String?  @map("output_desc")
+  sampleInput       String?  @map("sample_input")
+  sampleOutput      String?  @map("sample_output")
+  sampleExplanation String?  @map("sample_explanation")
+  starterCode       String?  @map("starter_code")
+  difficulty        String   @default("easy") // easy, medium, hard
+  tags              String   @default("") // 知识点标签，逗号分隔
+  timeLimit         Int      @default(1000) @map("time_limit") // ms
+  memoryLimit       Int      @default(128) @map("memory_limit") // MB
+  gespLevel         Int?     @map("gesp_level") // 关联 GESP 级别
+  status            String   @default("active")
+  createdAt         DateTime @default(now()) @map("created_at")
+  updatedAt         DateTime @updatedAt @map("updated_at")
+
+  tenant      Tenant       @relation(fields: [tenantId], references: [id])
+  testCases   TestCase[]
+  submissions Submission[]
+  examProblems ExamProblem[]
+
+  @@map("problems")
+}
+
+// 测试用例
+model TestCase {
+  id             String  @id @default(uuid())
+  problemId      String  @map("problem_id")
+  input          String
+  expectedOutput String  @map("expected_output")
+  isHidden       Boolean @default(false) @map("is_hidden")
+  score          Int     @default(0) // IOI 赛制：该测试点分值
+  sortOrder      Int     @default(0) @map("sort_order")
+
+  problem Problem @relation(fields: [problemId], references: [id], onDelete: Cascade)
+
+  @@map("test_cases")
+}
+
+// 提交记录
+model Submission {
+  id            String   @id @default(uuid())
+  userId        String   @map("user_id")
+  problemId     String   @map("problem_id")
+  code          String
+  language      String   @default("cpp")
+  result        String   // accepted, partial, wrong_answer, time_limit, memory_limit, compile_error, runtime_error
+  passedCount   Int      @default(0) @map("passed_count")
+  totalCount    Int      @default(0) @map("total_count")
+  score         Int      @default(0) // IOI 赛制得分
+  timeUsed      Int?     @map("time_used") // ms
+  memoryUsed    Int?     @map("memory_used") // KB
+  compileError  String?  @map("compile_error")
+  aiFeedback    String?  @map("ai_feedback")
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  user     User     @relation(fields: [userId], references: [id])
+  problem  Problem  @relation(fields: [problemId], references: [id])
+
+  @@map("submissions")
+}
+
+// 学习进度
+model LearningProgress {
+  id          String    @id @default(uuid())
+  userId      String    @map("user_id")
+  lessonId    String    @map("lesson_id")
+  status      String    @default("not_started") // not_started, in_progress, completed
+  completedAt DateTime? @map("completed_at")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+
+  user      User    @relation(fields: [userId], references: [id])
+  lesson    Lesson  @relation(fields: [lessonId], references: [id])
+
+  @@unique([userId, lessonId])
+  @@map("learning_progress")
+}
+
+// AI 对话历史
+model AIConversation {
+  id        String   @id @default(uuid())
+  userId    String   @map("user_id")
+  lessonId  String?  @map("lesson_id") // 关联课时上下文
+  problemId String?  @map("problem_id") // 关联题目上下文
+  role      String   // user, assistant, system
+  content   String
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@map("ai_conversations")
+}
+
+// 学习报告
+model FeedbackReport {
+  id        String   @id @default(uuid())
+  userId    String   @map("user_id")
+  reportDate DateTime @map("report_date") // 报告日期
+  content   String   // AI 生成的报告内容
+  stats     Json?    // 统计 JSON
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@unique([userId, reportDate])
+  @@map("feedback_reports")
+}
+
+// 徽章/成就定义
+model Achievement {
+  id          String   @id @default(uuid())
+  code        String   @unique // first_ac, streak_7, level_complete_1 等
+  name        String
+  description String
+  icon        String
+  condition   String   // 触发条件 JSON
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  userAchievements UserAchievement[]
+
+  @@map("achievements")
+}
+
+// 用户获得的成就
+model UserAchievement {
+  id            String   @id @default(uuid())
+  userId        String   @map("user_id")
+  achievementId String   @map("achievement_id")
+  earnedAt      DateTime @default(now()) @map("earned_at")
+
+  user        User        @relation(fields: [userId], references: [id])
+  achievement Achievement @relation(fields: [achievementId], references: [id])
+
+  @@unique([userId, achievementId])
+  @@map("user_achievements")
+}
+
+// 错题本
+model Mistake {
+  id            String   @id @default(uuid())
+  userId        String   @map("user_id")
+  problemId     String   @map("problem_id")
+  submissionId  String   @map("submission_id")
+  userCode      String   @map("user_code") // 当时提交的代码
+  errorType     String   @map("error_type") // compile_error, wrong_answer, time_limit
+  reviewed      Boolean  @default(false) // 是否已复习
+  reviewedAt    DateTime? @map("reviewed_at")
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  @@unique([userId, problemId])
+  @@map("mistakes")
+}
+
+// 模拟考试
+model Exam {
+  id          String   @id @default(uuid())
+  tenantId    String   @map("tenant_id")
+  title       String
+  description String?
+  duration    Int      @default(60) // 考试时长（分钟）
+  totalScore  Int      @default(100) @map("total_score")
+  gespLevel   Int?     @map("gesp_level") // 关联 GESP 级别
+  status      String   @default("draft") // draft, published, closed
+  createdBy   String   @map("created_by")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  tenant       Tenant        @relation(fields: [tenantId], references: [id])
+  creator      User          @relation(fields: [createdBy], references: [id])
+  problems     ExamProblem[]
+  studentExams StudentExam[]
+
+  @@map("exams")
+}
+
+// 考试题目关联
+model ExamProblem {
+  id        String @id @default(uuid())
+  examId    String @map("exam_id")
+  problemId String @map("problem_id")
+  sortOrder Int    @default(0) @map("sort_order")
+  score     Int    @default(0) // 该题在考试中的分值
+
+  exam    Exam    @relation(fields: [examId], references: [id], onDelete: Cascade)
+  problem Problem @relation(fields: [problemId], references: [id])
+
+  @@unique([examId, problemId])
+  @@map("exam_problems")
+}
+
+// 学生考试记录
+model StudentExam {
+  id          String    @id @default(uuid())
+  studentId   String    @map("student_id")
+  examId      String    @map("exam_id")
+  startedAt   DateTime  @default(now()) @map("started_at")
+  submittedAt DateTime? @map("submitted_at")
+  score       Int       @default(0)
+  status      String    @default("in_progress") // in_progress, submitted, graded
+  answers     Json?     // { problemId: { code: string, language: string } }
+  results     Json?     // { problemId: { passed: boolean, score: number } }
+
+  student User @relation(fields: [studentId], references: [id])
+  exam    Exam @relation(fields: [examId], references: [id], onDelete: Cascade)
+
+  @@unique([studentId, examId])
+  @@map("student_exams")
+}

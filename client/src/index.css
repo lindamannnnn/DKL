@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans;
+  }
+
+  /* 课件区域大字号 */
+  .lesson-content {
+    @apply text-lesson leading-relaxed;
+  }
+
+  .lesson-content h1 {
+    @apply text-lesson-xl font-bold mb-6 mt-8;
+  }
+
+  .lesson-content h2 {
+    @apply text-lesson-lg font-bold mb-4 mt-6;
+  }
+
+  .lesson-content h3 {
+    @apply text-lesson font-bold mb-3 mt-4;
+  }
+
+  .lesson-content p {
+    @apply mb-4;
+  }
+
+  .lesson-content ul,
+  .lesson-content ol {
+    @apply mb-4 pl-6;
+  }
+
+  .lesson-content li {
+    @apply mb-2;
+  }
+
+  .lesson-content code {
+    @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-pink-600;
+  }
+
+  .lesson-content pre {
+    @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4;
+  }
+
+  .lesson-content pre code {
+    @apply bg-transparent text-inherit p-0;
+  }
+
+  .lesson-content blockquote {
+    @apply border-l-4 border-primary-400 pl-4 py-2 bg-primary-50 rounded-r mb-4;
+  }
+
+  /* 分页课件专用样式 */
+  .lesson-content-paged {
+    @apply text-lg leading-relaxed;
+  }
+
+  .lesson-content-paged h1 {
+    @apply text-3xl font-bold mb-6;
+  }
+
+  .lesson-content-paged h2 {
+    @apply text-2xl font-bold mb-4 text-primary-700;
+  }
+
+  .lesson-content-paged h3 {
+    @apply text-xl font-bold mb-3 text-gray-800 flex items-center gap-2;
+  }
+
+  .lesson-content-paged p {
+    @apply mb-4 text-gray-700;
+  }
+
+  .lesson-content-paged ul,
+  .lesson-content-paged ol {
+    @apply mb-5 pl-6 space-y-2;
+  }
+
+  .lesson-content-paged li {
+    @apply text-gray-700;
+  }
+
+  .lesson-content-paged li > strong {
+    @apply text-gray-900;
+  }
+
+  .lesson-content-paged table {
+    @apply w-full border-collapse mb-6 rounded-xl overflow-hidden shadow-sm border border-gray-200;
+    table-layout: fixed;
+  }
+
+  .lesson-content-paged thead {
+    @apply bg-gradient-to-r from-primary-500 to-primary-600 text-white;
+  }
+
+  .lesson-content-paged th {
+    @apply px-4 py-3 text-left font-bold text-sm;
+  }
+
+  .lesson-content-paged th:first-child {
+    width: 20%;
+  }
+
+  .lesson-content-paged th:nth-child(2) {
+    width: 35%;
+  }
+
+  .lesson-content-paged th:nth-child(3) {
+    width: 30%;
+  }
+
+  .lesson-content-paged th:nth-child(4) {
+    width: 15%;
+  }
+
+  .lesson-content-paged td {
+    @apply px-4 py-3 border-b border-gray-100 text-sm align-middle;
+  }
+
+  .lesson-content-paged tbody tr:nth-child(even) {
+    @apply bg-gray-50;
+  }
+
+  .lesson-content-paged tbody tr:hover {
+    @apply bg-primary-50/50;
+  }
+
+  .lesson-content-paged td code {
+    @apply bg-transparent text-inherit p-0 font-mono;
+  }
+
+  .lesson-content-paged td strong {
+    @apply text-gray-900;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+  }
+
+  .btn-secondary {
+    @apply btn bg-gray-200 text-gray-800 hover:bg-gray-300 focus:ring-gray-500;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+  }
+
+  /* 毛玻璃卡片 — 参考模板1 */
+  .card-glass {
+    @apply bg-white/80 backdrop-blur-xl rounded-2xl border border-white/50 shadow-lg;
+  }
+
+  /* 渐变徽章 — 参考模板1 */
+  .badge-gold {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-yellow-400 to-orange-400 text-white shadow-sm;
+  }
+  .badge-red {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-red-500 to-pink-500 text-white shadow-sm;
+  }
+  .badge-blue {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-blue-500 to-cyan-400 text-white shadow-sm;
+  }
+  .badge-green {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-emerald-400 to-teal-400 text-white shadow-sm;
+  }
+  .badge-purple {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-sm;
+  }
+  .badge-gray {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-gray-200 text-gray-600;
+  }
+
+  /* 课程封面渐变色块 — 根据 GESP 级别分配 */
+  .cover-gesp-1 { @apply bg-gradient-to-br from-blue-400 to-cyan-300; }
+  .cover-gesp-2 { @apply bg-gradient-to-br from-emerald-400 to-teal-300; }
+  .cover-gesp-3 { @apply bg-gradient-to-br from-violet-400 to-purple-300; }
+  .cover-gesp-4 { @apply bg-gradient-to-br from-amber-400 to-orange-300; }
+  .cover-gesp-5 { @apply bg-gradient-to-br from-rose-400 to-pink-300; }
+  .cover-gesp-6 { @apply bg-gradient-to-br from-indigo-400 to-blue-300; }
+  .cover-gesp-7 { @apply bg-gradient-to-br from-red-400 to-orange-300; }
+  .cover-gesp-8 { @apply bg-gradient-to-br from-slate-500 to-gray-400; }
+  .cover-exam { @apply bg-gradient-to-br from-primary-500 to-accent-cyan; }
+
+  /* Hero 区域渐变背景 */
+  .hero-gradient {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 40%, #06b6d4 100%);
+  }
+
+  /* 动画工具类 */
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+}

@@ -1,0 +1,68 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Kimi agent files
+.kimi/
+
+# Large data files and archives
+hydroj/
+*.zip
+*.tar.gz
+*.rar
+
+# Problem data packages
+BZOJ1000-4999题「看压缩包内导入说明」/
+5000信奥题目.zip
+GESP客观题-更新至202509.zip
+gesp.zip
+cspt.zip
+csp近几年.zip
+csp2019.zip
+csp2020.zip
+csp2021.zip
+csp2022.zip
+csp2023.zip
+csp2024.zip
+
+# External cloned repositories
+judge_server_clone/
+online_judge_clone/
+code-master/
+
+# Misc large/binary files
+*.pdf
+gesp_syllabus.pdf
+模板1.html
+wsl-install.log
+*.db

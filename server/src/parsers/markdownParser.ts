@@ -13,6 +13,101 @@ export interface LessonPage {
   hasCheckpoint: boolean
 }
 
+// 智能拆分 Markdown 大段内容为合适大小的块。
+// 原则：不要把内容拆得太碎，标题+紧跟的短段落/列表应合并为一个概念块。
+const MAX_BLOCK_CHARS = 320
+
+function isHeading(text: string) {
+  return /^#{1,3}\s/.test(text.trim())
+}
+
+function isList(text: string) {
+  return /^\s*[-*+]|^\s*\d+[.)]/.test(text.trim())
+}
+
+function splitMarkdownBlocks(content: string): ContentBlock[] {
+  const trimmed = content.trim()
+  if (!trimmed) return []
+
+  // 很短：直接保留
+  if (trimmed.length <= 120 && !trimmed.includes('\n')) {
+    return [{ type: 'markdown', content: trimmed }]
+  }
+
+  const result: ContentBlock[] = []
+  const segments = trimmed.split(/\n\n+/)
+  let buffer = ''
+
+  const flush = () => {
+    if (buffer.trim()) {
+      result.push({ type: 'markdown', content: buffer.trim() })
+      buffer = ''
+    }
+  }
+
+  for (const seg of segments) {
+    const s = seg.trim()
+    if (!s) continue
+
+    const isTable = s.includes('\n') && /^\s*\|/.test(s)
+    const isFencedCode = s.startsWith('```')
+    const segIsHeading = isHeading(s)
+    const segIsList = isList(s)
+
+    // 代码围栏单独成块；表格如果前面是 heading，合并为同一块
+    if (isFencedCode) {
+      flush()
+      result.push({ type: 'markdown', content: s })
+      continue
+    }
+
+    if (isTable) {
+      if (buffer && isHeading(buffer.split('\n')[0])) {
+        buffer = `${buffer}\n\n${s}`
+      } else {
+        flush()
+        buffer = s
+      }
+      continue
+    }
+
+    // heading 开始新概念块
+    if (segIsHeading) {
+      flush()
+      buffer = s
+      continue
+    }
+
+    // 列表：如果前面有引导文字（heading 或普通段落），合并；否则单独成块
+    if (segIsList) {
+      if (buffer) {
+        buffer = `${buffer}\n\n${s}`
+      } else {
+        buffer = s
+      }
+      continue
+    }
+
+    // 普通段落
+    if (buffer) {
+      const firstLine = buffer.split('\n')[0]
+      const bufferIsHeading = isHeading(firstLine)
+      const projected = `${buffer}\n\n${s}`
+      if (bufferIsHeading || projected.length <= MAX_BLOCK_CHARS) {
+        buffer = projected
+      } else {
+        flush()
+        buffer = s
+      }
+    } else {
+      buffer = s
+    }
+  }
+
+  flush()
+  return result
+}
+
 /**
  * 读取一个以 <!-- ... --> 标记包裹的块
  */
@@ -290,10 +385,8 @@ export function parseLessonMarkdown(raw: string): ContentBlock[] {
     if (mdLines.length > 0) {
       const content = mdLines.join('\n').trim()
       if (content) {
-        blocks.push({
-          type: 'markdown',
-          content,
-        })
+        // 自动拆分大段 Markdown，避免一页内文字过多
+        blocks.push(...splitMarkdownBlocks(content))
       }
     }
   }

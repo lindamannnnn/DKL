@@ -9,10 +9,12 @@ const router = Router()
 router.use(authMiddleware)
 router.use(tenantMiddleware)
 
-// 获取课程列表
+// 获取课程列表（包含当前用户进度）
 router.get('/', async (req: any, res) => {
   try {
     const tenantId = req.tenantId
+    const userId = req.user.id
+
     const courses = await prisma.course.findMany({
       where: { tenantId, status: 'published' },
       include: {
@@ -28,17 +30,41 @@ router.get('/', async (req: any, res) => {
       },
       orderBy: { createdAt: 'desc' },
     })
-    res.json(courses)
+
+    // 获取该用户所有已完成课时
+    const completedProgress = await prisma.learningProgress.findMany({
+      where: { userId, status: 'completed' },
+      select: { lessonId: true },
+    })
+    const completedLessonIds = new Set(completedProgress.map((p) => p.lessonId))
+
+    const coursesWithProgress = courses.map((course) => {
+      const allLessonIds: string[] = []
+      course.chapters.forEach((ch) => ch.lessons.forEach((l) => allLessonIds.push(l.id)))
+      const completed = allLessonIds.filter((id) => completedLessonIds.has(id)).length
+      const total = allLessonIds.length
+      return {
+        ...course,
+        progress: {
+          completed,
+          total,
+          rate: total > 0 ? Math.round((completed / total) * 100) : 0,
+        },
+      }
+    })
+
+    res.json(coursesWithProgress)
   } catch (err: any) {
     res.status(500).json({ error: '获取课程失败', detail: err.message })
   }
 })
 
-// 获取单个课程详情
+// 获取单个课程详情（包含当前用户课时进度）
 router.get('/:id', async (req: any, res) => {
   try {
     const { id } = req.params
     const tenantId = req.tenantId
+    const userId = req.user.id
 
     const course = await prisma.course.findFirst({
       where: { id, tenantId },
@@ -55,7 +81,25 @@ router.get('/:id', async (req: any, res) => {
     })
 
     if (!course) return res.status(404).json({ error: '课程不存在' })
-    res.json(course)
+
+    const progress = await prisma.learningProgress.findMany({
+      where: { userId },
+      select: { lessonId: true, status: true },
+    })
+    const progressMap = new Map(progress.map((p) => [p.lessonId, p.status]))
+
+    const courseWithProgress = {
+      ...course,
+      chapters: course.chapters.map((ch) => ({
+        ...ch,
+        lessons: ch.lessons.map((l) => ({
+          ...l,
+          status: progressMap.get(l.id) || 'not_started',
+        })),
+      })),
+    }
+
+    res.json(courseWithProgress)
   } catch (err: any) {
     res.status(500).json({ error: '获取课程详情失败', detail: err.message })
   }

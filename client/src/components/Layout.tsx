@@ -9,8 +9,12 @@ export default function Layout({ children }: { children: ReactNode }) {
   const isActive = (path: string) => location.pathname.startsWith(path)
 
   const handleLogout = () => {
+    localStorage.removeItem('token')
     localStorage.removeItem('dkl_token')
+    localStorage.removeItem('user')
     localStorage.removeItem('dkl_user')
+    localStorage.removeItem('tenantId')
+    localStorage.removeItem('dkl_tenantId')
     navigate('/login')
   }
 

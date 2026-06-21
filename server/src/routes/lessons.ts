@@ -68,25 +68,39 @@ router.post('/:id/complete', async (req: any, res) => {
       },
     })
 
-    // 更新经验值和连续学习
+    // 更新经验值和连续学习（按周连胜：每周完成至少一课 +1）
     const user = await prisma.user.findUnique({ where: { id: userId } })
     if (user) {
-      const today = new Date()
-      today.setHours(0, 0, 0, 0)
+      // 获取本周开始时间（周一为一周开始）
+      const getWeekStart = (date: Date) => {
+        const d = new Date(date)
+        d.setHours(0, 0, 0, 0)
+        const day = d.getDay() // 0=周日, 1=周一, ..., 6=周六
+        const diff = d.getDate() - (day === 0 ? 6 : day - 1)
+        return new Date(d.setDate(diff))
+      }
+
+      const thisWeekStart = getWeekStart(new Date())
       const lastStudy = user.lastStudyDate ? new Date(user.lastStudyDate) : null
-      lastStudy?.setHours(0, 0, 0, 0)
+      const lastStudyWeekStart = lastStudy ? getWeekStart(lastStudy) : null
 
       let streak = user.streak
-      if (!lastStudy) {
+      let weeklyCompleted = false
+      if (!lastStudyWeekStart) {
         streak = 1
+        weeklyCompleted = true
       } else {
-        const diffDays = Math.round((today.getTime() - lastStudy.getTime()) / (1000 * 60 * 60 * 24))
-        if (diffDays === 0) {
-          // 今天已经学习过，streak 不变
-        } else if (diffDays === 1) {
+        const diffWeeks = Math.round(
+          (thisWeekStart.getTime() - lastStudyWeekStart.getTime()) / (7 * 24 * 60 * 60 * 1000)
+        )
+        if (diffWeeks === 0) {
+          // 本周已经学习过，streak 不变
+        } else if (diffWeeks === 1) {
           streak += 1
+          weeklyCompleted = true
         } else {
           streak = 1
+          weeklyCompleted = true
         }
       }
 
@@ -132,6 +146,8 @@ router.post('/:id/complete', async (req: any, res) => {
         levelUp,
         newLevel: levelUp ? newLevel : undefined,
         newBadges,
+        streak,
+        weeklyCompleted,
       })
     } else {
       res.json(progress)

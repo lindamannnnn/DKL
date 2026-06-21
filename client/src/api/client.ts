@@ -12,8 +12,9 @@ const client = axios.create({
 
 // 请求拦截器：自动附加 token 和 tenantId
 client.interceptors.request.use((config) => {
-  const token = localStorage.getItem('token')
-  const tenantId = localStorage.getItem('tenantId')
+  // 兼容旧版 key
+  const token = localStorage.getItem('token') || localStorage.getItem('dkl_token')
+  const tenantId = localStorage.getItem('tenantId') || localStorage.getItem('dkl_tenantId')
 
   if (token) {
     config.headers.Authorization = `Bearer ${token}`

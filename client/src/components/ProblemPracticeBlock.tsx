@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Editor from '@monaco-editor/react'
-import { Send } from 'lucide-react'
+import { Send, Lightbulb } from 'lucide-react'
 import client from '../api/client'
 import ProblemStatement from './ProblemStatement'
 
@@ -116,6 +116,14 @@ export default function ProblemPracticeBlock({ problemIds, lessonId }: Props) {
 
   return (
     <div className="space-y-6">
+      {/* Dev-C++ 提示 */}
+      <div className="bg-blue-50 border border-blue-100 rounded-2xl p-4 flex items-start gap-3 text-blue-800">
+        <Lightbulb className="w-5 h-5 flex-shrink-0 mt-0.5" />
+        <p className="text-sm">
+          小提示：请在 Dev-C++ 中完成程序编写，确认能运行后，再把代码复制到提交测评中递交。
+        </p>
+      </div>
+
       {/* 题目标签 */}
       <div className="flex items-center gap-2 overflow-x-auto pb-2">
         {problems.map((p, idx) => (

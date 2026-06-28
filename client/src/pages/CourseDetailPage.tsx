@@ -46,6 +46,9 @@ interface Terrain {
     near: string[] // 近景 emoji
     particle: string // 漂浮粒子 emoji
   }
+  bgImage?: string // 背景图片路径（AI生成）
+  bgPosition?: string // 背景图位置
+  overlayOpacity?: number // 背景图上叠加层透明度
   tagline: string
   vibe: 'bright' | 'dark' | 'cold' | 'hot'
 }
@@ -70,6 +73,9 @@ const TERRAINS: Terrain[] = [
       near: ['🌿', '🌾', '🍀'],
       particle: '✨',
     },
+    bgImage: '/maps/map-level-1.png',
+    bgPosition: 'center bottom',
+    overlayOpacity: 0.4,
     tagline: '从这里出发，学习最简单的 C++ 魔法',
     vibe: 'bright',
   },
@@ -92,6 +98,9 @@ const TERRAINS: Terrain[] = [
       near: ['🪨', '🦴', '🏺'],
       particle: '☀️',
     },
+    bgImage: '/maps/map-level-2.png',
+    bgPosition: 'center bottom',
+    overlayOpacity: 0.5,
     tagline: '沙漠里没有捷径，每一步都要踏实',
     vibe: 'hot',
   },
@@ -114,6 +123,9 @@ const TERRAINS: Terrain[] = [
       near: ['🌿', '🌱', '🪵'],
       particle: '🌫️',
     },
+    bgImage: '/maps/map-level-3.png',
+    bgPosition: 'center bottom',
+    overlayOpacity: 0.5,
     tagline: '森林里藏着更多语法陷阱，小心前进',
     vibe: 'bright',
   },
@@ -136,6 +148,9 @@ const TERRAINS: Terrain[] = [
       near: ['🧊', '⛄', '🎿'],
       particle: '❄️',
     },
+    bgImage: '/maps/map-level-4.png',
+    bgPosition: 'center bottom',
+    overlayOpacity: 0.45,
     tagline: '越往上越冷，但风景也越壮观',
     vibe: 'cold',
   },
@@ -158,6 +173,9 @@ const TERRAINS: Terrain[] = [
       near: ['🪨', '💀', '⚔️'],
       particle: '🔥',
     },
+    bgImage: '/maps/map-level-5.png',
+    bgPosition: 'center bottom',
+    overlayOpacity: 0.5,
     tagline: '难度开始燃烧，准备好接受挑战了吗？',
     vibe: 'hot',
   },
@@ -180,6 +198,9 @@ const TERRAINS: Terrain[] = [
       near: ['🪵', '🍃', '🐸'],
       particle: '👻',
     },
+    bgImage: '/maps/map-level-6.png',
+    bgPosition: 'center bottom',
+    overlayOpacity: 0.55,
     tagline: '沼泽里的 bug 会缠住你，调试能力要够强',
     vibe: 'dark',
   },
@@ -202,6 +223,9 @@ const TERRAINS: Terrain[] = [
       near: ['🪨', '💀', '🕯️'],
       particle: '✨',
     },
+    bgImage: '/maps/map-level-7.png',
+    bgPosition: 'center bottom',
+    overlayOpacity: 0.55,
     tagline: '这里接近算法的黑暗森林，只有少数人能到达',
     vibe: 'dark',
   },
@@ -227,6 +251,9 @@ const TERRAINS: Terrain[] = [
       near: ['💎', '🔮', '⚔️'],
       particle: '🌟',
     },
+    bgImage: '/maps/map-level-8.png',
+    bgPosition: 'center bottom',
+    overlayOpacity: 0.5,
     tagline: '编程大师的最终试炼场',
     vibe: 'dark',
   },
@@ -528,15 +555,35 @@ function PixelBackground({ terrain }: { terrain: Terrain }) {
 
   return (
     <div className="fixed inset-0 pointer-events-none z-0">
+      {/* 背景图片层（优先使用AI生成图片） */}
+      {terrain.bgImage && (
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url(${terrain.bgImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: terrain.bgPosition || 'center bottom',
+            backgroundRepeat: 'no-repeat',
+            opacity: 0.9,
+          }}
+        />
+      )}
+
+      {/* 天空渐变叠加层（确保文字可读） */}
+      <div
+        className={`absolute inset-0 bg-gradient-to-b ${terrain.sky}`}
+        style={{ opacity: terrain.bgImage ? (terrain.overlayOpacity || 0.5) : 1, mixBlendMode: 'multiply' }}
+      />
+
       {/* 天空天体 */}
-      {terrain.skyObjects.map((obj, i) => (
+      {!terrain.bgImage && terrain.skyObjects.map((obj, i) => (
         <SkyObject key={i} type={obj.type} color={obj.color} position={obj.position} />
       ))}
 
-      {/* 远景山峦剪影 */}
-      <PixelMountains terrain={terrain} />
+      {/* 远景山峦剪影（无图片时显示） */}
+      {!terrain.bgImage && <PixelMountains terrain={terrain} />}
 
-      {/* 装饰物层 */}
+      {/* 装饰物层（emoji装饰） */}
       {decor.map((item, i) => (
         <div
           key={i}
@@ -554,10 +601,12 @@ function PixelBackground({ terrain }: { terrain: Terrain }) {
         </div>
       ))}
 
-      {/* 地面像素层 */}
-      <div className={`absolute bottom-0 left-0 right-0 h-36 ${terrain.ground}`} style={{ backgroundImage: terrain.groundPattern }}>
-        <div className={`absolute -top-3 left-0 right-0 h-4 ${terrain.groundTop}`} style={{ clipPath: 'polygon(0% 100%, 5% 0%, 10% 100%, 15% 40%, 20% 100%, 25% 20%, 30% 100%, 35% 50%, 40% 100%, 45% 10%, 50% 100%, 55% 60%, 60% 100%, 65% 30%, 70% 100%, 75% 70%, 80% 100%, 85% 40%, 90% 100%, 95% 20%, 100% 100%)' }} />
-      </div>
+      {/* 地面像素层（无图片时显示） */}
+      {!terrain.bgImage && (
+        <div className={`absolute bottom-0 left-0 right-0 h-36 ${terrain.ground}`} style={{ backgroundImage: terrain.groundPattern }}>
+          <div className={`absolute -top-3 left-0 right-0 h-4 ${terrain.groundTop}`} style={{ clipPath: 'polygon(0% 100%, 5% 0%, 10% 100%, 15% 40%, 20% 100%, 25% 20%, 30% 100%, 35% 50%, 40% 100%, 45% 10%, 50% 100%, 55% 60%, 60% 100%, 65% 30%, 70% 100%, 75% 70%, 80% 100%, 85% 40%, 90% 100%, 95% 20%, 100% 100%)' }} />
+        </div>
+      )}
 
       {/* 漂浮粒子 */}
       {particles.map((p) => (

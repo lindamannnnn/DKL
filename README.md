@@ -69,7 +69,7 @@ npx vite --port 3000 --host 0.0.0.0
 
 | 角色 | 邮箱 | 密码 |
 |------|------|------|
-| 学生 | student@dkl.local | 123456 |
+| 学生 | student@dkl.local | student123 |
 | 教师 | teacher@dkl.local | teacher123 |
 | 管理员 | admin@dkl.local | admin123 |
 
@@ -94,17 +94,30 @@ npx vite --port 3000 --host 0.0.0.0
 - **少文字**：每页正文不超过 2 行，多用 emoji 和图标
 - **必互动**：每页包含知识卡片、代码演示或检查点
 - **Checkpoint 锁页**：检查点内的测验必须答对才能继续
+- **故事化开场**：用故事/角色/问题引入，降低儿童自学门槛
 
 格式规范见：`server/courses/MICRO_LESSON_FORMAT.md`
 
+儿童版课件示例：`server/courses/gesp1-micro/01-走进C++.md`
+
 课件导入脚本：`server/src/scripts/import-gesp1.ts`
+
+> ✅ GESP 1级（1-12 课）已全部按微课格式重写并通过小学生体验官评审入库。
 
 ## 正向反馈系统
 
 - 完成课时：全屏 confetti 庆祝 + 经验值 + 徽章
+- 周连胜：每周完成任意一课 +1，断周重置为 1
 - 通过题目：右上角徽章获得通知
 - 答对测验/检查点：经验值飘字动画
 - 个人中心：等级、经验条、连续学习天数、徽章墙
+
+## 课程地图
+
+- 课程详情页采用像素风冒险地图，S 形蜿蜒路径
+- 1-8 级 GESP 课程对应 8 套不同地形主题（草原 → 沙漠 → 森林 → 雪山 → 火山 → 沼泽 → 深渊 → 星河）
+- 地图背景图：`client/public/maps/map-level-{1-8}.png`
+- AI 生成 prompt：`docs/AI_MAP_PROMPTS.md`
 
 ## 题库数据
 
@@ -116,4 +129,7 @@ npx vite --port 3000 --host 0.0.0.0
 
 - `CLAUDE.MD` — 面向 AI 助手的项目说明与进度记录
 - `DEV_PLAN.md` — 开发执行计划
+- `CHANGELOG.md` — 近期开发日志
+- `CONTEXT.md` — 会话切换用上下文摘要
 - `plan.md` — 完整产品方案
+- `docs/agents/elementary-student-persona.md` — 零基础小学生体验官人设

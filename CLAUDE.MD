@@ -18,6 +18,15 @@
 ### 产品公式
 > 平台 = Markdown 课件渲染引擎 + 在线代码编辑器 + JudgeServer 判题 + AI 竞赛教练
 
+### 最近更新（2026-06-10 ~ 2026-06-27）
+- **周连胜粘性机制**：按周计算连胜，强化完成庆祝动画。
+- **像素风课程地图**：`CourseDetailPage` 改为 S 形冒险路径，8 级地形 + AI 生成背景图。
+- **儿童自学微课**：制定 `MICRO_LESSON_FORMAT.md`，完成 GESP1 第 1-12 课儿童版微课并入库，全部通过小学生体验官"小柯"评审；从 CSP01 题库为每节课匹配 5 道课后编程题（共 60 道），按知识点和难度从易到难排序，后续又根据零基础反馈从 simplest 候选集重新匹配为最简单题目。
+- **课后挑战体验优化**：统一在 `ProblemPracticeBlock` 顶部显示 Dev-C++ 编写提示；课程完成后顶部关卡号可点击回顾，关卡过多时自动换行不溢出屏幕。
+- **智能体验收**：以 `student@dkl.local` 完成 GESP1 第 1-5 课全部课后题并输出报告 `docs/reports/agent-gesp1-lessons-1-5.md`。
+- **小学生体验官**：新增 `docs/agents/elementary-student-persona.md`，用于课程可读性自检。
+- 详细改动见 `CHANGELOG.md`。
+
 ---
 
 ## 二、技术栈
@@ -277,8 +286,8 @@ StudentExam     -- 学生考试记录（答案/结果/分数）
    - 每道题含：题目描述、输入输出说明、2-10 个测试用例（含分值）
 
 3. **准备 Markdown 课件**
-   - ✅ GESP 1级第 1-2 课已完成并导入数据库
-   - 继续编写 GESP 1级第 3-14 课课件
+   - ✅ GESP 1级第 1-12 课儿童版微课已完成并导入数据库
+   - 继续编写 GESP 2级第 1-8 课儿童版微课
    - 将课件中的占位编程题替换为带测试用例的真实题目
 
 ### 接下来（P1）
@@ -358,7 +367,12 @@ npx vite --port 3000 --host 0.0.0.0
 
 - `plan.md` — 完整产品方案（需求、架构、流程）
 - `DEV_PLAN.md` — 开发执行计划（7个Phase详细任务）
+- `CHANGELOG.md` — 近期开发日志与改动清单
+- `CONTEXT.md` — 会话切换用上下文摘要
 - `CLAUDE.MD` — 本文档（项目说明+进度+下一步）
+- `server/courses/MICRO_LESSON_FORMAT.md` — 微课格式规范
+- `docs/AI_MAP_PROMPTS.md` — 地图背景 AI 生成 prompt
+- `docs/agents/elementary-student-persona.md` — 零基础小学生体验官人设
 
 ---
 
@@ -900,9 +914,8 @@ npx vite --port 3000 --host 0.0.0.0
 
 ### 12. 待完成
 
-- 启动 Docker Desktop 后运行数据库迁移：`npx prisma migrate dev`
-- 重新导入 GESP 1级课件：`npx tsx src/scripts/import-gesp1.ts`
-- 继续按微课格式重写 GESP 1级第 2-14 课和 GESP 2级课程
+- ✅ GESP 1级第 1-12 课微课已完成并重新导入
+- 继续按微课格式重写 GESP 2级第 1-8 课
 
 ### 13. 更新文件
 

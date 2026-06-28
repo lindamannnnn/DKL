@@ -284,12 +284,15 @@ export default function LessonPage() {
   const pages = lesson?.pages?.length ? lesson.pages : [{ title: lesson?.title || '', blocks: lesson?.content || [], hasCheckpoint: false }]
   const page = pages[currentPage]
   const totalPages = pages.length
+  const isCompleted = lesson?.progress?.status === 'completed'
 
   const currentLessonIndex = lesson?.chapter.lessons.findIndex((l) => l.id === id) ?? -1
   const nextLesson = lesson && currentLessonIndex < lesson.chapter.lessons.length - 1 ? lesson.chapter.lessons[currentLessonIndex + 1] : null
 
   const groups = page?.blocks?.length ? groupBlocks(page.blocks) : []
-  const revealedCount = revealedMap[currentPage] ?? Math.min(1, groups.length)
+  const revealedCount = isCompleted
+    ? groups.length
+    : revealedMap[currentPage] ?? Math.min(1, groups.length)
   const allRevealed = groups.length ? revealedCount >= groups.length : true
 
   const revealNext = () => {
@@ -458,30 +461,40 @@ export default function LessonPage() {
               </div>
             </div>
             {/* 星星进度轨道 */}
-            <div className="flex items-center gap-2">
-              {Array.from({ length: totalPages }).map((_, i) => (
-                <div key={i} className="flex-1 flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
+              {Array.from({ length: totalPages }).map((_, i) => {
+                const isPast = i < currentPage
+                const isCurrent = i === currentPage
+                const circle = (
                   <div
                     className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all ${
-                      i < currentPage
+                      isPast
                         ? 'bg-yellow-400 text-white shadow-sm'
-                        : i === currentPage
+                        : isCurrent
                         ? 'bg-primary-500 text-white ring-4 ring-primary-100 scale-110'
                         : 'bg-gray-200 text-gray-400'
                     }`}
                   >
-                    {i < currentPage ? <Star className="w-3.5 h-3.5 fill-current" /> : i + 1}
+                    {isPast ? <Star className="w-3.5 h-3.5 fill-current" /> : i + 1}
                   </div>
-                  {i < totalPages - 1 && (
-                    <div className="flex-1 h-1.5 rounded-full bg-gray-200 overflow-hidden">
-                      <div
-                        className="h-full bg-gradient-to-r from-yellow-400 to-primary-400 transition-all duration-500"
-                        style={{ width: i < currentPage ? '100%' : '0%' }}
-                      />
-                    </div>
-                  )}
-                </div>
-              ))}
+                )
+
+                return (
+                  <div key={i}>
+                    {isCompleted ? (
+                      <button
+                        onClick={() => setCurrentPage(i)}
+                        className="focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 rounded-full"
+                        title={`跳到第 ${i + 1} 关`}
+                      >
+                        {circle}
+                      </button>
+                    ) : (
+                      circle
+                    )}
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>

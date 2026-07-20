@@ -308,9 +308,49 @@ StudentExam     -- 学生考试记录（答案/结果/分数）
 - Git
 - Windows 11 + WSL2（当前开发环境）
 
+### 启动 Docker（必须第一步）
+
+本项目依赖 Docker 运行 PostgreSQL、Redis 和 JudgeServer 判题沙箱。在运行 `docker compose` 之前，必须先确保 Docker 引擎正在运行。
+
+#### Windows 上启动 Docker Desktop
+
+1. **从开始菜单启动**
+   - 点击 Windows 开始菜单 → 搜索 `Docker Desktop` → 点击打开
+   - 等待右下角托盘区出现鲸鱼图标，且图标不再闪烁（表示已启动完成）
+
+2. **从命令行启动（如已安装并加入 PATH）**
+   ```powershell
+   # 在 PowerShell 中执行
+   Start-Process "C:\Program Files\Docker\Docker\Docker Desktop.exe"
+   ```
+
+3. **验证 Docker 是否已运行**
+   ```bash
+   docker info
+   # 看到 Server 信息即表示 Docker 引擎已启动
+   # 如果报错 "Cannot connect to the Docker daemon"，说明 Docker Desktop 还没启动好
+   ```
+
+4. **等待完全就绪**
+   - Docker Desktop 首次启动可能需要 10-30 秒
+   - 确认左下角状态显示 `Engine running`（引擎运行中）
+
+#### 常见问题
+
+| 现象 | 原因 | 解决 |
+|------|------|------|
+| `docker info` 报错 "error during connect" | Docker Desktop 没启动 | 先启动 Docker Desktop，等待鲸鱼图标稳定后再试 |
+| `docker compose up -d` 卡住很久 | 镜像首次拉取 | 耐心等待 3-5 分钟，JudgeServer 镜像较大 |
+| 提示 "Docker Desktop service is not running" | 服务未启动 | 在开始菜单启动 Docker Desktop，不要直接运行 docker 命令 |
+| WSL2 相关报错 | Docker 后端未正确配置 | 打开 Docker Desktop → Settings → General → 勾选 "Use the WSL 2 based engine"，点击 Apply & Restart |
+
 ### 启动命令（开发）
+
+Docker 引擎就绪后，按顺序执行：
+
 ```bash
-# 1. 启动基础设施
+# 1. 启动基础设施（PostgreSQL + Redis + JudgeServer）
+# 必须在 Docker Desktop 运行后再执行
 docker compose up -d
 
 # 2. 后端

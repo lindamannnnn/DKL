@@ -16,7 +16,10 @@
 
 ### 决策
 - GESP2 课件知识体系自本日起不再修改，与 GESP1 冻结口径一致。
-- 第 14/15/16 课标题仍显示「课程13/14/15」（插入新课时只调了 sortOrder）——源文件与数据库保持一致，记为已知 cosmetic 遗留，不纳入本次冻结改动。
+- 第 14/15/16 课标题编号已修正为「课程14/15/16」（`server/src/scripts/fix-gesp2-lesson-titles.ts` 同步源文件与数据库，学习进度按 id 关联不受影响）。
+
+### 环境备注
+- Windows 上启动 Docker Desktop 必须通过正常桌面会话（开始菜单或 `explorer.exe "C:\Program Files\Docker\Docker\Docker Desktop.exe"`）：Git Bash 环境缺少 `ProgramData`/`SystemRoot` 等变量，直接启动会导致后端崩溃。详见 CLAUDE.MD「启动 Docker（必须第一步）」。
 
 ### 待办（下一步）
 - [ ] 推进 GESP 3级课件开发（`标准教案/GESP03/` 已就位，评估体系可复用）

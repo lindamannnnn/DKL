@@ -190,7 +190,7 @@ using namespace std;
 bool isPrime(int n)
 {   // 判断素数
     if (n < 2) return false;
-    for (int i = 2; i <= (int)sqrt(n); i++)
+    for (int i = 2; i * i <= n; i++)   // 试到 i*i 超过 n 就够了（和 GESP1 学的写法一样）
         if (n % i == 0) return false;
     return true;
 }

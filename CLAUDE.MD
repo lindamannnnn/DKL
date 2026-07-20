@@ -18,11 +18,11 @@
 ### 产品公式
 > 平台 = Markdown 课件渲染引擎 + 在线代码编辑器 + JudgeServer 判题 + AI 竞赛教练
 
-### 最近更新（2026-07-01 ~ 2026-07-04）
-- **GESP1 内容冻结**：01-18 课结构统一为「普通课 2+5 / 练习课 5+5」，课堂挑战后补充评讲逻辑，`gesp1/` 与 `gesp1-micro/` 同步，不再修改课件知识体系。
-- **小学生智能体 v6 评估**：重置"小柯"和"小明"状态，从零重新学习 GESP1 全部 18 课；小柯平均理解率 89.3%，小明 72.8%；报告见 `docs/reports/evaluation-xiaoke-18-lessons-v6.md` 与 `docs/reports/evaluation-xiaoming-18-lessons-v6.md`。
-- **GESP1 一级真题 14 套自测**：每套卷前重置智能体状态，独立测试不累积；小柯平均 98.8 分，小明平均 68.9 分；报告见 `docs/reports/xiaoke-gesp1-exam-v6-report.md` 与 `docs/reports/xiaoming-gesp1-exam-v6-report.md`。
-- **GESP2 准备**：`server/courses/gesp2/` 已有 8 课标准教案，下一步按微课格式重写为 `gesp2-micro/` 并导入数据库。
+### 最近更新（2026-07-20）
+- **GESP1 内容冻结**：01-18 课结构统一为「普通课 2+5 / 练习课 5+5」，不再修改课件知识体系。
+- **GESP2 内容冻结（2026-07-20）**：16 课全部完成（含新增第 13 课「循环模拟与易错点专项」、L05 枚举去重），课后题修复与难度排序完成，双智能体测评 P0=0、真题 5 套闭卷验证通过；`server/courses/gesp2/` 源文件已与数据库同步定版，不再修改课件知识体系。
+- **评估体系**：评估准则 v1（`docs/agents/evaluation-rubric-v1.md`）+ GESP1 毕业知识基线（`docs/agents/gesp1-graduate-knowledge-baseline.md`）已建立，GESP3 及以上测评可直接复用。
+- **GESP3 准备**：`标准教案/GESP03/` 已就位，下一步按微课格式开发。
 - 详细改动见 `CHANGELOG.md`。
 
 ---

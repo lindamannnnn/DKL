@@ -33,8 +33,8 @@ client.interceptors.response.use(
     const message = error.response?.data?.error || error.message || '请求失败'
     console.error('API Error:', message)
 
-    // 401 自动登出
-    if (error.response?.status === 401) {
+    // 401 自动登出（生产环境）
+    if (error.response?.status === 401 && import.meta.env.PROD) {
       localStorage.removeItem('token')
       localStorage.removeItem('user')
       window.location.href = '/login'

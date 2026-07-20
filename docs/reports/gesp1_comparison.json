@@ -1,0 +1,196 @@
+[
+  {
+    "id": "482",
+    "source": "extracted_202303与202309客观题/482",
+    "total": 25,
+    "answered": 25,
+    "wrong_count": 0,
+    "wrongs": []
+  },
+  {
+    "id": "522",
+    "source": "extracted_202303与202309客观题/522",
+    "total": 25,
+    "answered": 25,
+    "wrong_count": 1,
+    "wrongs": [
+      {
+        "qnum": "19",
+        "body": "- 正确\n- 错误\n\n20. 10 是一个 int 类型常量。",
+        "options": [
+          "正确",
+          "错误"
+        ],
+        "my": "A",
+        "correct": "B"
+      }
+    ]
+  },
+  {
+    "id": "1690",
+    "source": "extracted_202303与202309客观题/1690",
+    "total": 25,
+    "answered": 25,
+    "wrong_count": 1,
+    "wrongs": [
+      {
+        "qnum": "20",
+        "body": "- 对\n- 错\n\n21、C++表达式 `('1' + '1')` 的值为 '2'。",
+        "options": [
+          "对",
+          "错"
+        ],
+        "my": "B",
+        "correct": "A"
+      }
+    ]
+  },
+  {
+    "id": "1694",
+    "source": "extracted_202312客观题/1694",
+    "total": 25,
+    "answered": 25,
+    "wrong_count": 1,
+    "wrongs": [
+      {
+        "qnum": "13",
+        "body": "- `3`\n- `3 5`\n- `3 5 9`\n- 以上都不对\n\n第 14 题 某公司新出了一款无人驾驶的小汽车，通过声控智能驾驶系统，乘客只要告诉汽车目的地，车子就能自动选择一条优化路线，告诉乘客后驶达那里。请问下面哪项不是驾驶系统完成选路所必须的。（ ）",
+        "options": [
+          "`3`",
+          "`3 5`",
+          "`3 5 9`",
+          "以上都不对"
+        ],
+        "my": "D",
+        "correct": "B"
+      }
+    ]
+  },
+  {
+    "id": "1876",
+    "source": "extracted_202403客观题/1876",
+    "total": 25,
+    "answered": 25,
+    "wrong_count": 0,
+    "wrongs": []
+  },
+  {
+    "id": "1958",
+    "source": "extracted_202406客观题/1958",
+    "total": 25,
+    "answered": 25,
+    "wrong_count": 0,
+    "wrongs": []
+  },
+  {
+    "id": "2221",
+    "source": "extracted_202409客观题/2221",
+    "total": 25,
+    "answered": 25,
+    "wrong_count": 2,
+    "wrongs": [
+      {
+        "qnum": "7",
+        "body": "- 将输出整数7 \n- 将输出52，5和2之间没有空格 \n- 将输出5和2，5和2之间有空格 \n- 执⾏结果不确定，因为代码段没有显⽰a和b的数据类型\n\n第 8 题 下⾯C++代码执⾏后输出是（ ）。\n\n```cpp\nint Sum = 0;\nfor (int i = 0; i < 10; i++)\n    Sum += i;\ncout << Sum;\n```",
+        "options": [
+          "将输出整数7 ",
+          "将输出52，5和2之间没有空格 ",
+          "将输出5和2，5和2之间有空格 ",
+          "执⾏结果不确定，因为代码段没有显⽰a和b的数据类型"
+        ],
+        "my": "A",
+        "correct": "D"
+      },
+      {
+        "qnum": "22",
+        "body": "- 对 \n- 错\n\n第 23 题 在C++代码中，不可以将变量命名为 `five-star` ，因为变量名中不可以出现 - （减号）符号。（ ）",
+        "options": [
+          "对 ",
+          "错"
+        ],
+        "my": "A",
+        "correct": "B"
+      }
+    ]
+  },
+  {
+    "id": "2216",
+    "source": "extracted_202412客观题/2216",
+    "total": 25,
+    "answered": 25,
+    "wrong_count": 1,
+    "wrongs": [
+      {
+        "qnum": "18",
+        "body": "-  对 \n-  错\n\n第 19 题 下⾯C++代码执⾏后将输出10。（ ）\n\n```cpp\nint N = 0;\nfor (int i = 0; i < 10; i++){\n    continue;\n    N += 1;\n}\ncout << N;\n```",
+        "options": [
+          "对 ",
+          "错"
+        ],
+        "my": "A",
+        "correct": "B"
+      }
+    ]
+  },
+  {
+    "id": "2354",
+    "source": "extracted_202503客观题/2354",
+    "total": 25,
+    "answered": 25,
+    "wrong_count": 1,
+    "wrongs": [
+      {
+        "qnum": "10",
+        "body": "-  `10*10={10*10}` \n-  `100=10` \n-  `N*N=100` \n-  `{N}*{N}={10*10}`\n\n第 11 题 执行下面的C++代码，在键盘上先后输入100和200，输出是（ ）。\n\n```cpp\nint first,second;\ncout << \"请输入第1个正整数：\";\ncin >> first;\ncout << \"请输入第2个正整数：\";\ncin >> second;\ncout << (first / second * second) << endl;\n```",
+        "options": [
+          "`10*10={10*10}` ",
+          "`100=10` ",
+          "`N*N=100` ",
+          "`{N}*{N}={10*10}`"
+        ],
+        "my": "A",
+        "correct": "D"
+      }
+    ]
+  },
+  {
+    "id": "2651",
+    "source": "extracted_202506客观/2651",
+    "total": 25,
+    "answered": 25,
+    "wrong_count": 1,
+    "wrongs": [
+      {
+        "qnum": "19",
+        "body": "- 对\n- 错\n\n第 20 题 将下面C++代码中的 `i < 100; i = i + 1` 修改为 `i < 200;` `i += i + 1` ，其输出与当前代码输出相同。（ ）\n\n```cpp\nint cnt = 0;\nfor (int i = 0; i < 100; i = i + 1)\n    cnt += 1;\ncout << cnt;\n```",
+        "options": [
+          "对",
+          "错"
+        ],
+        "my": "A",
+        "correct": "B"
+      }
+    ]
+  },
+  {
+    "id": "2871",
+    "source": "extracted_202509客观题/2871",
+    "total": 25,
+    "answered": 18,
+    "wrong_count": 1,
+    "wrongs": [
+      {
+        "qnum": "4",
+        "body": "- 2 3\n- 23\n- 20\n- 以上都不准确\n\n5. C++表达式 `3 * 4 % 5 / 6` 的值是( )。",
+        "options": [
+          "2 3",
+          "23",
+          "20",
+          "以上都不准确"
+        ],
+        "my": "D",
+        "correct": "C"
+      }
+    ]
+  }
+]

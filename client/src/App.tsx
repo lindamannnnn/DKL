@@ -64,7 +64,7 @@ function App() {
         </Route>
 
         {/* 默认跳转 */}
-        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/" element={<Navigate to="/student/courses" replace />} />
         </Routes>
       </BrowserRouter>
     </ErrorBoundary>

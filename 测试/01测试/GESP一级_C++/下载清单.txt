@@ -1,0 +1,73 @@
+GESP C++ 一级真题下载清单
+==================================================
+
+考试时间: 2023-03
+文件名称: GESP_2023-03_C++_1级.pdf
+原始标题: GESP 3月认证C++一级真题
+下载链接: https://gesp.ccf.org.cn/101/attach/1536716611518496.pdf
+
+考试时间: 2023-06
+文件名称: GESP_2023-06_C++_1级.pdf
+原始标题: GESP C++一级真题
+下载链接: https://gesp.ccf.org.cn/101/attach/1553039792013344.pdf
+
+考试时间: 2023-09
+文件名称: GESP_2023-09_C++_1级.pdf
+原始标题: GESP 9月认证C++一级真题
+下载链接: https://gesp.ccf.org.cn/101/attach/1570611155435552.pdf
+
+考试时间: 2023-12
+文件名称: GESP_2023-12_C++_1级.pdf
+原始标题: GESP 12月认证C++一级真题
+下载链接: https://gesp.ccf.org.cn/101/attach/1585703601307680.pdf
+
+考试时间: 2024-03
+文件名称: GESP_2024-03_C++_1级.pdf
+原始标题: GESP 3月认证C++一级真题
+下载链接: https://gesp.ccf.org.cn/101/attach/1602047004639264.pdf
+
+考试时间: 2024-06
+文件名称: GESP_2024-06_C++_1级.pdf
+原始标题: GESP 6月认证 C++ 一级真题
+下载链接: https://gesp.ccf.org.cn/101/attach/1621071329493024.pdf
+
+考试时间: 2024-09
+文件名称: GESP_2024-09_C++_1级.pdf
+原始标题: GESP 9月认证 C++ 一级真题
+下载链接: https://gesp.ccf.org.cn/101/attach/1633835940839456.pdf
+
+考试时间: 2024-12
+文件名称: GESP_2024-12_C++_1级.pdf
+原始标题: GESP 2024年12月认证 C++ 1级真题
+下载链接: https://gesp.ccf.org.cn/101/attach/1652740757389344.pdf
+
+考试时间: 2025-03
+文件名称: GESP_2025-03_C++_1级.pdf
+原始标题: CCF GESP 2025年3月认证 C++ 1级试题
+下载链接: https://gesp.ccf.org.cn/101/attach/1669256632598560.pdf
+
+考试时间: 2025-06
+文件名称: GESP_2025-06_C++_1级.pdf
+原始标题: CCF GESP 2025年6月认证 C++ 1级试题
+下载链接: https://gesp.ccf.org.cn/101/attach/1687195805024288.pdf
+
+考试时间: 2025-09
+文件名称: GESP_2025-09_C++_1级.pdf
+原始标题: CCF GESP 2025年9月认证 C++ 1级试题
+下载链接: https://gesp.ccf.org.cn/101/attach/1703972987469856.pdf
+
+考试时间: 2025-12
+文件名称: GESP_2025-12_C++_1级.pdf
+原始标题: CCF GESP 2025年12月认证 C++ 1级试题
+下载链接: https://gesp.ccf.org.cn/101/attach/1723012510384160.pdf
+
+考试时间: 2026-03
+文件名称: GESP_2026-03_C++_1级.pdf
+原始标题: CCF GESP 2026年3月认证 C++ 1级试题
+下载链接: https://gesp.ccf.org.cn/101/attach/1734124574343200.pdf
+
+考试时间: 2026-06
+文件名称: GESP_2026-06_C++_1级.pdf
+原始标题: CCF GESP 2026年6月认证 C++ 1级试题
+下载链接: https://gesp.ccf.org.cn/101/attach/1753295253143584.pdf
+

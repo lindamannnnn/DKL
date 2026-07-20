@@ -1,6 +1,8 @@
 # DKL "每周一课" 儿童自学版 — 当前上下文
 
 > 本文件用于在切换 Kimi 会话时快速恢复上下文。切换回 Kimi 客户端后，把这份文件内容贴给 Kimi 即可。
+> 
+> **最后更新**：2026-07-04
 
 ---
 
@@ -17,131 +19,164 @@
 
 ---
 
-## 2. 当前完成状态
+## 2. 当前会话完成的工作（2026-07-04）
 
-### ✅ 已完成
+### 2.1 GESP1 最终整理与冻结
+- 课程结构统一：普通课「2 道课堂挑战 + 5 道课后作业」，练习课「5 道课堂挑战 + 5 道课后作业」。
+- 课堂挑战后统一补充评讲逻辑（知识点、思路、易错点、关键代码解释）。
+- `server/courses/gesp1/` 与 `server/courses/gesp1-micro/` 同步，GESP1 课件内容冻结，不再修改知识体系。
 
-**激励与粘性**
-- 后端周连胜逻辑完成（按周计算，周一为一周开始）
-- 后端 `/lessons/:id/complete` 返回 `streak` 和 `weeklyCompleted`
-- 后端 `/progress/stats` 返回 `weeklyCompleted` 和 `nextLesson`
-- 后端 `/progress/report` 统一使用周连胜并调整文案
-- 前端 `CourseHallPage` 改造为 Dashboard 风格首页
-- 前端 `CourseDetailPage` 改造为像素风冒险地图（S 形路径、8 级地形）
-- 前端 `CelebrationModal` 强化庆祝效果（彩带、XP、等级、徽章、连胜、下一课）
-- 前端 `LessonPage` 完成时传递 streak/weeklyCompleted 给庆祝弹窗
+### 2.2 GESP1 智能体 v6 评估
+- 重置小柯（9 岁三年级）和小明（11 岁五年级）状态，从零重新学习 01-18 课。
+- 小柯平均理解率 **89.3%**（未达 90%），小明平均理解率 **72.8%**（达 70%）。
+- 报告：`docs/reports/evaluation-xiaoke-18-lessons-v6.md`、`docs/reports/evaluation-xiaoming-18-lessons-v6.md`。
 
-**课程地图美术**
-- 使用 AI 生成 8 张地图背景图，存放于 `client/public/maps/map-level-{1-8}.png`
-- 生成 prompt 记录在 `docs/AI_MAP_PROMPTS.md`
-- 课程详情页背景使用 bgImage，随 `course.levelMin` 切换 1-8 级主题
-- 修复节点与 SVG 路径使用统一像素坐标，课程名完整展示
+### 2.3 GESP1 一级真题 14 套自测
+- 每套卷前重置智能体状态为"刚学完 18 课"，独立测试不累积。
+- 小柯 14 套平均 **98.8 分**（12 套满分）。
+- 小明 14 套平均 **68.9 分**（最高 86，最低 57）。
+- 报告：`docs/reports/xiaoke-gesp1-exam-v6-report.md`、`docs/reports/xiaoming-gesp1-exam-v6-report.md`。
 
-**微课格式与内容**
-- 制定微课格式规范：`server/courses/MICRO_LESSON_FORMAT.md`
-- 定义 story / card / demo / checkpoint / challenge 五种组件
-- 完成 GESP1 全部 12 课儿童版微课：`server/courses/gesp1-micro/01-走进C++.md` 至 `12-C风格输入输出.md`
-- 全部通过小学生体验官"小柯"人设评审并导入数据库
-- 从 CSP01 题库为每节课匹配 5 道课后编程题（共 60 道），按知识点、难度从易到难排序，后续又根据零基础反馈从 simplest 候选集重新匹配为最简单题目
-- 修复 `/lessons/:id/problems` 接口，返回顺序与课件编排一致
-- 新增/更新 Skill：`.kimi/skills/gesp1-lesson-pipeline/`（改造流水线）、`.kimi/skills/course-kid-evaluator/`（小柯测评）
-- 课后挑战区统一增加 Dev-C++ 编写提示（`ProblemPracticeBlock` 组件）
-- 课时页关卡导航优化：课程完成后可点击回顾，关卡过多时自动换行
-- 智能体验收：以 `student@dkl.local` 完成 GESP1 第 1-5 课，输出 `docs/reports/agent-gesp1-lessons-1-5.md`
+### 2.4 文档更新
+- `README.md`：GESP1 状态更新为 01-18 课完成，GESP2 准备中。
+- `CHANGELOG.md`：新增 v6 评估与真题自测阶段记录。
+- `DEV_PLAN.md`：Phase 7 进度更新为 70%，GESP1 冻结、GESP2 待开始。
+- `CONTEXT.md`：即本文件，已同步到最新状态。
 
-**Bug 修复**
-- 修复 `client.ts` token key 兼容问题（兼容 `token`/`dkl_token`、`tenantId`/`dkl_tenantId`）
-- 修复 `Layout.tsx` / `CourseHallPage.tsx` 退出登录清理 key 不一致
-- 修复 `progress.ts` 中 `nextLesson` Prisma `select` + `include` 冲突
-- 修复 CSS 代码块默认文字颜色 bug（`inherit` → `#abb2bf`，暗色背景下可见）
-
-**基础设施**
-- 启动 Docker / PostgreSQL / Redis / JudgeServer，恢复课程数据
-- 前端 `npm run build` ✅ 通过
-- 后端 `npx tsc --noEmit` ✅ 通过
-
-### 🔄 进行中 / 待优化
-- GESP1 全部 12 课已完成，开始准备 GESP2 8 课改造
-- 验证第 1 课知识体系完整性（变量创建/赋值/初始化已补）
-- 用小学生智能体人设自检每节课可读性
-- 课后编程题和课堂操作题题目、测试用例待补充
-- 前端 dev server 偶有 120s 超时 / 端口占用问题
+### 2.5 服务恢复
+- Docker Desktop 已启动，容器 `dkl-postgres`、`dkl-redis`、`dkl-judge` 运行中。
+- 后端 dev server 已启动：`http://localhost:4001`
+- 前端 dev server 已启动：`http://localhost:3000`
+- 登录接口测试通过，数据库连接正常。
 
 ---
 
-## 3. 关键文件改动
+## 3. 当前运行中的服务
 
+| 服务 | URL | 状态 |
+|------|-----|------|
+| 前端 | http://localhost:3000 | 运行中 |
+| 后端 | http://localhost:4001 | 运行中 |
+| PostgreSQL | localhost:5432 | Docker 运行中 |
+| Redis | localhost:6379 | Docker 运行中 |
+| JudgeServer | localhost:8080 | Docker 运行中 |
+
+测试账号：
+- 邮箱：`student@dkl.local`
+- 密码：`student123`
+- tenantId：`080ffa34-df87-4566-b1ef-555b88bfe5b8`
+
+快速验证：
+```bash
+curl -s http://localhost:3000       # 前端 200
+curl -s -X POST http://localhost:4001/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"email":"student@dkl.local","password":"student123","tenantId":"080ffa34-df87-4566-b1ef-555b88bfe5b8"}'
 ```
-M  client/src/api/client.ts                    # token/tenantId key 兼容
-M  client/src/components/CelebrationModal.tsx  # 强化庆祝弹窗
-M  client/src/components/Layout.tsx            # logout 清理 key
-M  client/src/index.css                         # 像素风样式、代码块颜色、地图效果
-M  client/src/pages/CourseDetailPage.tsx       # 像素风地图详情页
-M  client/src/pages/CourseHallPage.tsx         # Dashboard 首页
-M  client/src/pages/LessonPage.tsx             # 课时完成传参、关卡导航
-M  client/src/components/ProblemPracticeBlock.tsx # 课后挑战 Dev-C++ 提示
-M  server/src/parsers/markdownParser.ts        # 课件分页解析
-M  server/src/routes/courses.ts                # 返回用户进度
-M  server/src/routes/lessons.ts                # 周连胜计算
-M  server/src/routes/progress.ts               # stats/report 周连胜
 
-A  client/public/maps/map-level-{1-8}.png      # AI 生成地图背景
-A  client/public/maps/check-state.png          # 地图状态图标
-A  docs/AI_MAP_PROMPTS.md                      # 地图生成 prompt
-A  docs/agents/elementary-student-persona.md   # 零基础小学生体验官人设
-A  generate_maps.py                            # 地图背景生成辅助脚本
-A  server/courses/MICRO_LESSON_FORMAT.md       # 微课格式规范
-A  server/courses/gesp1-micro/01-走进C++.md 至 12-C风格输入输出.md  # GESP1 儿童版微课全套
-A  docs/reports/agent-gesp1-lessons-1-5.md    # 智能体验收学习报告
+如果后端起不来，常见原因：
+1. Docker Desktop 没开 → 手动启动 Docker Desktop，等待 `docker ps` 能看到容器。
+2. 端口 4001 被占用 → 运行 `npx kill-port 4001` 后再启动。
+3. 前端 3000 被占用 → Vite 会自动 fallback 到 3001。
+
+---
+
+## 4. 当前未提交改动
+
+本次会话产生大量改动，**尚未 commit/push**。
+
+主要变更：
+- `CHANGELOG.md`、`CONTEXT.md` 更新
+- `server/courses/gesp1-micro/` 和 `server/courses/gesp1/` 从 12 个文件调整为 18 个文件
+- 新增：
+  - `server/src/scripts/migrate-gesp1-18-lessons.ts`
+  - `server/src/scripts/verify-gesp1-all.ts`
+  - `docs/reports/agent-gesp1-18-lessons.md`
+  - `docs/reports/agent-gesp1-lessons-6-12.md`
+  - `docs/reports/agent-xiaoming-gesp1-evaluation.md`
+  - `docs/agents/xiaoming-persona.md`
+
+查看完整状态：
+```bash
+cd e:/DKL && git status --short
 ```
 
 ---
 
-## 4. 当前技术栈 & 环境
+## 5. 关键文件清单
+
+| 文件 | 作用 |
+|------|------|
+| `server/courses/gesp1-micro/01-走进C++.md` ~ `18-练习课-GESP1综合大闯关.md` | 儿童版微课源文件（导入/展示用） |
+| `server/courses/gesp1/01-走进C++.md` ~ `18-练习课-GESP1综合大闯关.md` | 标准版微课源文件（迁移脚本读取用） |
+| `server/courses/MICRO_LESSON_FORMAT.md` | 微课格式规范 |
+| `server/src/scripts/migrate-gesp1-18-lessons.ts` | 18 课数据库迁移脚本 |
+| `server/src/scripts/verify-gesp1-all.ts` | 90 道课后题自动验证脚本 |
+| `docs/agents/elementary-student-persona.md` | 零基础小学生体验官"小柯"人设 |
+| `docs/agents/xiaoming-persona.md` | 五年级零基础贪玩体验官"小明"人设 |
+| `docs/reports/agent-gesp1-lessons-1-5.md` | 1-5 课验证报告 |
+| `docs/reports/agent-gesp1-lessons-6-12.md` | 6-12 课验证报告 |
+| `docs/reports/agent-gesp1-18-lessons.md` | 18 课扩充与全量验证报告 |
+| `docs/reports/agent-xiaoming-gesp1-evaluation.md` | 小明人设 18 课体验评估报告 |
+| `docs/reports/evaluation-xiaoke-18-lessons-v6.md` | 小柯 v6 学习评估报告 |
+| `docs/reports/evaluation-xiaoming-18-lessons-v6.md` | 小明 v6 学习评估报告 |
+| `docs/reports/xiaoke-gesp1-exam-v6-report.md` | 小柯 14 套一级真题自测报告 |
+| `docs/reports/xiaoming-gesp1-exam-v6-report.md` | 小明 14 套一级真题自测报告 |
+
+---
+
+## 6. 当前主要问题与下一步
+
+### 6.1 当前状态（2026-07-18 更新）
+- **GESP1 已冻结**：18 课完成，90/90 课后题验证通过，双智能体多轮评估完成。
+- **GESP2 已完成并测试通过**：16 课全部就绪。课后题修复（HTML 泄露、错题替换、简单→难排序）、双智能体课件测评（小柯 0.93/76.7、小明 0.98/85，P0=0）、真题 5 套闭卷验证（小柯 79.6/合格5/5、小明 ~84/合格4/5）、新增第 13 课「循环模拟与易错点专项」、L05 补枚举去重。
+- **评估体系已建好**：评估准则 v1（`docs/agents/evaluation-rubric-v1.md`）+ GESP1 毕业知识基线（`docs/agents/gesp1-graduate-knowledge-baseline.md`），GESP3 及以上测评可直接复用。
+
+### 6.2 待处理
+1. **未提交 Git**：本次所有改动均未 commit/push，需用户确认后提交。
+2. **测试用例补充**：部分课后题测试用例覆盖不足。
+3. **前端渲染抽查**：新第 13 课含 7 个 checkpoint 块，建议在浏览器里实际过一遍确认锁页与渲染正常。
+
+### 6.3 下一步可选方向
+- **方向 A：GESP2 收尾终验**，双智能体把修复后的第 13 课再过一遍，然后冻结 GESP2。
+- **方向 B：推进 GESP 3级课件开发**（标准教案 GESP03 已就位）。
+- **方向 C：GESP 真题录入与模拟考试题库扩充**。
+- **方向 D：配置真实 AI Key，验证 AI 教练在线效果**。
+
+---
+
+## 7. 关键约定
+
+- 不改课件 Markdown 知识体系，只按微课格式重新包装。
+- 连胜按"周"计算（周一为一周开始）。
+- `CourseHallPage` 是学生实际首页（`/student/courses`）。
+- 课程详情页根据 `course.levelMin` 切换 1-8 级地形主题。
+- 每节课必须包含 story / card / demo / checkpoint / challenge 中的至少一种互动。
+- 检查点（checkpoint）必须答对才能继续下一页。
+- 新智能体人设位于 `docs/agents/elementary-student-persona.md` 和 `docs/agents/xiaoming-persona.md`，用于课程可读性自检。
+
+---
+
+## 8. 环境信息
 
 - OS: Windows 11 + WSL2 + Docker Desktop
 - Node: v24.14.0, npm 11.9.0
 - Stack: Node.js + Express + Prisma + PostgreSQL + Redis + React 18 + Vite + Tailwind
-- 后端: http://localhost:4001
-- 前端: http://localhost:3000（被占用时可能 fallback 到 3001）
-- 数据库: localhost:5432 (dkl_db)
 - Git: https://github.com/lindamannnnn/DKL.git
 - 最新 commit: `8648b10 feat: 周连胜粘性机制 + 像素风课程地图 MVP`
 
 ---
 
-## 5. 测试账号
+## 9. 新会话恢复步骤
 
-- 邮箱：`student@dkl.local`
-- 密码：`student123`
-- tenantId：`080ffa34-df87-4566-b1ef-555b88bfe5b8`
+如果切换到新 Kimi 会话，请按以下顺序恢复：
 
----
-
-## 6. 当前主要问题
-
-1. **课程转换任务**：GESP1 已完成；GESP2 剩 8 课需要按新微课格式重写并导入。
-2. **前端 dev server 超时**：后台任务常因 120s 超时失败，实际服务可能已启动但心跳丢失。
-3. **端口占用**：前后端服务进程残留导致启动失败，需手动 kill 旧进程后重启。
-4. **未提交改动多**：地图图、CSS、课程详情页、新文档等均未 commit。
-
----
-
-## 7. 下一步可选方向
-
-- **方向 A：继续批量转换课程**（GESP2-01 到 GESP2-08）
-- **方向 B：用小学生智能体自检第 1 课**，找出不够儿童化的地方
-- **方向 C：补充课后编程题和测试用例**，让每节课形成完整闭环
-- **方向 D：先 commit 当前改动**，清理端口后验证前后端都能正常启动
-
----
-
-## 8. 关键约定
-
-- 不改课件 Markdown 知识体系，只按微课格式重新包装
-- 连胜按"周"计算（周一为一周开始）
-- `CourseHallPage` 是学生实际首页（`/student/courses`）
-- 课程详情页根据 `course.levelMin` 切换 1-8 级地形主题
-- 每节课必须包含 story / card / demo / checkpoint / challenge 中的至少一种互动
-- 检查点（checkpoint）必须答对才能继续下一页
-- 新智能体人设位于 `docs/agents/elementary-student-persona.md`，用于课程可读性自检
+1. **贴入本文件全文**作为上下文。
+2. **检查服务状态**：
+   ```bash
+   docker ps
+   curl -s http://localhost:4001/api/auth/login ... # 见第 3 节
+   curl -s -o /dev/null -w "%{http_code}" http://localhost:3000
+   ```
+3. 如果服务没起，按第 3 节说明启动 Docker、后端、前端。
+4. 继续当前**进行中**的工作（推荐先 commit，再按小明报告优化课件或开始 GESP2）。

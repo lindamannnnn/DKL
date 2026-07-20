@@ -1,0 +1,2196 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "C++ 二级"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                386,
+                142,
+                613,
+                175
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2025年06月"
+                    }
+                ]
+            },
+            "bbox": [
+                411,
+                188,
+                581,
+                212
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1 单选题（每题2分，共30分）"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                233,
+                448,
+                254
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/97e01268597e00d481be595f8d5515999d62a9dace72b6fd166a3becc8f4242e.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>答案</td><td>C</td><td>A</td><td>C</td><td>A</td><td>D</td><td>D</td><td>C</td><td>C</td><td>B</td><td>A</td><td>D</td><td>D</td><td>D</td><td>D</td><td>A</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                278,
+                269,
+                719,
+                308
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第1题 2025年4月19日在北京举行了一场颇为瞩目的人形机器人半程马拉松赛。比赛期间，跑动着的机器人会利用身上安装的多个传感器所反馈的数据来调整姿态、保持平衡等，那么这类传感器类似于计算机的( )。\n□ A. 处理器\n□ B. 存储器\n□ C. 输入设备\n□ D. 输出设备"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                321,
+                892,
+                476
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第2题 小明购置的计算机使用一年后觉得内存不够用了，想购置一个容量更大的内存条，这时他需要的内存条是（）。  \n□A.RAM  \n□B.ROM  \n□C.CACHE  \n□D.EPROM"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                486,
+                904,
+                640
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第 3 题 下面 C++ 代码执行后的输出是（）。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                652,
+                401,
+                667
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "int a=3;\nfloat b = 3.5;\ncout << (a *= b);"
+                    }
+                ],
+                "code_language": "javascript"
+            },
+            "bbox": [
+                97,
+                682,
+                268,
+                730
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "□A.3   \n□B.3.5   \n□C.10   \n□D.11"
+                    }
+                ]
+            },
+            "bbox": [
+                99,
+                745,
+                169,
+                849
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第 4 题 下面 C++ 代码用于获得正整数的第 3 位数，如 1234 则输出 2。如果是一位数或两位数，则输出 0。横线处应填入的代码是()。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                862,
+                890,
+                895
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "中国计算机学会\nCCF GESP CCF 编程能力等级认证\nGrade Examination of Software Programming"
+                    }
+                ]
+            },
+            "bbox": [
+                107,
+                67,
+                887,
+                121
+            ]
+        }
+    ],
+    [
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "1 int N, remainder;\n2 cout << \"请输入正整数:\";\n3 cin >> N;\n4 cout << ____;\n□ A. N % 1000 / 100\n□ B. N / 1000 % 100\n□ C. N / 1000 / 100\n□ D. N % 100 / 100"
+                    }
+                ],
+                "code_language": "csv"
+            },
+            "bbox": [
+                99,
+                62,
+                334,
+                242
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第 5 题 下面 C++ 代码执行，其输出是( )。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                254,
+                401,
+                270
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "1 int a, b = (6, 28);\n2 b == a;\n3 a = b;\n4 cout << a << ' ' << b;\n□ A. 6 28\n□ B. 6 6\n□ C. 28 6\n□ D. 28 28"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                100,
+                285,
+                305,
+                464
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第6题今天星期六，其后第N天星期几？如果是星期一到星期六输出形如：星期1、星期2等，星期天则输出星期天。下面的C++代码用于完成上述要求，横线处应填上的代码是( )。"
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                477,
+                880,
+                511
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "int N, remainder;\ncin >> N;\nremainder = ____;\nif(remainder == 0)\n    printf(\"星期六后第%d天是星期天\\n\", N);\nelse\n    printf(\"星期六后第%d天是星期%d\\n\", N, remainder);"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                100,
+                526,
+                524,
+                750
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第 7 题 下面的C++代码执行后其输出是()。"
+                    }
+                ]
+            },
+            "bbox": [
+                94,
+                763,
+                401,
+                779
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "int i, Sum = 0;\nfor (i = 1; i < 10; i++) {\n    Sum += i;\n    if(i % 2) continue;\n    if(i % 7) break;\n}\ncout << Sum;\n\nA. 45\nB. 28"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                102,
+                794,
+                329,
+                957
+            ]
+        }
+    ],
+    [
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "□ C. 3\n□ D. 0"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                99,
+                60,
+                159,
+                106
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第8题 下面  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{C}++"
+                    },
+                    {
+                        "type": "text",
+                        "content": " 代码执行后其输出是( )。"
+                    }
+                ]
+            },
+            "bbox": [
+                94,
+                119,
+                401,
+                135
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "int i, j;\nfor(i = 1; i < 12; i++)\n    for(j = 1; j < i; j++)\n    if(i * j % 2 == 1)\n    break;\ncout << i * j;"
+                    }
+                ],
+                "code_language": "matlab"
+            },
+            "bbox": [
+                97,
+                147,
+                334,
+                238
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "□ A. 110\n□ B. 22\n□ C. 12\n□ D. 3"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                100,
+                252,
+                174,
+                357
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第 9 题 下面 C++ 代码执行后输出是()。"
+                    }
+                ]
+            },
+            "bbox": [
+                94,
+                370,
+                369,
+                385
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "int i, cnt = 0;\nfor(i = -99; i < 100; i += 2)\ncnt = 1 + cnt;\ncout << cnt;"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                95,
+                397,
+                357,
+                460
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "□ A. 101\n□ B. 100\n□ C. 99\n□ D. 98"
+                    }
+                ],
+                "code_language": "csv"
+            },
+            "bbox": [
+                100,
+                475,
+                174,
+                580
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第 10 题 下面 C++ 代码执行后输出是（）。"
+                    }
+                ]
+            },
+            "bbox": [
+                94,
+                593,
+                408,
+                608
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "int i;\nfor(i = 1; i < 10; i++) {\n    if(i % 3 != 0) {\n    printf(\"A#\");\n    continue;\n    }\n    else\n    break;\n    printf(\"0#\");\n}\nif(i == 10) cout << \"1\";"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                97,
+                621,
+                332,
+                780
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "□ A. A#A#\n□ B. A#0#A#0\n□ C. A#A#1\n□ D. A#0#A#0#1"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                99,
+                794,
+                226,
+                897
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第 11 题 下面 C++ 代码执行后的输出是（）。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                910,
+                423,
+                926
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "int i,j;\nfor(i = 0; i < 3; i++)\n    for(j = 0; j < i; j++)\n    printf(\"%d#%d-\", i, j);\nprintf(\"END\");\n□ A. 0#0-1#0-2#0-2#1-END\n□ B. 0#0-1#0-1#1-2#0-2#1-2#2-3#0-3#1-3#2-END\n□ C. 0#0-1#0-1#1-2#0-2#1-2#2-END\n□ D. 1#0-2#0-2#1-END"
+                    }
+                ]
+            },
+            "bbox": [
+                99,
+                62,
+                448,
+                256
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第 12 题 下面 C++ 代码执行后，将输出不能被 3 整除且除以 5 余数为 2 的数。下列选项不能实现的是（）。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                267,
+                853,
+                283
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第 13 题 下面 C++ 代码用于判断一个大于 0 的正整数是几位数，横线处应填入代码先后是（）。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                491,
+                761,
+                507
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "int N, cnt;\ncout << \"请输入大于0的正整数：\";\ncin >> N;\n\ncnt = 0;\nwhile (____){\n    cnt += 1;\n    ____;\n}\ncout << cnt;"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                110,
+                522,
+                378,
+                675
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "□ A."
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                99,
+                692,
+                147,
+                709
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "□ B."
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                100,
+                770,
+                146,
+                787
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "□ C."
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                100,
+                847,
+                147,
+                866
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "□ D."
+                    }
+                ]
+            },
+            "bbox": [
+                100,
+                928,
+                147,
+                942
+            ]
+        }
+    ],
+    [
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "1 | N > 0\n2 | N /= 10"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                141,
+                62,
+                226,
+                93
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第 14 题 判断一个数是否为自守数。自守数的定义是如果一个数的平方其尾数与该数相同，则为自守数，如25的平方是625，其尾数是25，所以25是自守数。相关说法错误的是（）。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                109,
+                892,
+                143
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "int N, N1, M1;\ncout << \"输入一个正整数：\";\ncin >> N;\nN1 = N, M1 = N * N;\n\nbool Flag = true;\n\nwhile (N1 > 0){\n    if (N1 % 10 != M1 % 10){\n    Flag = false;\n    break;\n    }\n    else{\n    N1 = N1 / 10, M1 = M1 / 10;\n    }\n}\n\nif (Flag == true)\n    printf(\"%d的平方是%d, 是自守数\", N, N * N);\nelse\n    printf(\"%d的平方是%d, 不是自守数\", N, N * N);\n\n□ A. 如果Flag在循环中不被改为false，则说明该数是自守数\n□ B. 代码 if (N1 % 10 != M1 % 10) 用于判断其个位数是否相等，如果不等，则表明不是自守数\n□ C. 代码 N1 = N1 / 10, M1 = M1 / 10 将个位数去掉\n□ D. 将 N1 > 0 改为 N > 0 效果相同"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                100,
+                157,
+                784,
+                572
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第 15 题 下面 C++ 代码实现输出如下图形，相关说法错误的是（）。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                585,
+                576,
+                600
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "请输入层数：10\n0\n12\n345\n6789\n01234\n567890\n1234567\n89012345\n678901234\n5678901234\n\nint line_number, now_number;\nint i,row;\n\ncout << \"请输入行数：\";\ncin >> line_number;\nnow_number = 0;\n\nfor (row = 1; row < line_number + 1; row++) { // L1\n    for (i = 0; i < row; i++) { // L2\n    cout << now_number;\n    now_number += 1;\n    if (now_number == 10) now_number = 0; // L3"
+                    }
+                ],
+                "code_language": "c"
+            },
+            "bbox": [
+                107,
+                616,
+                532,
+                956
+            ]
+        }
+    ],
+    [
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "13 }  \n14 cout << endl;  \n15 }"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                94,
+                57,
+                277,
+                103
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "☐ A. 代码 now_number = 0 移动到 L1 和 L2 标记的两行代码之间，效果维持不变"
+                    }
+                ]
+            },
+            "bbox": [
+                99,
+                118,
+                670,
+                134
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 代码 now_number += 1 修改为 now_number = 1 + now_number 效果维持不变"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                100,
+                148,
+                673,
+                163
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "☐ C. 将代码 now_number == 10 调整为 now_number > 9 效果维持不变"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                100,
+                178,
+                596,
+                194
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 将最后一行的 cout << endl 修改为 cout << \"\\n\"，效果维持不变"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                100,
+                209,
+                613,
+                224
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2 判断题（每题2分，共20分）"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                239,
+                447,
+                261
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/60660b99a34674aacfdb77e890c6f182eab5e2db32eab92690c32def9eb06bd5.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>答案</td><td>√</td><td>√</td><td>×</td><td>√</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>√</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                356,
+                277,
+                643,
+                313
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第 1 题 人们现在参加很多闭卷考试时通常都不允许带智能手机、平板电脑等，此外很多种智能手表同样因为具有嵌入操作系统及通信等功能，所以也不允许随身携带。（）"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                328,
+                900,
+                364
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第2题在  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{C}++"
+                    },
+                    {
+                        "type": "text",
+                        "content": " 代码中，假设N为正整数，则N/10舍弃个位数。如果N小于10，则其值为0，大于10则是舍弃个位数的数。（）"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                376,
+                905,
+                412
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第3题 下列C++代码执行后，其输出为10 20，即 a == b 和 b == a 对 a 和 b 的值没有任何影响。（）"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                425,
+                872,
+                441
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "1 int a = 10, b = 20;\n2 a == b;\n3 b == a;\n4 cout << (a, b);"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                95,
+                454,
+                282,
+                517
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第 4 题 a 和 b 分别是 C++ 的整型变量，如果表达式 max(a, b) == min(a, b) 的值为真，则说明 a 和 b 相等。（）"
+                    }
+                ]
+            },
+            "bbox": [
+                94,
+                530,
+                887,
+                565
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第 5 题 下面 C++ 代码编译时将报错，因为字符变量 a 被赋值了浮点值。（）"
+                    }
+                ]
+            },
+            "bbox": [
+                94,
+                580,
+                648,
+                596
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "1 char a = '1';\n2 a = 45.6;\n3 cout << a;"
+                    }
+                ],
+                "code_language": "javascript"
+            },
+            "bbox": [
+                97,
+                611,
+                238,
+                657
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第6题 下面C++代码执行时如输入59.99，将输出及格两个汉字。（）"
+                    }
+                ]
+            },
+            "bbox": [
+                94,
+                672,
+                591,
+                688
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "int score;\ncout << \"请输入学生成绩：\";\ncin >> score;\nif (score < 60)\n    cout << \"不及格\";\nelse\n    cout << \"及格\";"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                97,
+                704,
+                334,
+                806
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第 7 题 在下面的 C++ 代码中，因为 continue 将被执行，因此不会有输出。（）"
+                    }
+                ]
+            },
+            "bbox": [
+                94,
+                820,
+                652,
+                836
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "int i;\nfor (i = 1; i < 10; i++)\n    if (i % 2 == 0)\n    continue;\nif(i == 10)\n    cout << \"END\";"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                97,
+                850,
+                319,
+                939
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第8题 下面的  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{C}++"
+                    },
+                    {
+                        "type": "text",
+                        "content": " 代码执行后将输出15。（）"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                60,
+                421,
+                77
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "int Sum = 0;\nfor (int i = 0; i < 5; i++)\n    Sum += i;\ncout << Sum;"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                95,
+                89,
+                342,
+                150
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第9题 将下面C++代码中的 (int i = 5; i > 1; i--) 调整为 (int i = 1; i < 5; i++) 输出结果相同，因为5到1与1到5的求和相同。（）"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                166,
+                897,
+                201
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "int tnt;\ntnt = 0;\nfor (int i = 5; i > 1; i--)\n    tnt += i;\ncout << tnt;\n    cout << endl;"
+                    }
+                ],
+                "code_language": "c"
+            },
+            "bbox": [
+                95,
+                214,
+                342,
+                304
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "第 10 题 为实现如下效果，即N行N列字符。当输入是奇数时，中间列为 *，其他是-；当输入是偶数时，则中间两列是 *，其他是-。字符阵列后的代码能实现其效果。（）"
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                318,
+                892,
+                353
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "int N;\ncin >> N;\n\nint i, j;\nfor (i = 0; i < N; i++) {\n    for (j = 0; j < N; j++)\n    if ((j == N / 2) || (j == (N - 1) / 2))\n    cout << \"*\";\n    else\n    cout << \"-\";\n    cout << endl;\n}"
+                    }
+                ],
+                "code_language": "c"
+            },
+            "bbox": [
+                100,
+                498,
+                485,
+                669
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3 编程题（每题 25 分，共 50 分）"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                685,
+                458,
+                706
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1 编程题1"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                719,
+                223,
+                737
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- 试题名称：数三角形"
+                    }
+                ]
+            },
+            "bbox": [
+                105,
+                751,
+                275,
+                767
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- 时间限制：  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1.0 \\mathrm{~s}"
+                    }
+                ]
+            },
+            "bbox": [
+                105,
+                781,
+                242,
+                796
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- 内存限制：512.0 MB"
+                    }
+                ]
+            },
+            "bbox": [
+                105,
+                809,
+                275,
+                825
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1.1 题目描述"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                838,
+                231,
+                853
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "直角三角形有两条直角边与一条斜边，设两条直角边的长度分别为 a, b，则直角三角形的面积为   "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\frac{ab}{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " 。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                866,
+                789,
+                883
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "请你计算当直角边长  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a, b"
+                    },
+                    {
+                        "type": "text",
+                        "content": " 均取不超过  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n"
+                    },
+                    {
+                        "type": "text",
+                        "content": " 的正整数时，有多少个不同的面积为整数的直角三角形。直角边长分别为  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a, b"
+                    },
+                    {
+                        "type": "text",
+                        "content": " 和  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a', b'"
+                    },
+                    {
+                        "type": "text",
+                        "content": " 的两个直角三角形相同，当且仅当  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a = a', b = b'"
+                    },
+                    {
+                        "type": "text",
+                        "content": " 或者  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a = b', b = a'"
+                    },
+                    {
+                        "type": "text",
+                        "content": "。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                897,
+                905,
+                931
+            ]
+        }
+    ],
+    [
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "1 | 5"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                95,
+                353,
+                151,
+                377
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1.2 输入格式"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                59,
+                231,
+                74
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "一行，一个整数  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n"
+                    },
+                    {
+                        "type": "text",
+                        "content": " ，表示直角边长的最大值。"
+                    }
+                ]
+            },
+            "bbox": [
+                105,
+                87,
+                406,
+                104
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1.3 输出格式"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                116,
+                231,
+                131
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "输出一行，一个整数，表示不同的直角三角形数量。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                146,
+                455,
+                162
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1.4 样例"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                174,
+                193,
+                190
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1.4.1 输入样例1"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                201,
+                250,
+                217
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1.4.2 输出样例1"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                263,
+                250,
+                280
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1.4.3 输入样例2"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                326,
+                252,
+                343
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1.4.4 输出样例2"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                94,
+                388,
+                250,
+                404
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1.5 数据范围"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                452,
+                228,
+                467
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "对于所有测试点，保证  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 \\leq n \\leq 1000"
+                    },
+                    {
+                        "type": "text",
+                        "content": "。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                480,
+                361,
+                496
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1.6 参考程序"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                94,
+                509,
+                230,
+                526
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "#include <iostream>\nusing namespace std;\n\nint main()\n{\n    int n, a, b, cnt=0;\n    cin >> n;\n    for(a=1; a<=n; a++)\n    {\n    for(b=a; b<=n; b++)\n    {\n    if(a*b%2==0) cnt++;\n    }\n    }\n    cout << cnt << endl;\n    return 0;\n}"
+                    }
+                ],
+                "code_language": "cpp"
+            },
+            "bbox": [
+                95,
+                536,
+                902,
+                777
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.2 编程题2"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                790,
+                223,
+                809
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- 试题名称：幂和数"
+                    }
+                ]
+            },
+            "bbox": [
+                105,
+                824,
+                257,
+                838
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- 时间限制：1.0 s"
+                    }
+                ]
+            },
+            "bbox": [
+                105,
+                853,
+                240,
+                866
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- 内存限制：512.0 MB"
+                    }
+                ]
+            },
+            "bbox": [
+                105,
+                882,
+                275,
+                897
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.2.1 题目描述"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                59,
+                231,
+                74
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "对于正整数  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n"
+                    },
+                    {
+                        "type": "text",
+                        "content": " ，如果  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n"
+                    },
+                    {
+                        "type": "text",
+                        "content": " 可以表为两个2的次幂之和，即  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n = 2^{x} + 2^{y}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " （ "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x, y"
+                    },
+                    {
+                        "type": "text",
+                        "content": " 均为非负整数），那么称  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n"
+                    },
+                    {
+                        "type": "text",
+                        "content": " 为幂和数。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                87,
+                872,
+                104
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "给定正整数  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "l, r"
+                    },
+                    {
+                        "type": "text",
+                        "content": "，请你求出满足  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "l \\leq n \\leq r"
+                    },
+                    {
+                        "type": "text",
+                        "content": " 的整数  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n"
+                    },
+                    {
+                        "type": "text",
+                        "content": " 中有多少个幂和数。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                118,
+                584,
+                133
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.2.2 输入格式"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                146,
+                231,
+                161
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "一行，两个正整数 l, r，含义如上。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                175,
+                337,
+                190
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.2.3 输出格式"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                204,
+                231,
+                220
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "输出一行，一个整数，表示 l, r 之间幂和数的数量。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                233,
+                450,
+                248
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.2.4 样例"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                262,
+                194,
+                277
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.2.4.1 输入样例1"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                288,
+                250,
+                304
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "1 | 2 8"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                95,
+                315,
+                166,
+                338
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.2.4.2 输出样例1"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                94,
+                350,
+                250,
+                366
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "1 | 6"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                94,
+                378,
+                151,
+                402
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.2.4.3 输入样例2"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                94,
+                413,
+                252,
+                429
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "1 | 10 100"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                95,
+                440,
+                189,
+                464
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.2.4.4 输出样例2"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                476,
+                252,
+                492
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "1 | 20"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                95,
+                502,
+                159,
+                526
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.2.5 数据范围"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                539,
+                230,
+                555
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "对于所有测试点，保证   "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 \\leq l \\leq r \\leq 10^{4}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " 。"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                568,
+                376,
+                584
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.2.6 参考程序"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                92,
+                597,
+                230,
+                612
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "#include <iostream>\nusing namespace std;\n\nint main()\n{\n    int l, r, a, b, n, cnt = 0;\n    cin >> l >> r;\n\n    a = 1;\n    while(a <= r)\n    {\n    b = a;\n    while(b <= r)\n    {\n    n = a + b;\n    if(n >= 1 && n <= r) cnt++;\n    b *= 2;\n    }\n    a *= 2;\n    }\n    cout << cnt << endl;\n    return 0;\n}"
+                    }
+                ],
+                "code_language": "cpp"
+            },
+            "bbox": [
+                97,
+                625,
+                411,
+                942
+            ]
+        }
+    ]
+]

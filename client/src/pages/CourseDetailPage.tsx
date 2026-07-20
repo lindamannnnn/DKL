@@ -468,8 +468,9 @@ export default function CourseDetailPage() {
             const pos = positions[idx]
             const isCompleted = lesson.status === 'completed'
             const prevCompleted = idx === 0 || allLessons[idx - 1]?.status === 'completed'
-            const isCurrent = !isCompleted && prevCompleted
-            const isLocked = !isCompleted && !isCurrent
+            // 开发环境：所有关卡全部解锁，方便测试
+            const isCurrent = import.meta.env.DEV ? !isCompleted : (!isCompleted && prevCompleted)
+            const isLocked = import.meta.env.DEV ? false : (!isCompleted && !isCurrent)
             const style = isCompleted ? terrain.nodeCompleted : isCurrent ? terrain.nodeCurrent : terrain.nodeLocked
 
             return (

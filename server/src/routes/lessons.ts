@@ -191,7 +191,6 @@ router.get('/:id/problems', async (req: any, res) => {
         memoryLimit: true,
       },
     })
-
     // 保持课件中题目编排的顺序
     const orderMap = new Map(problemIds.map((id: string, idx: number) => [id, idx]))
     problems.sort((a, b) => (orderMap.get(a.id) ?? 0) - (orderMap.get(b.id) ?? 0))

@@ -1,0 +1,2763 @@
+[
+    [
+        {
+            "type": "header",
+            "bbox": [
+                0.109,
+                0.068,
+                0.89,
+                0.122
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "doc_title",
+            "bbox": [
+                0.386,
+                0.145,
+                0.611,
+                0.176
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "doc_title",
+            "bbox": [
+                0.413,
+                0.19,
+                0.583,
+                0.213
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.235,
+                0.456,
+                0.255
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.277,
+                0.27,
+                0.723,
+                0.309
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>答案</td><td>D</td><td>C</td><td>C</td><td>C</td><td>D</td><td>A</td><td>D</td><td>C</td><td>C</td><td>A</td><td>C</td><td>D</td><td>D</td><td>A</td><td>D</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.323,
+                0.899,
+                0.456
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.468,
+                0.902,
+                0.62
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.631,
+                0.625,
+                0.646
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.108,
+                0.664,
+                0.341,
+                0.72
+            ],
+            "angle": 0,
+            "content": "1 string XingMing;\n2 cout << \"请输入您的姓名：\";\n3 cin >> XingMing;\n4 cout << XingMing;"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.1,
+                0.737,
+                0.457,
+                0.753
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.835,
+                0.562,
+                0.85
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.108,
+                0.867,
+                0.42,
+                0.923
+            ],
+            "angle": 0,
+            "content": "1 a = 13;\n2 b = 5;\n3 cout << a / b << a %// b << a % b;\n4 a*b;"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.101,
+                0.94,
+                0.184,
+                0.956
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.118,
+                0.068,
+                0.205,
+                0.09
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.231,
+                0.076,
+                0.417,
+                0.112
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.444,
+                0.073,
+                0.887,
+                0.099
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.445,
+                0.101,
+                0.882,
+                0.12
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.46,
+                0.14,
+                0.615,
+                0.183
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.385,
+                0.146,
+                0.48,
+                0.181
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.415,
+                0.19,
+                0.58,
+                0.214
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.236,
+                0.452,
+                0.254
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.099,
+                0.327,
+                0.894,
+                0.337
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.343,
+                0.195,
+                0.356
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.104,
+                0.373,
+                0.228,
+                0.386
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.102,
+                0.395,
+                0.228,
+                0.408
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.418,
+                0.228,
+                0.431
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.102,
+                0.441,
+                0.229,
+                0.454
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.471,
+                0.897,
+                0.481
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.489,
+                0.89,
+                0.5
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.506,
+                0.256,
+                0.518
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.104,
+                0.537,
+                0.245,
+                0.549
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.104,
+                0.558,
+                0.306,
+                0.571
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.105,
+                0.582,
+                0.26,
+                0.594
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.602,
+                0.261,
+                0.618
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.632,
+                0.622,
+                0.645
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.105,
+                0.739,
+                0.454,
+                0.752
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.837,
+                0.557,
+                0.848
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.101,
+                0.94,
+                0.184,
+                0.956
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "text",
+            "bbox": [
+                0.1,
+                0.061,
+                0.248,
+                0.123
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.135,
+                0.435,
+                0.25
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.263,
+                0.891,
+                0.297
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.096,
+                0.308,
+                0.31,
+                0.457
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.471,
+                0.687,
+                0.486
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.097,
+                0.498,
+                0.414,
+                0.602
+            ],
+            "angle": 0,
+            "content": "int N, M;\ncin >> N;\nM = ____;\nif (M == 0)\n    printf(\"%d个月后12月\", N);\nelse\n    printf(\"%d个月后是%d月\", N, M);"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.1,
+                0.617,
+                0.262,
+                0.701
+            ],
+            "angle": 0,
+            "content": "□ A. N % 12\n□ B. 9 + N % 12\n□ C. (9 + N) / 12\n□ D. (9 + N) % 12"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.714,
+                0.441,
+                0.73
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.097,
+                0.742,
+                0.37,
+                0.804
+            ],
+            "angle": 0,
+            "content": "int n = 0;\nfor (int i = 0; i < 100; i++)\n    n += i % 2;\ncout << n;"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.1,
+                0.819,
+                0.194,
+                0.904
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.917,
+                0.441,
+                0.933
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.101,
+                0.062,
+                0.174,
+                0.078
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.101,
+                0.085,
+                0.175,
+                0.101
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.109,
+                0.245,
+                0.122
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.096,
+                0.136,
+                0.432,
+                0.151
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.102,
+                0.167,
+                0.167,
+                0.182
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.102,
+                0.189,
+                0.159,
+                0.206
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.213,
+                0.159,
+                0.229
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.102,
+                0.234,
+                0.16,
+                0.251
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.265,
+                0.887,
+                0.276
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.283,
+                0.21,
+                0.296
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.11,
+                0.314,
+                0.126,
+                0.326
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.139,
+                0.315,
+                0.271,
+                0.327
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.11,
+                0.326,
+                0.125,
+                0.34
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.14,
+                0.328,
+                0.271,
+                0.34
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.111,
+                0.339,
+                0.125,
+                0.353
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.139,
+                0.342,
+                0.295,
+                0.354
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.102,
+                0.373,
+                0.191,
+                0.388
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.396,
+                0.19,
+                0.41
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.418,
+                0.199,
+                0.433
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.442,
+                0.307,
+                0.455
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.474,
+                0.684,
+                0.484
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.716,
+                0.376,
+                0.728
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.377,
+                0.716,
+                0.44,
+                0.729
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.101,
+                0.822,
+                0.191,
+                0.836
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.101,
+                0.845,
+                0.19,
+                0.859
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.102,
+                0.867,
+                0.175,
+                0.882
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.101,
+                0.89,
+                0.175,
+                0.905
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.918,
+                0.375,
+                0.931
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.376,
+                0.919,
+                0.44,
+                0.932
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "code",
+            "bbox": [
+                0.098,
+                0.06,
+                0.37,
+                0.123
+            ],
+            "angle": 0,
+            "content": "int N = 0, i;\nfor (i = -100; i < 100; i++)\n    N += i % 10;\ncout << N;"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.101,
+                0.137,
+                0.191,
+                0.222
+            ],
+            "angle": 0,
+            "content": "□A.900   \n□B.100   \n□C.0   \n□D.-100"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.235,
+                0.406,
+                0.251
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.101,
+                0.264,
+                0.353,
+                0.366
+            ],
+            "angle": 0,
+            "content": "int i;\nfor(i = 1; i < 5; i++) {\n    if(i % 3 == 0)\n    break;\n    printf(\"%d#\", i);\n}\nif(i > 5) printf(\"END\\n\");"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.101,
+                0.381,
+                0.251,
+                0.466
+            ],
+            "angle": 0,
+            "content": "□A.1#2#\n□B.1#2#END\n□C.1#2\n□D.1#2#3#4#END"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.093,
+                0.479,
+                0.905,
+                0.514
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.101,
+                0.527,
+                0.414,
+                0.643
+            ],
+            "angle": 0,
+            "content": "cout << \"请输入个位数不为0的正整数：\";\ncin >> N;\nrst = 0; // 保存逆序结果\nwhile (____){\n    rst = rst * 10 + N % 10;\n    N = N / 10;\n}\ncout << rst << endl;"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.101,
+                0.657,
+                0.257,
+                0.742
+            ],
+            "angle": 0,
+            "content": "□ A. N != 0\n□ B. not (N == 0)\n□ C. N = 0\n□ D. N > 0"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.754,
+                0.69,
+                0.77
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.101,
+                0.784,
+                0.148,
+                0.8
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.135,
+                0.807,
+                0.498,
+                0.922
+            ],
+            "angle": 0,
+            "content": "cout << \"输入第一个正整数：\";\ncin >> a;\ncout << \"输入第二个正整数：\";\ncin >> b;\ntemp = a;\na = b;\nb = temp;\ncout << \"a=\" << a << \" b=\" << b << endl;"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.102,
+                0.932,
+                0.146,
+                0.946
+            ],
+            "angle": 0,
+            "content": "□ B."
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.236,
+                0.403,
+                0.249
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.482,
+                0.9,
+                0.492
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.5,
+                0.787,
+                0.51
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.757,
+                0.687,
+                0.767
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.1,
+                0.785,
+                0.149,
+                0.806
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "code",
+            "bbox": [
+                0.14,
+                0.062,
+                0.499,
+                0.176
+            ],
+            "angle": 0,
+            "content": "cout << \"输入第一个正整数：\";\ncin >> a;\ncout << \"输入第二个正整数：\";\ncin >> b;\nb = a - b;\na = a - b;\nb = a + b;\ncout << \"a=\" << a << \" b=\" << b << endl;"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.101,
+                0.186,
+                0.147,
+                0.202
+            ],
+            "angle": 0,
+            "content": "□ C."
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.139,
+                0.209,
+                0.499,
+                0.336
+            ],
+            "angle": 0,
+            "content": "cout << \"输入第一个正整数：\";\ncin >> a;\ncout << \"输入第二个正整数：\";\ncin >> b;\na = a + b;\nb = a - b;\na = a - b;\ncout << \"a=\" << a << \" b=\" << b << endl;"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.101,
+                0.346,
+                0.147,
+                0.362
+            ],
+            "angle": 0,
+            "content": "D."
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.139,
+                0.37,
+                0.498,
+                0.457
+            ],
+            "angle": 0,
+            "content": "cout << \"输入第一个正整数：\";\ncin >> a;\ncout << \"输入第二个正整数：\";\ncin >> b;\na, b = b, a;\ncout << \"a=\" << a << \" b=\" << b << endl;"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.093,
+                0.472,
+                0.902,
+                0.507
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.107,
+                0.52,
+                0.492,
+                0.649
+            ],
+            "angle": 0,
+            "content": "int N, M, div=1;\ncout << \"请输入一个正整数：\";\ncin >> N;\ncout << \"请输入从右到左取第几位数：\";\ncin >> M;\nfor (int i =0; i < (M - 1); i++) div *= 10;\ncout << (____);"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.101,
+                0.663,
+                0.261,
+                0.749
+            ],
+            "angle": 0,
+            "content": "□ A. N % div / 10\n□ B. N / div / 10\n□ C. N % div % 10\n□ D. N / div % 10"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.76,
+                0.409,
+                0.777
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.103,
+                0.79,
+                0.33,
+                0.892
+            ],
+            "angle": 0,
+            "content": "num = 0;\nwhile (num <= 5){\n    num += 1;\n    if (num == 3)\n    continue;\n    printf(\"%d#\", num);\n}"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.102,
+                0.908,
+                0.242,
+                0.947
+            ],
+            "angle": 0,
+            "content": "□ A. 1#2#4#5#6#\n□ B. 1#2#4#5#6"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.475,
+                0.899,
+                0.485
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.492,
+                0.591,
+                0.505
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.763,
+                0.407,
+                0.775
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "code",
+            "bbox": [
+                0.101,
+                0.062,
+                0.26,
+                0.101
+            ],
+            "angle": 0,
+            "content": "C. 1#2#3#4#5#6#\nD. 1#2#3#4#5#6"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.114,
+                0.897,
+                0.147
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.102,
+                0.161,
+                0.427,
+                0.344
+            ],
+            "angle": 0,
+            "content": "cin >> now_num;\nmin_num = max_num = now_num;\n\nwhile (now_num != -999){\n    if (max_num < now_num)\n    max_num = now_num;\n\n    if (min_num > now_num)\n    min_num = now_num;\n\n    cin >> now_num;\n}\ncout << min_num << ' ' << max_num;"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.101,
+                0.36,
+                0.585,
+                0.376
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.101,
+                0.383,
+                0.897,
+                0.416
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.101,
+                0.424,
+                0.867,
+                0.439
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.477,
+                0.455,
+                0.497
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.356,
+                0.512,
+                0.645,
+                0.55
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>答案</td><td>×</td><td>√</td><td>×</td><td>×</td><td>√</td><td>×</td><td>×</td><td>×</td><td>×</td><td>√</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.093,
+                0.566,
+                0.9,
+                0.6
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.613,
+                0.682,
+                0.629
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.642,
+                0.428,
+                0.658
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.097,
+                0.672,
+                0.336,
+                0.72
+            ],
+            "angle": 0,
+            "content": "for (i = 0; i < 10; i++)\n    break;\ncout << i;"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.734,
+                0.421,
+                0.75
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.097,
+                0.763,
+                0.377,
+                0.826
+            ],
+            "angle": 0,
+            "content": "1 n = 0;\n2 for (int i = 0; i > -10; i--)\n3    n = n + i * -1;\n4 cout << n;"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.84,
+                0.773,
+                0.856
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.098,
+                0.869,
+                0.428,
+                0.93
+            ],
+            "angle": 0,
+            "content": "1 cnt = 0;\n2 for (int i = 0; i < 100; i++) // L1\n3    cnt += i;\n4 cout << cnt"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.115,
+                0.894,
+                0.127
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.092,
+                0.132,
+                0.124,
+                0.147
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.36,
+                0.583,
+                0.374
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.104,
+                0.383,
+                0.895,
+                0.397
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.129,
+                0.403,
+                0.319,
+                0.415
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.425,
+                0.863,
+                0.438
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.48,
+                0.451,
+                0.496
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.568,
+                0.897,
+                0.579
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.587,
+                0.318,
+                0.597
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.096,
+                0.613,
+                0.681,
+                0.628
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.096,
+                0.643,
+                0.428,
+                0.658
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.096,
+                0.734,
+                0.42,
+                0.75
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.096,
+                0.84,
+                0.771,
+                0.855
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.061,
+                0.664,
+                0.078
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.097,
+                0.091,
+                0.266,
+                0.193
+            ],
+            "angle": 0,
+            "content": "int n, i;\nn = i = 0;\nwhile (i < 10){\n    n += i;\n    i += 1;\n}\ncout << n;"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.207,
+                0.437,
+                0.224
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.098,
+                0.237,
+                0.267,
+                0.34
+            ],
+            "angle": 0,
+            "content": "int n, i;\nn = i = 0;\nwhile (i < 10){\n    i += 1;\n    n += i;\n}\ncout << n;"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.093,
+                0.354,
+                0.895,
+                0.388
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.402,
+                0.566,
+                0.418
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.098,
+                0.431,
+                0.346,
+                0.534
+            ],
+            "angle": 0,
+            "content": "int count = 0;\nwhile (count < 5){\n    count += 1;\n    if (count == 3)\n    continue;\n    cout << count << ' ';\n}"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.092,
+                0.548,
+                0.89,
+                0.583
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.097,
+                0.595,
+                0.371,
+                0.699
+            ],
+            "angle": 0,
+            "content": "cin >> n;\na = 0, b = 1;\nfor (int j = 0; j < n; j++) {\n    cout << a << \" \";\n    b = b + a;\n    a = b - a;\n}"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.714,
+                0.466,
+                0.735
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.749,
+                0.228,
+                0.766
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.107,
+                0.781,
+                0.275,
+                0.796
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.107,
+                0.804,
+                0.243,
+                0.819
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.107,
+                0.826,
+                0.277,
+                0.841
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.855,
+                0.232,
+                0.871
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.093,
+                0.884,
+                0.877,
+                0.918
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.061,
+                0.662,
+                0.077
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.208,
+                0.435,
+                0.222
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.096,
+                0.355,
+                0.893,
+                0.369
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.374,
+                0.272,
+                0.386
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.405,
+                0.562,
+                0.416
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.551,
+                0.886,
+                0.561
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.57,
+                0.532,
+                0.579
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.716,
+                0.463,
+                0.734
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.75,
+                0.226,
+                0.766
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.111,
+                0.782,
+                0.272,
+                0.795
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.111,
+                0.805,
+                0.24,
+                0.818
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.111,
+                0.828,
+                0.272,
+                0.84
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.854,
+                0.231,
+                0.871
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.886,
+                0.876,
+                0.898
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.903,
+                0.737,
+                0.918
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "text",
+            "bbox": [
+                0.093,
+                0.062,
+                0.895,
+                0.096
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.11,
+                0.822,
+                0.126
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.137,
+                0.233,
+                0.154
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.167,
+                0.421,
+                0.183
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.195,
+                0.233,
+                0.211
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.225,
+                0.552,
+                0.24
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.254,
+                0.195,
+                0.27
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.28,
+                0.251,
+                0.296
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.097,
+                0.307,
+                0.161,
+                0.369
+            ],
+            "angle": 0,
+            "content": "1 | 8\n2 | 7\n3 | 9\n4 | 10"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.383,
+                0.251,
+                0.4
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.101,
+                0.412,
+                0.176,
+                0.433
+            ],
+            "angle": 0,
+            "content": "1 | 3.00"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.095,
+                0.446,
+                0.253,
+                0.462
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.097,
+                0.474,
+                0.159,
+                0.536
+            ],
+            "angle": 0,
+            "content": "1 | 8\n2 | 7\n3 | 2\n4 | 11"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.095,
+                0.55,
+                0.252,
+                0.566
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.103,
+                0.577,
+                0.178,
+                0.599
+            ],
+            "angle": 0,
+            "content": "1 | 2.20"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.612,
+                0.231,
+                0.629
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.642,
+                0.574,
+                0.657
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.671,
+                0.231,
+                0.687
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.109,
+                0.701,
+                0.461,
+                0.923
+            ],
+            "angle": 0,
+            "content": "#include <algorithm>\n#include <cstdio>\n\nusing namespace std;\n\nint x, y, n, p;\ndouble a1, a2;\n\nint main() {\n    scanf(\"%d%d%d%d\", &x, &y, &n, &p);\n    a1 = p;\n    if (a1 >= x) a1 -= y;\n    a2 = p * 0.1 * n;\n    printf(\"%.2lf\\n\", min(a1, a2));\n    return 0;\n}"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.099,
+                0.064,
+                0.89,
+                0.075
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.099,
+                0.083,
+                0.35,
+                0.093
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.112,
+                0.818,
+                0.122
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.137,
+                0.231,
+                0.154
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.17,
+                0.418,
+                0.181
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.195,
+                0.231,
+                0.212
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.099,
+                0.227,
+                0.548,
+                0.238
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.253,
+                0.194,
+                0.271
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.28,
+                0.25,
+                0.295
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.383,
+                0.25,
+                0.4
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.447,
+                0.251,
+                0.462
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.096,
+                0.551,
+                0.25,
+                0.565
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.612,
+                0.228,
+                0.629
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.643,
+                0.572,
+                0.658
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.67,
+                0.231,
+                0.688
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "code",
+            "bbox": [
+                0.096,
+                0.411,
+                0.153,
+                0.434
+            ],
+            "angle": 0,
+            "content": "1 | 2"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.097,
+                0.474,
+                0.153,
+                0.497
+            ],
+            "angle": 0,
+            "content": "1 | 5"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.06,
+                0.229,
+                0.077
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.107,
+                0.092,
+                0.26,
+                0.107
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.107,
+                0.114,
+                0.244,
+                0.129
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.107,
+                0.137,
+                0.277,
+                0.152
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.165,
+                0.232,
+                0.181
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.093,
+                0.195,
+                0.897,
+                0.228
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.241,
+                0.233,
+                0.257
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.271,
+                0.391,
+                0.286
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.299,
+                0.233,
+                0.315
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.328,
+                0.472,
+                0.344
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.357,
+                0.195,
+                0.374
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.383,
+                0.252,
+                0.399
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.446,
+                0.252,
+                0.462
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.509,
+                0.253,
+                0.525
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.572,
+                0.253,
+                0.588
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.635,
+                0.231,
+                0.651
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.664,
+                0.347,
+                0.679
+            ],
+            "angle": 0,
+            "content": null,
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.692,
+                0.231,
+                0.708
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.109,
+                0.722,
+                0.527,
+                0.904
+            ],
+            "angle": 0,
+            "content": "#include <algorithm>\n#include <cstdio>\n\nusing namespace std;\n\nint n, ans;\n\nint main() {\n    scanf(\"%d\", &n);\n    for (int i = 1; i <= n; i++) ans += i * i;\n    printf(\"%d\\n\", ans);\n    return 0;\n}"
+        },
+        {
+            "type": "inline_formula",
+            "bbox": [
+                0.467,
+                0.196,
+                0.748,
+                0.209
+            ],
+            "latex": "n \\times n , ( n - 1 ) \\times ( n - 1 ) , \\ldots , 2 \\times 2 , 1 \\times 1",
+            "score": 0.6713
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.061,
+                0.227,
+                0.077
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.109,
+                0.092,
+                0.257,
+                0.107
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.111,
+                0.115,
+                0.239,
+                0.128
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.111,
+                0.139,
+                0.272,
+                0.151
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.165,
+                0.231,
+                0.181
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.198,
+                0.463,
+                0.208
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.752,
+                0.198,
+                0.894,
+                0.208
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.216,
+                0.279,
+                0.226
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.241,
+                0.231,
+                0.258
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.099,
+                0.273,
+                0.386,
+                0.284
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.298,
+                0.231,
+                0.315
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.099,
+                0.331,
+                0.469,
+                0.341
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.094,
+                0.357,
+                0.194,
+                0.374
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.383,
+                0.251,
+                0.399
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.446,
+                0.251,
+                0.463
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.509,
+                0.252,
+                0.525
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.096,
+                0.573,
+                0.251,
+                0.587
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.094,
+                0.634,
+                0.229,
+                0.651
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.667,
+                0.343,
+                0.677
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.094,
+                0.691,
+                0.231,
+                0.71
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ]
+]

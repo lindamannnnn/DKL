@@ -1,0 +1,1790 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "GESP C++二级试卷"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                416,
+                112,
+                581,
+                129
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "（满分：100 分 考试时间：90 分钟）"
+                    }
+                ]
+            },
+            "bbox": [
+                344,
+                149,
+                650,
+                167
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "学校："
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                187,
+                381,
+                204
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "姓名："
+                    }
+                ]
+            },
+            "bbox": [
+                532,
+                187,
+                778,
+                204
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/e4d790ef00962c6bda1214cbe081945c77436ea0fbc9ab0ddc0c366ce01b0281.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>题目</td><td>一</td><td>二</td><td>三</td><td>总分</td></tr><tr><td>得分</td><td></td><td></td><td></td><td></td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                139,
+                211,
+                858,
+                290
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "一、单选题（每题 2 分，共 30 分）"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                144,
+                338,
+                420,
+                355
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/b8bbfb82d48f786383db580723066899d2f498c9ff7e8285d761cf6c9dc35348.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>答案</td><td>D</td><td>D</td><td>B</td><td>C</td><td>C</td><td>D</td><td>D</td><td>A</td><td>B</td><td>D</td><td>A</td><td>A</td><td>D</td><td>B</td><td>C</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                137,
+                362,
+                910,
+                439
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. 高级语言编写的程序需要经过以下（ ）操作，可以生成在计算机上运行的可执行代码。A. 编辑B. 保存C. 调试D. 编译"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                479,
+                853,
+                653
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. 能够实现下面流程图功能的伪代码是（ ）。"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                696,
+                574,
+                713
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "GESP"
+                    }
+                ]
+            },
+            "bbox": [
+                174,
+                64,
+                315,
+                87
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/6582a0929e75469d07b7212ffe7484e07b172d0eca0532844e2ad3f7aa936866.jpg"
+                },
+                "content": "",
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                159,
+                107,
+                324,
+                299
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. if 条件判断 then 语句块B. if 条件判断 then 什么也不做 else 语句块C. while 条件判断 do 语句块D. while not 条件判断 do 语句块"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                315,
+                584,
+                426
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "3. 下列关于C++语言的叙述，正确的是（ ）。A. char 类型变量不能赋值给int 类型的变量。B. 两个int 类型变量相乘，计算结果还是int 类型。C. 计算两个int 类型变量相乘时，如果乘积超出了int 类型的取值范围，程序会报错崩溃。D. 计算两个double 类型变量相除时，如果除数的值为0.0，程序会报错崩溃。"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                470,
+                850,
+                643
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "4. 下列关于C++语言的叙述，不正确的是（ ）。A. if 语句中的判断条件必须用小括号‘(’和‘)’括起来。B.for 语句中两个‘;’之间的循环条件可以省略，表示循环继续执行的条件一直满足。C. 循环体包含多条语句时，可以用缩进消除二义性。D. 除了“先乘除、后加减”，还有很多运算符优先级。"
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                688,
+                850,
+                859
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "GESP"
+                    }
+                ]
+            },
+            "bbox": [
+                174,
+                63,
+                315,
+                87
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "5. 以下哪个是C++语言的关键字？（ ）A. mainB. maxC. doubleD. sqrt"
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                107,
+                514,
+                253
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "6. 以下哪个不是C++语言的运算符？（ ）A. >=B. /=C. ||D. <>"
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                326,
+                532,
+                472
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "7. 如果 a 为 int 类型的变量，b 为 char 类型的变量，则下列哪个语句不符合C++语法？（ ）A. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\textsf { a } = \\textsf { a } + \\textsf { 1 } . \\textsf { \\textsf { 0 } } ;"
+                    },
+                    {
+                        "type": "text",
+                        "content": ";B. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a ~ = ~ ( \\operatorname { i n t } ) ( { \\mathsf { b } } ~ - ~ { \\mathsf { ^ { \\prime } } } \\theta ^ { \\prime } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ";C. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "b ~ = ~ ( \\mathsf { c h a r } ) ( \\mathsf { a } ~ + ~ ^ { \\prime } \\otimes ^ { \\prime } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ";D. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\mathtt { i n t } ) \\mathtt { b } \\ = \\ \\mathtt { a } ;"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                514,
+                848,
+                689
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "8. 如果用两个int 类型的变量a 和b 分别表达平行四边形的两条边长，用int类型的变量 h 表达 a 边对应的高，则下列哪个表达式不能用来计算 b 边对应的高？（ ）A. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a ~ / ~ b ~ ^ { * } ~ ( \\theta . \\theta ~ + ~ h )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "B. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\theta . \\theta \\ + \\ \\mathsf { a } \\ ^ { \\ * } \\ \\mathsf { h } ) \\ / \\ \\mathsf { b }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "C. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\textsf { a } ^ { * } \\textsf { h } / \\textsf { ( b } + \\theta . \\theta )"
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                731,
+                850,
+                900
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "GESP"
+                    }
+                ]
+            },
+            "bbox": [
+                174,
+                63,
+                315,
+                87
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\textsf { a } + \\textsf { \\theta } . \\theta ) * \\textsf { h } / \\textsf { b }"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                108,
+                371,
+                124
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "9. 以下哪个循环语句会无限次执行？（ ）A. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { f o r } \\ \\mathrm { ~ ( ~ i n t ~ \\mathsf ~ { ~ a ~ } ~ = ~ } \\theta ; \\ \\mathsf { a } ; \\ \\mathsf { a } + + \\mathrm { ) ~ } \\mathrm { ~ ; ~ }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ";B. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { f o r ~ ( b o o l ~ b ~ = ~ f a l s e ; ~ b ~ < = ~ t r u e ; ~ b + + ) }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ";C. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { f o r \\alpha ( c h a r c \\alpha = \\beta ^ { \\prime } A ^ { \\prime } \\cdot \\alpha \\mathsf { c } \\cdot \\beta ^ { \\prime } \\mathsf { \\beta } \\mathsf { \\beta } ^ { \\prime } c + \\beta ^ { \\prime } \\mathsf { \\beta } ) }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ";D. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { f o r ~ \\mathsf { \\Gamma } ( d o u b l e ~ d ~ = ~ } \\theta . \\theta ; \\mathsf { \\Gamma } \\mathsf { d ~ < ~ } 1 \\theta . \\theta ; \\mathsf { d ~ + = ~ } \\theta . \\theta \\theta 1 \\mathsf { \\Gamma } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ";"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                170,
+                670,
+                313
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "10. 如果 a 为 char 类型的变量，且 a 的值为'C'（已知'C'的 ASCII 码为 67），则执行 cout << (a + 2);会输出（ ）。A. EB. C+2C. C2D. 69"
+                    }
+                ]
+            },
+            "bbox": [
+                141,
+                357,
+                850,
+                533
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "11. 如果 a 和 b 均为 int 类型的变量，下列表达式能正确判断“a 等于 1 且 b等于1”的是（ ）。A. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\mathsf { a } \\ = \\mathsf { b } ) \\ \\& \\ \\mathsf { 8 } \\ ( \\mathsf { b } \\ = \\mathsf { 1 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "B. (a && b)C. (a == b == 1)D. (a * b == 1)"
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                574,
+                850,
+                747
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "12. 如果a 为 char 类型的变量，下列哪个表达式可以正确判断“a 是数字”？（ ）A. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\theta ^ { \\prime } \\ < = \\ \\mathsf { a } \\& \\& \\ \\mathsf { a } \\ \\ < = \\ \\mathsf { \\Omega } ^ { \\prime } 9 ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "B. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 1 < \\texttt { \\small 4 } 8 8 \\texttt { \\small d } < = \\texttt { \\small 1 } _ { Q } ,"
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                790,
+                842,
+                898
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "GESP"
+                    }
+                ]
+            },
+            "bbox": [
+                174,
+                63,
+                315,
+                87
+            ]
+        }
+    ],
+    [
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "C. '0' <= a <= '9'\nD. '1' <= a <= '0'"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                144,
+                105,
+                347,
+                158
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "13. 在下列代码的横线处填写（ ），使得输出是9。"
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                200,
+                621,
+                219
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "#include <iostream>\nusing namespace std;\nint main() {\n    char a = '3', b = '6';\n    cout << ____; // 在此处填入代码\n    return 0;\n}\nA. (a + b)\nB. (a + b - '0')\nC. (char)(a + b)\nD. (char)(a + b - '0')"
+                    }
+                ],
+                "code_language": "cpp"
+            },
+            "bbox": [
+                144,
+                233,
+                625,
+                500
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "14. 在下列代码的横线处填写（ ），可以使得输出是42。"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                541,
+                673,
+                558
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "#include <iostream>\nusing namespace std;\nint main() {\n    int sum = 0;\n    for (int i = 1; i <= 20; i++)\n    if (____) // 在此处填入代码\n    sum += i;\n    cout << sum << endl;\n    return 0;\n}\nA. i % 3 == 0\nB. 20 % i == 0\nC. i <= 8\nD. i >= 18"
+                    }
+                ],
+                "code_language": "cpp"
+            },
+            "bbox": [
+                144,
+                568,
+                556,
+                858
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "GESP"
+                    }
+                ]
+            },
+            "bbox": [
+                174,
+                63,
+                317,
+                89
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "15. 执行以下C++语言程序后，输出结果是（ ）。"
+                    }
+                ]
+            },
+            "bbox": [
+                147,
+                107,
+                601,
+                124
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "#include <iostream>\nusing namespace std;\nint main() {\n    for (char x = 'A'; x <= 'D'; x++)\n    if ((x != 'A') + (x == 'C') + (x == 'D') + (x != 'D') == 3)\n    cout << x;\n    return 0;\n}\nA. A\nB. B\nC. C\nD. D"
+                    }
+                ],
+                "code_language": "cpp"
+            },
+            "bbox": [
+                146,
+                139,
+                845,
+                403
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "二、判断题（每题 2 分，共 20 分）"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                144,
+                420,
+                421,
+                439
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/87ae5b18734ca567f5ec5694a7d7e39369161410bc5808b7fbfa0a04a356cf9b.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>答案</td><td>×</td><td>×</td><td>√</td><td>×</td><td>×</td><td>√</td><td>√</td><td>×</td><td>√</td><td>×</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                137,
+                445,
+                781,
+                525
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. 诞生于1986年的中华学习机CEC-I入选了2021年的CCF计算机历史记忆（一类），它的内存只有64KB。当时的汉字编码字符集GB2312中共有6763个汉字，假如每个汉字用2个字节编码，将整个GB2312汉字字符集都放入CEC-I的内存，也只占用了不超过1/5的内存空间。"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                561,
+                850,
+                648
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. 域名是由一串用点分隔的名字来标识互联网上一个计算机或计算机组的名称，CCF 编程能力等级认证官方网站的域名是 gesp.ccf.org.cn，其中顶级域名是gesp。"
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                671,
+                853,
+                736
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "3. 在使用C++语言编写程序时，不能使用sqrt、abs 等数学函数，包含<cmath>或<math.h>头文件后就能够使用了。"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                762,
+                850,
+                802
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "4. 在C++语言中，标识符中可以有下划线‘_’。同时，‘_’也是C++语言的运算符。"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                828,
+                850,
+                869
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "GESP"
+                    }
+                ]
+            },
+            "bbox": [
+                174,
+                64,
+                315,
+                87
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "5. 如果a 是double 类型的变量，而且值为 3.5，则表达式a * 10 的计算结果为35，且结果类型为 int。"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                104,
+                850,
+                145
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "6. 在if 语句中，如果条件成立时需要执行多条语句，可以使用大括号‘{’和}’将这些语句括起来。"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                170,
+                850,
+                211
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "7. 循环语句的循环体有可能无限制地执行下去。"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                237,
+                574,
+                256
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "8. ++和==都是C++语言的运算符，但+=不是。"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                282,
+                556,
+                300
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "9. 如果a 为char 类型的变量，且取值为大写字母'F'，则执行语句a = a + 1;后，a 的值会变为大写字母'G'。"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                326,
+                848,
+                367
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "10. 表达式sqrt(9.0)的计算结果为3，且结果类型为int。"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                393,
+                684,
+                412
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "三、编程题（每题 25 分，共 50 分）"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                144,
+                445,
+                431,
+                463
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/ea826bfc79c77ce44848671ccd7bf80ecc0602ff53a59c33fc18c7e5cca79a49.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>题号</td><td>1</td><td>2</td></tr><tr><td>答案</td><td></td><td></td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                139,
+                470,
+                315,
+                549
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1. 找素数"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                146,
+                589,
+                243,
+                607
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "【问题描述】"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                154,
+                620,
+                268,
+                639
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "小明刚刚学习了素数的概念：如果一个大于1的正整数，除了1和它自身外，不能被其他正整数整除，则这个正整数是素数。现在，小明想找到两个正整数和 之间（包括 和 ）有多少个素数？"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                652,
+                852,
+                726
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "【输入描述】"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                154,
+                739,
+                268,
+                757
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "输入 2 行，第一行包含正整数 ，第二行包含正整数 。约定 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2 \\leq A \\leq B \\leq"
+                    },
+                    {
+                        "type": "text",
+                        "content": "1000<sup>。</sup>"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                770,
+                850,
+                816
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "【输出描述】"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                154,
+                829,
+                268,
+                847
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "输出一行，包含一个整数 ，表示找到 个素数。"
+                    }
+                ]
+            },
+            "bbox": [
+                184,
+                860,
+                608,
+                879
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "【样例输入1】"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                154,
+                892,
+                282,
+                910
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "GESP"
+                    }
+                ]
+            },
+            "bbox": [
+                174,
+                64,
+                317,
+                87
+            ]
+        }
+    ],
+    [
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "2   \n10"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                147,
+                102,
+                463,
+                152
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "【样例输出1】"
+                    }
+                ]
+            },
+            "bbox": [
+                156,
+                165,
+                280,
+                185
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "4"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                147,
+                193,
+                463,
+                225
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "【样例解释1】"
+                    }
+                ]
+            },
+            "bbox": [
+                156,
+                237,
+                280,
+                256
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "在2和10之间有4个素数，分别为：2、3、5、7。"
+                    }
+                ]
+            },
+            "bbox": [
+                186,
+                269,
+                635,
+                288
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "【样例输入2】"
+                    }
+                ]
+            },
+            "bbox": [
+                154,
+                300,
+                280,
+                319
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "98\n100"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                149,
+                329,
+                463,
+                376
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "【样例输出2】"
+                    }
+                ]
+            },
+            "bbox": [
+                156,
+                391,
+                280,
+                410
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "θ"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                149,
+                419,
+                463,
+                450
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "【参考程序】"
+                    }
+                ]
+            },
+            "bbox": [
+                156,
+                462,
+                265,
+                482
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "#include <iostream>\nusing namespace std;\nint main() {\n    int a = 0, b = 0, cnt = 0;\n    cin >> a >> b;\n    for (int n = a; n <= b; n++) {\n    bool isPrime = true;\n    for (int i = 2; i * i <= n; i++) {\n    if (n % i == 0) {\n    isPrime = false;\n    break;\n    }\n    }\n    if (isPrime)\n    cnt++;\n    }\n    cout << cnt << endl;\n    return 0;\n}"
+                    }
+                ],
+                "code_language": "cpp"
+            },
+            "bbox": [
+                152,
+                494,
+                568,
+                854
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "GESP"
+                    }
+                ]
+            },
+            "bbox": [
+                174,
+                63,
+                315,
+                89
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2. 自幂数判断"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                146,
+                107,
+                284,
+                124
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "【问题描述】"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                154,
+                137,
+                267,
+                156
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "自幂数是指，一个 位数，满足各位数字 次方之和是本身。例如，153是3位数，其每位数的 3 次方之和， "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 ^ { 3 } + 5 ^ { 3 } + 3 ^ { 3 } = 1 5 3"
+                    },
+                    {
+                        "type": "text",
+                        "content": "，因此 153 是自幂数；1634是4位数，其每位数的 4次方之和， "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 ^ { 4 } + 6 ^ { 4 } + 3 ^ { 4 } + 4 ^ { 4 } = 1 6 3 4"
+                    },
+                    {
+                        "type": "text",
+                        "content": "，因此 1634 是自幂数。"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                170,
+                850,
+                272
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "现在，输入若干个正整数，请判断它们是否是自幂数。"
+                    }
+                ]
+            },
+            "bbox": [
+                184,
+                285,
+                665,
+                303
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "【输入描述】"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                154,
+                316,
+                267,
+                334
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "输入第一行是一个正整数 ，表示有 个待判断的正整数。约定 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 \\leq M \\leq 1 0 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": "C"
+                    }
+                ]
+            },
+            "bbox": [
+                184,
+                347,
+                858,
+                365
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "从第2行开始的 行，每行一个待判断的正整数。约定这些正整数均小于 8。"
+                    }
+                ]
+            },
+            "bbox": [
+                186,
+                378,
+                858,
+                397
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "【输出描述】"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                154,
+                410,
+                267,
+                428
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "输出 行，如果对应的待判断正整数为自幂数，则输出英文大写字母'T'，否则输出英文大写字母'F'。"
+                    }
+                ]
+            },
+            "bbox": [
+                147,
+                441,
+                840,
+                488
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "提示：不需要等到所有输入结束在依次输出，可以输入一个数就判断一个数并输出，再输入下一个数。"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                500,
+                850,
+                546
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "【样例输入1】"
+                    }
+                ]
+            },
+            "bbox": [
+                154,
+                558,
+                280,
+                577
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/5074dfa56159ab54bbb333eef19c7108b9a405430ebf70d1c54505e66cdddcd7.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>3</td></tr><tr><td>152</td></tr><tr><td>111</td></tr><tr><td>153</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                147,
+                587,
+                463,
+                673
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "【样例输出1】"
+                    }
+                ]
+            },
+            "bbox": [
+                156,
+                687,
+                280,
+                705
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/d919cea2e6e7fd1774b85d5cd5bb0eb6bda2b6965369a21a0a7996906faf41ad.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>F</td></tr><tr><td>F</td></tr><tr><td>T</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                147,
+                715,
+                463,
+                782
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "【样例输入2】"
+                    }
+                ]
+            },
+            "bbox": [
+                154,
+                796,
+                280,
+                814
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "GESP"
+                    }
+                ]
+            },
+            "bbox": [
+                174,
+                64,
+                315,
+                87
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/9ba51a8519f8fea8077d7260a1de815fcee1952fcebd5c5087037a62b134b22e.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>5</td></tr><tr><td>8208</td></tr><tr><td>548834</td></tr><tr><td>88593477</td></tr><tr><td>12345</td></tr><tr><td>5432</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                151,
+                105,
+                463,
+                225
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "【样例输出2】"
+                    }
+                ]
+            },
+            "bbox": [
+                156,
+                240,
+                280,
+                258
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/9e185149f25950060bdc298adf15e0ab0691d756841b0a067cdeb94a35e59b0d.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>T</td></tr><tr><td>T</td></tr><tr><td>T</td></tr><tr><td>F</td></tr><tr><td>F</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                152,
+                268,
+                463,
+                372
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "【参考程序】"
+                    }
+                ]
+            },
+            "bbox": [
+                156,
+                606,
+                265,
+                624
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "GESP"
+                    }
+                ]
+            },
+            "bbox": [
+                174,
+                64,
+                315,
+                87
+            ]
+        }
+    ],
+    [
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "#include <iostream>\nusing namespace std;\nint main() {\n    int m = 0;\n    cin >> m;\n    for (int i = 0; i < m; i++) {\n    int n = 0;\n    cin >> n;\n    // 数一下 n 有多少位数，记为 1\n    int t = n, l = 0;\n    while (t > 0) {\n    t /= 10;\n    l++;\n    }\n    // 每位数 1 次方求和，记为 sum\n    int sum = 0;\n    t = n;\n    while (t > 0) {\n    int d = t % 10;\n    t /= 10;\n    int mul = 1;\n    for (int j = 0; j < l; j++)\n    mul *= d;\n    sum += mul;\n    }\n    // 根据 sum 和 n 是否相等，判断是否为自幂数\n    if (sum == n)\n    cout << \"T\" << endl;\n    else\n    cout << \"F\" << endl;\n    }\n    return 0;\n}"
+                    }
+                ],
+                "code_language": "cpp"
+            },
+            "bbox": [
+                152,
+                105,
+                840,
+                727
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "GESP"
+                    }
+                ]
+            },
+            "bbox": [
+                174,
+                63,
+                315,
+                89
+            ]
+        }
+    ]
+]

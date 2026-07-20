@@ -1,0 +1,1499 @@
+[
+    {
+        "type": "text",
+        "text": "C++ 二级",
+        "text_level": 1,
+        "bbox": [
+            384,
+            144,
+            611,
+            176
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2024年12月",
+        "bbox": [
+            411,
+            188,
+            581,
+            212
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1 单选题（每题2分，共30分）",
+        "bbox": [
+            90,
+            235,
+            445,
+            255
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/ac9f9597c9c231b2cbd8acda26e8a55d07b7456bb2d6bee228bbe837b76aec29.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>答案</td><td>C</td><td>A</td><td>D</td><td>B</td><td>D</td><td>B</td><td>C</td><td>C</td><td>D</td><td>A</td><td>A</td><td>D</td><td>B</td><td>D</td><td>C</td></tr></table>",
+        "bbox": [
+            277,
+            270,
+            719,
+            307
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "第1题 2024年10月8日，诺贝尔物理学奖“意外地”颁给了两位计算机科学家约翰·霍普菲尔德（John J. Hopfield）和杰弗里·辛顿（Geoffrey E. Hinton）。这两位科学家的主要研究方向是（）。  \n□A.天体物理  \n□B.流体力学  \n□C.人工智能  \n□D.量子理论",
+        "bbox": [
+            92,
+            321,
+            904,
+            476
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "第2题 计算机系统中存储的基本单位用B来表示，它代表的是（），比如某个照片大小为3MB。\n□ A. Byte\n□ B. Block\n□ C. Bulk\n□ D. Bit",
+        "bbox": [
+            92,
+            486,
+            766,
+            622
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "第3题 C++语句 cout << (3 + 3 % 3 \\* 2 - 1) 执行后输出的值是（）。  \n□ A. -1  \n□ B. 4  \n□ C. 56  \n□ D. 2",
+        "bbox": [
+            92,
+            634,
+            630,
+            770
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "第 4 题 下面 C++ 代码执行后其输出是( )。",
+        "bbox": [
+            92,
+            781,
+            400,
+            796
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1 for (int i=0; i<10; i++)\n2 printf(\"%d\",i);",
+        "bbox": [
+            92,
+            809,
+            352,
+            849
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "□A.123456789  \n□B.0123456789  \n□C.12345678910",
+        "bbox": [
+            97,
+            864,
+            236,
+            938
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "中国计算机学会\nCCF GESP CCF 编程能力等级认证\nGrade Examination of Software Programming",
+        "bbox": [
+            105,
+            66,
+            887,
+            121
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 012345678910",
+        "bbox": [
+            97,
+            61,
+            243,
+            76
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "第 5 题 下面 C++ 代码的相关说法中，正确的是()。",
+        "bbox": [
+            92,
+            90,
+            463,
+            105
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nint tint;\nfor (int i=0; i<10; i++)\n    tint += i;\ncout << tint;\n```",
+        "bbox": [
+            95,
+            118,
+            352,
+            190
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "□ A. 上述代码执行后其输出相当于求1-10的和（包含10）\n□ B. 上述代码执行后其输出相当于求1-10的和（不包含10）\n□ C. 上述代码执行后其输出相当于求0-10的和（不包含10）\n□ D. 上述代码执行后将输出不确定的值",
+        "bbox": [
+            97,
+            204,
+            519,
+            309
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "第6题 下面C++代码执行后输出是（）。",
+        "bbox": [
+            92,
+            323,
+            400,
+            338
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```matlab\nint i;\nfor (i=1; i<10; i++)\n    if (i % 2)\n    continue;\n    else\n    break;\ncout << i;\n```",
+        "bbox": [
+            134,
+            353,
+            317,
+            501
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n□A.1   \n□B.2   \n□C.9   \n□D.10\n```",
+        "bbox": [
+            99,
+            517,
+            164,
+            622
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "第7题 下面C++代码执行后的输出是（）。",
+        "bbox": [
+            92,
+            635,
+            415,
+            650
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nfor (i=0; i<10; i++) {\n    if (i % 3)\n    continue;\n    printf(\"0#\");\n}\nif(i>=10)\n    printf(\"1#\");\n```",
+        "bbox": [
+            97,
+            663,
+            327,
+            783
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```csv\n□ A. 0#0#0#0#0#0#0#1#\n□ B. 0#0#0#0#0#0#1#\n□ C. 0#0#0#0#1#\n□ D. 0#0#0#0#\n```",
+        "bbox": [
+            99,
+            799,
+            277,
+            903
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "第 8 题 下面 C++ 代码用于输出 0-100 之前（包含 100）能被 7 整除但不能被 3 整除的数，横线处不能填入的代码是（）。",
+        "bbox": [
+            90,
+            916,
+            875,
+            950
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nfor (i=0; i<100; i++)\n    if(____)\n    cout << i << endl;\n```",
+        "bbox": [
+            92,
+            60,
+            369,
+            116
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n□ A. i % 7 == 0 && i % 3 != 0\n□ B. !(i % 7) && i % 3 != 0\n□ C. i % 7 && i % 3\n□ D. i % 7 == 0 && !(i % 3 == 0)\n```",
+        "bbox": [
+            97,
+            130,
+            332,
+            235
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "第 9 题 下面 C++ 代码用于求正整数各位数字之和，横线处不应填入代码是（）。",
+        "bbox": [
+            92,
+            248,
+            660,
+            264
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint tnt, N;\nprintf(\"请输入正整数：\");\ncin >> N;\ntnt = 0;\nwhile (N != 0){\n    N /= 10;\n}\ncout <<tnt;\n```",
+        "bbox": [
+            95,
+            277,
+            351,
+            428
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_body": "<div class=\"mineru-algorithm\" style=\"white-space: pre-wrap; font-family:monospace;\">\n□ A.  $\\text{tnt} = \\text{tnt} + \\text{N} \\% 10$ \n□ B.  $\\text{tnt} += \\text{N} \\% 10$ \n□ C.  $\\text{tnt} = \\text{N} \\% 10 + \\text{tnt}$ \n□ D.  $\\text{tnt} = \\text{N} \\% 10$\n</div>",
+        "bbox": [
+            97,
+            442,
+            268,
+            549
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "第 10 题 下图的 C++ 程序执行后的输出是（）。",
+        "bbox": [
+            92,
+            561,
+            435,
+            577
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nfor (i=0; i<5; i++)\n    for (j=0; j<i; j++)\n    cout << j;\n```",
+        "bbox": [
+            94,
+            589,
+            344,
+            644
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```csv\n□A.0010120123  \n□B.01012012301234  \n□C.001012012301234  \n□D.01012012301234012345\n```",
+        "bbox": [
+            97,
+            660,
+            309,
+            764
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "第 11 题 下面 C++ 代码用于实现图示的九九乘法表。相关说法错误的是（）。",
+        "bbox": [
+            90,
+            777,
+            633,
+            793
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n1 /*  \n2 1*1=1  \n3 1*2=2 2*2=4  \n4 1*3=3 2*3=6 3*3=9  \n5 1*4=4 2*4=8 3*4=12 4*4=16  \n6 1*5=5 2*5=10 3*5=15 4*5=20 5*5=25  \n7 1*6=6 2*6=12 3*6=18 4*6=24 5*6=30 6*6=36  \n8 1*7=7 2*7=14 3*7=21 4*7=28 5*7=35 6*7=42 7*7=49  \n9 1*8=8 2*8=16 3*8=24 4*8=32 5*8=40 6*8=48 7*8=56 8*8=64\n```",
+        "bbox": [
+            95,
+            805,
+            633,
+            958
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n1*9=9 2*9=18 3*9=27 4*9=36 5*9=45 6*9=54 7*9=63 8*9=72 9*9=81\n*/\nfor (int Hang=1; Hang<10; Hang++) {\n    for (int Lie=1; Lie<Hang+1; Lie++) {\n    if (Lie * Hang > 9)\n    printf(\"%d %d=%d \", Lie, Hang, Lie*Hang);\n    else \n    printf(\"%d %d=%d \", Lie, Hang, Lie*Hang);\n    // L2\n    }\n    printf(\"\\n\"); // L1\n}\n```",
+        "bbox": [
+            100,
+            58,
+            692,
+            286
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "☐ A. 将L1注释的 printf(\"\\\\n\") 移到L2注释所在行，效果相同",
+        "bbox": [
+            97,
+            301,
+            552,
+            318
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nB. 将L1注释的 printf(\"\\n\") 修改为 print(\"%c\", '\\n') 效果相同\n```",
+        "bbox": [
+            99,
+            330,
+            613,
+            347
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n☐ C. 将 Lie * Hang > 9 修改为 Lie * Hang >= 10 效果相同\n```",
+        "bbox": [
+            99,
+            359,
+            556,
+            376
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n☐ D. 将 Lie * Hang > 9 修改为 Hang * Lie > 9 效果相同\n```",
+        "bbox": [
+            99,
+            389,
+            539,
+            404
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "第12题在数学中N!表示N的阶乘，即1到N的乘积，如 $3! = 1*2*3$ 。下面的 $\\mathrm{C}++$ 用于求1-N的阶乘之和，如N为3，则是 $1! + 2! + 3!$ 。下面代码段补充选项后用于实现上述功能，其中不能实现阶乘和的选项是（）。",
+        "bbox": [
+            90,
+            419,
+            900,
+            453
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint N;\ncin >> N;\nint tnt=0, nowNum = 1; //tnt保存求和之值，当前N的阶乘\nfor (int i=1; i < N + 1; i++) {\n    ____ // 基于上一个计算出当前数的阶乘\n    ____ // 从1到i每个数阶乘之和\n}\ncout << tnt;\n```",
+        "bbox": [
+            94,
+            464,
+            900,
+            665
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "□ A.",
+        "text_level": 2,
+        "bbox": [
+            99,
+            681,
+            144,
+            697
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n1 nowNum *= i;\n2 tnt += nowNum;\n```",
+        "bbox": [
+            129,
+            711,
+            295,
+            748
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "□ B.",
+        "text_level": 2,
+        "bbox": [
+            100,
+            764,
+            142,
+            780
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n1 nowNum = nowNum * i;\n2 tnt = tnt + nowNum;\n```",
+        "bbox": [
+            139,
+            795,
+            347,
+            830
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "□ C.",
+        "text_level": 2,
+        "bbox": [
+            100,
+            847,
+            142,
+            863
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_body": "<div class=\"mineru-algorithm\" style=\"white-space: pre-wrap; font-family:monospace;\">\n1 nowNum *= i;\n2 \n  $\\text{tnt} = \\text{nowNum} + \\text{tnt};$\n</div>",
+        "bbox": [
+            137,
+            878,
+            339,
+            914
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D.",
+        "bbox": [
+            100,
+            931,
+            142,
+            946
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n/*\n高度:5\n*\n***\n*****\n*****\n*****\n*/\nint height;\ncout << \"高度: \";\n//获取用户输入的高度\ncin >> height;\nfor (i=0; i<height; i++){\n    //打印每行前面的空格\n    for (j = 0; j < ____; j++)\n    cout << \" \";\n    //打印每行的星号\n    for (k = 0; k < ____; k++)\n    cout << \"*\";\n    //输出一行后，换行\n    cout << endl;\n}\n```",
+        "bbox": [
+            92,
+            473,
+            899,
+            868
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n□ A.\n```",
+        "bbox": [
+            99,
+            883,
+            144,
+            900
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_body": "<div class=\"mineru-algorithm\" style=\"white-space: pre-wrap; font-family:monospace;\">\n1 nowNum = nowNum + i;\n2 \n  \\|  $*$  = nowNum;\n</div>",
+        "bbox": [
+            127,
+            59,
+            349,
+            100
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "第 13 题 下面C++代码用于输出N和M之间（可以包括N和M）的孪生素数。孪生素数是指间隔为2的两个数均为素数，如11和13分别是素数，且间隔为2。isPrime(N)用于判断N是否为素数的函数。为完成上述功能，横线处应填上的代码是（）。",
+        "bbox": [
+            90,
+            114,
+            900,
+            167
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint N, M;\n//本题假设N小于M\ncin >> N >> M;\nfor (int i = N; i < ____; i++)\n    if (isPrime(i) && isPrime(i + 2))\n    printf(\"%d %d\\n\", i, i + 2);\n```",
+        "bbox": [
+            102,
+            179,
+            465,
+            315
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```csv\n□ A.M-2\n□ B.M-1\n□ C.M\n□ D.M+1\n```",
+        "bbox": [
+            97,
+            328,
+            189,
+            435
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "第 14 题 下面 C++ 代码实现输出如下图形，横线应填入的代码是（）。",
+        "bbox": [
+            92,
+            447,
+            594,
+            464
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n1 height - i\n2 2 * i\n```",
+        "bbox": [
+            127,
+            912,
+            263,
+            952
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "□ B.",
+        "bbox": [
+            99,
+            61,
+            144,
+            76
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n1 height\n2 2 * i\n```",
+        "bbox": [
+            126,
+            90,
+            226,
+            130
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "□ C.",
+        "bbox": [
+            99,
+            144,
+            144,
+            160
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n1 height - i\n2 2 * i + 1\n```",
+        "bbox": [
+            126,
+            172,
+            262,
+            212
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "□ D.",
+        "bbox": [
+            99,
+            226,
+            142,
+            243
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_body": "<div class=\"mineru-algorithm\" style=\"white-space: pre-wrap; font-family:monospace;\">\n1 height - i - 1\n2  $2 * i + 1$\n</div>",
+        "bbox": [
+            127,
+            256,
+            297,
+            295
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "第 15 题 下面 C++ 代码执行后的输出是 30，则横线处不能填入（）。",
+        "bbox": [
+            92,
+            309,
+            578,
+            326
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nint a=10,b=20,c=30;\ncout << ____ << endl;\ncout << endl;\n```",
+        "bbox": [
+            94,
+            339,
+            475,
+            426
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_body": "<div class=\"mineru-algorithm\" style=\"white-space: pre-wrap; font-family:monospace;\">\n□ A.  $\\max(\\max(a, b), c)$\n</div>",
+        "bbox": [
+            100,
+            442,
+            300,
+            458
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_body": "<div class=\"mineru-algorithm\" style=\"white-space: pre-wrap; font-family:monospace;\">\nB.  $\\min(a+b, c)$\n</div>",
+        "bbox": [
+            100,
+            471,
+            248,
+            486
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n□ C. sqrt(a+b+c)\n```",
+        "bbox": [
+            100,
+            501,
+            248,
+            517
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_body": "<div class=\"mineru-algorithm\" style=\"white-space: pre-wrap; font-family:monospace;\">\nD. $(a + b + c) / 2$\n</div>",
+        "bbox": [
+            99,
+            530,
+            233,
+            546
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2 判断题（每题2分，共20分）",
+        "text_level": 2,
+        "bbox": [
+            90,
+            561,
+            445,
+            581
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/faccf2c6100383100fa7ebb16a02a145f8f4682b783be869b7b8601e57c5a5c2.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>答案</td><td>√</td><td>√</td><td>√</td><td>√</td><td>×</td><td>×</td><td>×</td><td>√</td><td>√</td><td>√</td></tr></table>",
+        "bbox": [
+            354,
+            597,
+            642,
+            633
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "第 1 题 在Windows的资源管理器中为已有文件A建立副本的操作是Ctrl+C，然后Ctrl+V。（）",
+        "bbox": [
+            90,
+            650,
+            729,
+            665
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "第2题 在C++代码中，假设N为正整数，则cout << (N - N / 10 \\* 10) 将获得N的个位数。（）",
+        "bbox": [
+            92,
+            679,
+            805,
+            694
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "第3题 在C++语句 cout << (10 <= N <= 12) 中，假设N为12，则其输出为1。（）",
+        "bbox": [
+            92,
+            707,
+            685,
+            723
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "第4题如果C++表达式int(sqrt(N))\\*int(sqrt(N)) == N的值为True，则说明N为完全平方数，如4、9、25等。（）",
+        "bbox": [
+            90,
+            737,
+            875,
+            771
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "第 5 题 下面 C++ 代码执行后将输出 $2 \\times 3 = 6$ 。()",
+        "bbox": [
+            92,
+            785,
+            425,
+            800
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nint a = 2, b = 3;\nprintf(\"%a*%%b=%d\", a*b);\n```",
+        "bbox": [
+            94,
+            814,
+            359,
+            852
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "第6题 以下 $\\mathrm{C}++$ 代码因为循环变量为将导致错误，即不能作为变量名称，不符合 $\\mathrm{C}++$ 变量命名规范。（）",
+        "bbox": [
+            92,
+            868,
+            828,
+            884
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n1 for (int _ = 0; _ < 10; _++)  \n2 continue;\n```",
+        "bbox": [
+            94,
+            897,
+            386,
+            935
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "第7题 下面C++代码执行后因为有break，将输出0。（）",
+        "bbox": [
+            92,
+            60,
+            494,
+            77
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint i;\nfor (i = 0; i < 10; i++) {\n    continue;\n    break;\n}\ncout << i;\n```",
+        "bbox": [
+            95,
+            89,
+            361,
+            193
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "第8题 下面的C++代码执行后将输出18行“OK”。（）",
+        "bbox": [
+            92,
+            207,
+            472,
+            224
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nint i, j;\nfor (i = 8; i > 2; i -= 2)\n    for (j = 0; j < i; j++)\n    printf(\"OK\\n\");\n```",
+        "bbox": [
+            95,
+            236,
+            369,
+            309
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "第9题 将下面C++代码中的 i = 1 调整为 i = 0 的输出结果相同。（）",
+        "bbox": [
+            92,
+            323,
+            605,
+            340
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nint i;\nint cnt = 0;\nfor (i = 1; i < 5; i++)\n    if(i%2) cnt += 1;\ncout << cnt;\n```",
+        "bbox": [
+            95,
+            352,
+            342,
+            440
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "第10题 下面两段C++代码都是用于求1-10的和，其运行结果相同。通常说来，for循环都可以用while循环实现。（）",
+        "bbox": [
+            90,
+            454,
+            890,
+            486
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint tnt;\nint i;\ntnt = 0;\nfor (i = 1; i < 10 + 1; i++)\n    tnt += i;\ncout << tnt << endl;\n```",
+        "bbox": [
+            99,
+            500,
+            386,
+            622
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint tnt;\nint i;\ntnt = 0;\ni = 1;\nwhile (i <= 10){\n    tnt += i;\n    i += 1;\n}\ncout << tnt << endl;\n```",
+        "bbox": [
+            97,
+            636,
+            326,
+            804
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3 编程题（每题25分，共50分）",
+        "text_level": 2,
+        "bbox": [
+            90,
+            61,
+            458,
+            83
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.1 编程题1",
+        "text_level": 2,
+        "bbox": [
+            90,
+            96,
+            221,
+            112
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- 试题名称：寻找数字",
+        "bbox": [
+            104,
+            127,
+            273,
+            142
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- 时间限制： $1.0 \\mathrm{~s}$",
+        "bbox": [
+            105,
+            157,
+            240,
+            171
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- 内存限制：512.0 MB",
+        "bbox": [
+            104,
+            186,
+            273,
+            201
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.1.1 题面描述",
+        "text_level": 2,
+        "bbox": [
+            90,
+            214,
+            230,
+            230
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "小杨有一个正整数 $a$ ，小杨想知道是否存在一个正整数 $b$ 满足 $a = b^4$ 。",
+        "bbox": [
+            90,
+            243,
+            576,
+            258
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.1.2 输入格式",
+        "text_level": 2,
+        "bbox": [
+            90,
+            271,
+            230,
+            288
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "第一行包含一个正整数 t，代表测试数据组数。",
+        "bbox": [
+            90,
+            301,
+            416,
+            317
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "对于每组测试数据，第一行包含一个正整数代表 a。",
+        "bbox": [
+            90,
+            331,
+            450,
+            346
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.1.3 输出格式",
+        "text_level": 2,
+        "bbox": [
+            90,
+            359,
+            230,
+            375
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "对于每组测试数据，如果存在满足条件的正整数 b，则输出 b，否则输出 -1。",
+        "bbox": [
+            90,
+            388,
+            628,
+            404
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.1.4 样例",
+        "text_level": 2,
+        "bbox": [
+            90,
+            416,
+            191,
+            434
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```csv\n1 | 3\n2 | 16\n3 | 81\n4 | 10\n1 | 2\n2 | 3\n3 | -1\n```",
+        "bbox": [
+            92,
+            442,
+            902,
+            589
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "对于全部数据，保证有 $1 \\leq t \\leq 10^{5}, 1 \\leq a \\leq 10^{8}$ 。",
+        "bbox": [
+            90,
+            600,
+            436,
+            618
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.1.5 参考程序",
+        "text_level": 2,
+        "bbox": [
+            90,
+            631,
+            228,
+            647
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```cpp\n#include <iostream>\n#include <cmath>\nusing namespace std;\n\nint main() {\n    int t;\n    cin >> t;\n    while (t--) {\n    int a;\n    cin >> a;\n    int b = (int)(sqrt(sqrt(a)));\n    if (b * b * b * b == a) {\n    cout << b << endl;\n    } else {\n    cout << -1 << endl;\n    }\n    }\n```",
+        "bbox": [
+            100,
+            660,
+            475,
+            958
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n19 return 0;\n20 }\n```",
+        "bbox": [
+            92,
+            55,
+            902,
+            96
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.2 编程题2",
+        "text_level": 2,
+        "bbox": [
+            90,
+            109,
+            221,
+            127
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- 试题名称：数位和",
+        "bbox": [
+            104,
+            140,
+            257,
+            156
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- 时间限制： $1.0 \\mathrm{~s}$",
+        "bbox": [
+            105,
+            169,
+            240,
+            185
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- 内存限制：512.0 MB",
+        "bbox": [
+            105,
+            199,
+            273,
+            214
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.2.1 题面描述",
+        "text_level": 2,
+        "bbox": [
+            90,
+            228,
+            230,
+            244
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "小杨有 $n$ 个正整数，小杨想知道这些正整数的数位和中最大值是多少。",
+        "bbox": [
+            90,
+            256,
+            583,
+            271
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "“数位和”指的是一个数字中所有数位的和。例如：",
+        "bbox": [
+            90,
+            286,
+            436,
+            302
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "对于数字12345，它的各个数位分别是1,2,3,4,5。将这些数位相加，得到：",
+        "bbox": [
+            90,
+            315,
+            621,
+            331
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\n1 + 2 + 3 + 4 + 5 = 1 5\n$$",
+        "text_format": "latex",
+        "bbox": [
+            416,
+            344,
+            581,
+            359
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "因此，12345 的数位和是 15。",
+        "bbox": [
+            92,
+            372,
+            295,
+            388
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.2.2 输入格式",
+        "text_level": 2,
+        "bbox": [
+            90,
+            400,
+            230,
+            416
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "第一行包含一个正整数 n，代表正整数个数。",
+        "bbox": [
+            90,
+            429,
+            403,
+            446
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "之后 n 行，每行包含一个正整数。",
+        "bbox": [
+            90,
+            459,
+            329,
+            475
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.2.3 输出格式",
+        "text_level": 2,
+        "bbox": [
+            90,
+            488,
+            230,
+            505
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "输出这些正整数的数位和的最大值。",
+        "bbox": [
+            90,
+            517,
+            342,
+            532
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.2.4 样例",
+        "text_level": 2,
+        "bbox": [
+            90,
+            546,
+            191,
+            562
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/1ca176aa0b217dd2dfcc29d222fa9ab096c5bf57115e3c0defe9a4a94a034415.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1</td><td>3</td></tr><tr><td>2</td><td>16</td></tr><tr><td>3</td><td>81</td></tr><tr><td>4</td><td>10</td></tr></table>",
+        "bbox": [
+            94,
+            573,
+            163,
+            644
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n1 | 9\n```",
+        "bbox": [
+            94,
+            660,
+            152,
+            686
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "对于全部数据，保证有 $1 \\leq n \\leq 10^{5}$ ，每个正整数不超过 $10^{12}$ 。",
+        "bbox": [
+            92,
+            698,
+            527,
+            714
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.2.5 参考程序",
+        "text_level": 2,
+        "bbox": [
+            90,
+            726,
+            228,
+            744
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```cpp\n#include <bits/stdc++.h>\nusing namespace std;\n#define ll long long\nint main() {\n    int n;\n    cin >> n;\n    int x = 0;\n\n    for (int i = 0; i < n; i++) {\n    int smu = 0;\n    ll tmp;\n    cin >> tmp;\n    }\n}\n```",
+        "bbox": [
+            99,
+            756,
+            440,
+            957
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nwhile (tmp > 0) {\n    smu += tmp % 10;\n    tmp /= 10;\n}\n\nx = max(x, smu);\ncout << x << endl;\nreturn 0;\n```",
+        "bbox": [
+            104,
+            57,
+            396,
+            252
+        ],
+        "page_idx": 9
+    }
+]

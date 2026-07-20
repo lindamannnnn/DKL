@@ -1,0 +1,980 @@
+[
+    {
+        "type": "text",
+        "text": "GESP C++一级认证试卷",
+        "text_level": 2,
+        "bbox": [
+            400,
+            112,
+            598,
+            129
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "（满分：100 分 考试时间：90 分钟）",
+        "bbox": [
+            344,
+            149,
+            650,
+            167
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "学校：",
+        "bbox": [
+            144,
+            187,
+            381,
+            204
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "姓名：",
+        "bbox": [
+            532,
+            187,
+            778,
+            204
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/eab3a4d2a7d81daf1320ddb898ca5bed2544b75cc627ab69ecdc6a485ce8aee8.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>题目</td><td>一</td><td>二</td><td>三</td><td>总分</td></tr><tr><td>得分</td><td></td><td></td><td></td><td></td></tr></table>",
+        "bbox": [
+            139,
+            211,
+            858,
+            290
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "一、单选题（每题 2 分，共 30 分）",
+        "text_level": 2,
+        "bbox": [
+            144,
+            338,
+            420,
+            355
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/4a40aeeee0de275ec4fae17f48232a43934a026f8bcb82985b211213d7310634.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>答案</td><td>A</td><td>C</td><td>C</td><td>D</td><td>A</td><td>D</td><td>D</td><td>C</td><td>C</td><td>B</td><td>B</td><td>A</td><td>C</td><td>B</td><td>D</td></tr></table>",
+        "bbox": [
+            137,
+            362,
+            910,
+            439
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. 以下不属于计算机输出设备的有（ ）。A. 麦克风B. 音箱C. 打印机D. 显示器",
+        "bbox": [
+            142,
+            480,
+            534,
+            624
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2. ChatGPT 是OpenAI研发的聊天机器人程序，它能通过理解和学习人类的语言来进行对话，还能根据聊天的上下文进行互动，完成很多工作。请你猜猜看，下面任务中，ChatGPT不能完成的是（ ）。A. 改邮件B. 编剧本C. 擦地板D. 写代码",
+        "bbox": [
+            142,
+            668,
+            852,
+            869
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "GESP",
+        "bbox": [
+            174,
+            64,
+            315,
+            87
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3. 常量'3'的数据类型是（ ）。A. doubleB. floatC. charD. int",
+        "bbox": [
+            142,
+            137,
+            447,
+            282
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4. 下列关于C++语言变量的叙述，正确的是（ ）。A. 变量可以没有定义B. 对一个没有定义的变量赋值，相当于定义了一个新变量C. 执行赋值语句后，变量的类型可能会变化D. 执行赋值语句后，变量的值可能不会变化",
+        "bbox": [
+            142,
+            326,
+            665,
+            470
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5. 以下可以作为C++标识符的是（ ）。A. number\\_of\\_Chinese\\_people\\_in\\_millionsB. 360AntiVirusC. Man&WomanD. break",
+        "bbox": [
+            142,
+            514,
+            581,
+            658
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "6. 以下哪个不是C++语言的关键字？（ ）A. doubleB. elseC. whileD. endl",
+        "bbox": [
+            142,
+            703,
+            532,
+            848
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "GESP",
+        "bbox": [
+            174,
+            63,
+            315,
+            87
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "7. 如果a、b 和c 都是int 类型的变量，下列哪个语句不符合 C++语法？（ ） A. a = (b == c); B. b = 5.5; C. c = a + b + c; D. a + c = b + c;",
+        "bbox": [
+            142,
+            107,
+            850,
+            254
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "8. 如果用一个int 类型的变量a 表达正方形的边长，则下列哪个表达式不能用来计算正方形的面积？（ ）A. a \\* aB. 1 \\* a \\* aC. a ^ 2D. a \\* 2 \\* a / 2",
+        "bbox": [
+            141,
+            294,
+            850,
+            468
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "9. 表达式(4 \\* (11 + 12) / 4)的计算结果为（ ）。A. 47B. 20C. 23D. 56",
+        "bbox": [
+            141,
+            511,
+            645,
+            656
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "10. 如果a 为int 类型的变量，且a 的值为6，则执行a %= 4;之后，a 的值会是（ ）。A. 1B. 2C. 3D. 4",
+        "bbox": [
+            141,
+            699,
+            850,
+            872
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "GESP",
+        "bbox": [
+            174,
+            63,
+            315,
+            87
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "11. 如果 a 和 b 均为 int 类型的变量，下列表达式能正确判断“a 等于 0 且 b等于0”的是（ ）。A. (a == b == 0)B. !(a || b)C. (a + b == 0)D. (a == 0) + (b == 0)",
+        "bbox": [
+            142,
+            107,
+            850,
+            281
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "12. 如果a 和b 为int 类型的变量，且值分别为7 和2，则下列哪个表达式的计算结果不是3.5？（ ）A. 0.0 + a / bB. (a + 0.0) / bC. (0.0 + a) / bD. a / (0.0 + b)",
+        "bbox": [
+            142,
+            323,
+            850,
+            497
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "13. 在下列代码的横线处填写（ ），使得输出是“20 10”。",
+        "bbox": [
+            144,
+            539,
+            700,
+            557
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int a = 10, b = 20;\n    a = ____; // 在此处填入代码\n    b = a + b;\n    a = b - a;\n    cout << a << \" \" << b << endl;\n    return 0;\n}\nA. a + b\nB. b\nC. a - b\nD. b - a\n```",
+        "bbox": [
+            142,
+            568,
+            594,
+            892
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "GESP",
+        "bbox": [
+            174,
+            63,
+            315,
+            87
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "14. 在下列代码的横线处填写（ ），可以使得输出是“147”。",
+        "bbox": [
+            144,
+            137,
+            719,
+            156
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    for (int i = 1; i <= 8; i++)\n    if (____) // 在此处填入代码\n    cout << i;\n    return 0;\n}\nA. i % 2 == 1\nB. i % 3 == 1\nC. i = i + 3\nD. i + 3\n```",
+        "bbox": [
+            144,
+            168,
+            626,
+            456
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "15. 执行以下C++语言程序后，输出结果是（ ）。",
+        "bbox": [
+            144,
+            497,
+            601,
+            514
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int sum;\n    for (int i = 1; i <= 20; i++)\n    if (i % 3 == 0 || i % 5 == 0)\n    sum += i;\n    cout << sum << endl;\n    return 0;\n}\nA. 63\nB. 98\nC. 113\nD. 无法确定\n```",
+        "bbox": [
+            144,
+            524,
+            625,
+            853
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "GESP",
+        "bbox": [
+            174,
+            63,
+            315,
+            89
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "二、判断题（每题 2 分，共 20 分）",
+        "text_level": 2,
+        "bbox": [
+            144,
+            143,
+            421,
+            161
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/b05034c5da79ca309841d76992bc4b819c4911668b6a32b236b823c51efa54ba.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>答案</td><td>√</td><td>√</td><td>×</td><td>×</td><td>√</td><td>√</td><td>√</td><td>×</td><td>×</td><td>√</td></tr></table>",
+        "bbox": [
+            137,
+            168,
+            781,
+            247
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1. 计算机硬件主要包括运算器、控制器、存储器、输入设备和输出设备。",
+        "bbox": [
+            144,
+            287,
+            796,
+            305
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2. 诞生于 1958 年的103 机是中国第一台通用数字电子计算机，比 1946年在美国诞生的第一台通用电子计算机 ENIAC晚了十多年。",
+        "bbox": [
+            144,
+            342,
+            850,
+            388
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3. 在C++语言中，计算结果必须存储在变量中才能输出。",
+        "bbox": [
+            144,
+            426,
+            650,
+            444
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4. 在C++语言中，标识符的命名不能完全由数字组成，至少有一个字母就可以。",
+        "bbox": [
+            144,
+            482,
+            848,
+            499
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5. 10 是一个int 类型常量。",
+        "bbox": [
+            144,
+            538,
+            403,
+            554
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "6. if 语句可以没有else 子句。",
+        "bbox": [
+            144,
+            593,
+            433,
+            609
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "7. do ... while 语句的循环体至少会执行一次。",
+        "bbox": [
+            144,
+            649,
+            591,
+            665
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "8. 如果a 和b 为int 类型的变量，则表达式a = b 可以判断a 和b 是否相等。",
+        "bbox": [
+            144,
+            703,
+            848,
+            721
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "9. 如果 a 为 int 类型的变量，则表达式(a % 4 == 2)可以判断 a 的值是否为偶数。",
+        "bbox": [
+            144,
+            760,
+            850,
+            804
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "10. 表达式(37 / 4)的计算结果为9，且结果类型为int。",
+        "bbox": [
+            146,
+            843,
+            668,
+            860
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "GESP",
+        "bbox": [
+            174,
+            64,
+            315,
+            87
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "三、编程题（每题 25 分，共 50 分）",
+        "text_level": 2,
+        "bbox": [
+            144,
+            168,
+            431,
+            185
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/e0e043c9e7f90307344419983ccaffcb58b47f1a336daf7a443675ea82cb871b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>题号</td><td>1</td><td>2</td></tr><tr><td>答案</td><td></td><td></td></tr></table>",
+        "bbox": [
+            139,
+            192,
+            317,
+            271
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1. 时间规划",
+        "text_level": 2,
+        "bbox": [
+            147,
+            311,
+            265,
+            329
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "【问题描述】",
+        "text_level": 2,
+        "bbox": [
+            154,
+            342,
+            267,
+            361
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "小明在为自己规划学习时间。现在他想知道两个时刻之间有多少分钟，你能通过编程帮他做到吗？",
+        "bbox": [
+            144,
+            374,
+            850,
+            420
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "【输入描述】",
+        "text_level": 2,
+        "bbox": [
+            154,
+            432,
+            267,
+            451
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "输入4行，第一行为开始时刻的小时，第二行为开始时刻的分钟，第三行为结束时刻的小时，第四行为结束时刻的分钟。",
+        "bbox": [
+            144,
+            464,
+            850,
+            512
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "输入保证两个时刻是同一天，开始时刻一定在结束时刻之前。时刻使用 24小时制，即小时在0到23之间，分钟在0到59之间。",
+        "bbox": [
+            144,
+            524,
+            852,
+            570
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "【输出描述】",
+        "text_level": 2,
+        "bbox": [
+            154,
+            583,
+            267,
+            601
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "输出一行，包含一个整数，从开始时刻到结束时刻之间有多少分钟。",
+        "bbox": [
+            184,
+            613,
+            786,
+            633
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "【样例输入1】",
+        "bbox": [
+            154,
+            645,
+            282,
+            663
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/2bbf5a387db3ed016d987265a25d24e7a5bf3689f9ba0aa75d009b63e5839d8b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>9</td></tr><tr><td>6</td></tr></table>",
+        "bbox": [
+            147,
+            673,
+            463,
+            760
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "【样例输出1】",
+        "text_level": 2,
+        "bbox": [
+            154,
+            772,
+            282,
+            791
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "GESP",
+        "bbox": [
+            174,
+            63,
+            317,
+            89
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n1\n```",
+        "bbox": [
+            149,
+            102,
+            463,
+            133
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "【样例输入2】",
+        "text_level": 2,
+        "bbox": [
+            156,
+            146,
+            280,
+            166
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```csv\n9\n5\n10\n0\n```",
+        "bbox": [
+            149,
+            175,
+            463,
+            261
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "【样例输出2】",
+        "bbox": [
+            156,
+            274,
+            280,
+            294
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n55\n```",
+        "bbox": [
+            149,
+            303,
+            463,
+            332
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "【参考程序】",
+        "text_level": 2,
+        "bbox": [
+            156,
+            378,
+            265,
+            397
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int h1 = 0, m1 = 0, h2 = 0, m2 = 0;\n    cin >> h1 >> m1;\n    cin >> h2 >> m2;\n    cout << (h2 - h1) * 60 + (m2 - m1) << endl;\n    return 0;\n}\n```",
+        "bbox": [
+            154,
+            407,
+            620,
+            583
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2. 累计相加",
+        "text_level": 2,
+        "bbox": [
+            146,
+            629,
+            263,
+            648
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "【问题描述】",
+        "text_level": 2,
+        "bbox": [
+            154,
+            661,
+            267,
+            680
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "输入一个正整数 ，求形如： $1 + ( 1 + 2 ) + ( 1 + 2 + 3 ) + ( 1 + 2 + 3 + 4 ) +$ ……(1+2+3+4+5+……n)的累计相加。",
+        "bbox": [
+            147,
+            692,
+            850,
+            739
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "【输入描述】",
+        "text_level": 2,
+        "bbox": [
+            154,
+            751,
+            265,
+            770
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "输入一个正整数。约定<sub>1 ≤ ? ≤ 100</sub>。",
+        "bbox": [
+            186,
+            784,
+            517,
+            801
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "【输出描述】",
+        "text_level": 2,
+        "bbox": [
+            154,
+            815,
+            265,
+            833
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "输出累计相加的结果。",
+        "bbox": [
+            186,
+            846,
+            381,
+            864
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "【样例输入1】",
+        "text_level": 2,
+        "bbox": [
+            154,
+            877,
+            280,
+            896
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "GESP",
+        "bbox": [
+            174,
+            63,
+            315,
+            87
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n10\n```",
+        "bbox": [
+            159,
+            183,
+            184,
+            200
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n20\n```",
+        "bbox": [
+            159,
+            326,
+            184,
+            344
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "【样例输出1】",
+        "bbox": [
+            156,
+            146,
+            280,
+            167
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "【样例输入2】",
+        "bbox": [
+            156,
+            218,
+            280,
+            237
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "【样例输出2】",
+        "bbox": [
+            156,
+            291,
+            280,
+            311
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "【样例输入3】",
+        "bbox": [
+            156,
+            362,
+            280,
+            382
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "【样例输出3】",
+        "bbox": [
+            156,
+            434,
+            280,
+            454
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n220\n```",
+        "bbox": [
+            159,
+            470,
+            194,
+            488
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "【参考程序】",
+        "text_level": 2,
+        "bbox": [
+            156,
+            538,
+            263,
+            557
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int n = 0;\n    cin >> n;\n    int sum = 0;\n    for (int i = 1; i <= n; i++)\n    sum += (i + 1) * i / 2;\n    cout << sum << endl;\n    return 0;\n}\n```",
+        "bbox": [
+            156,
+            569,
+            472,
+            780
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "GESP",
+        "bbox": [
+            174,
+            63,
+            315,
+            87
+        ],
+        "page_idx": 8
+    }
+]

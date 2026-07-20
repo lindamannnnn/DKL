@@ -18,6 +18,7 @@ import {
   ArrowRight,
   Volume2,
   VolumeX,
+  Eye,
 } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -35,6 +36,7 @@ interface LessonPageData {
   title: string
   blocks: any[]
   hasCheckpoint: boolean
+  isChallenge?: boolean
 }
 
 interface LessonData {
@@ -62,6 +64,7 @@ interface Reward {
 }
 
 const LS_PAGE_KEY = 'dkl-lesson-page'
+const LS_MAX_PAGE_KEY = 'dkl-lesson-max-page'
 
 function getStoredPage(lessonId?: string): number {
   if (!lessonId) return 0
@@ -81,6 +84,29 @@ function storePage(lessonId: string, page: number) {
     const map = raw ? JSON.parse(raw) : {}
     map[lessonId] = page
     localStorage.setItem(LS_PAGE_KEY, JSON.stringify(map))
+  } catch {
+    // ignore
+  }
+}
+
+function getStoredMaxPage(lessonId?: string): number {
+  if (!lessonId) return 0
+  try {
+    const raw = localStorage.getItem(LS_MAX_PAGE_KEY)
+    if (!raw) return 0
+    const map = JSON.parse(raw)
+    return typeof map[lessonId] === 'number' ? map[lessonId] : 0
+  } catch {
+    return 0
+  }
+}
+
+function storeMaxPage(lessonId: string, page: number) {
+  try {
+    const raw = localStorage.getItem(LS_MAX_PAGE_KEY)
+    const map = raw ? JSON.parse(raw) : {}
+    map[lessonId] = page
+    localStorage.setItem(LS_MAX_PAGE_KEY, JSON.stringify(map))
   } catch {
     // ignore
   }
@@ -216,6 +242,30 @@ function playSound(type: 'correct' | 'wrong' | 'reveal' | 'complete' | 'click') 
 }
 
 // 提取可朗读的纯文本
+// 判断一个概念组是否属于挑战页的“参考答案”部分
+// demo 代码块，或包含“这道题考察什么知识点/解题思路”的教师讲解卡片
+function isAnswerGroup(group: any[]): boolean {
+  return group.some((b) => {
+    if (b.type === 'demo') return true
+    if (b.type === 'card' && b.metadata?.type === 'teacher') {
+      const text = (b.content || '').trim()
+      return (
+        text.includes('这道题考察什么知识点') ||
+        text.includes('解题思路') ||
+        text.includes('关键代码解释')
+      )
+    }
+    if (b.type === 'markdown') {
+      const text = (b.content || '').trim()
+      return (
+        text.startsWith('**这道题考察什么知识点**') ||
+        text.startsWith('**解题思路')
+      )
+    }
+    return false
+  })
+}
+
 function extractText(content: string): string {
   return content
     .replace(/#{1,3}\s*/g, '')
@@ -232,6 +282,7 @@ export default function LessonPage() {
   const scrollRef = useRef<HTMLDivElement>(null)
   const [lesson, setLesson] = useState<LessonData | null>(null)
   const [currentPage, setCurrentPage] = useState(0)
+  const [maxVisitedPage, setMaxVisitedPage] = useState(0)
   const [loading, setLoading] = useState(true)
   const [showAI, setShowAI] = useState(false)
   const [completedReward, setCompletedReward] = useState<Reward | null>(null)
@@ -242,10 +293,14 @@ export default function LessonPage() {
   const [pageXP, setPageXP] = useState(0)
   const [milestone, setMilestone] = useState<string | null>(null)
   const [revealedMap, setRevealedMap] = useState<Record<number, number>>({})
+  const [showChallengeAnswer, setShowChallengeAnswer] = useState(false)
 
   useEffect(() => {
     if (id) {
-      setCurrentPage(getStoredPage(id))
+      const storedPage = getStoredPage(id)
+      const storedMax = getStoredMaxPage(id)
+      setCurrentPage(storedPage)
+      setMaxVisitedPage(Math.max(storedPage, storedMax))
       setRevealedMap({})
       setCombo(0)
       setPageXP(0)
@@ -261,13 +316,24 @@ export default function LessonPage() {
     if (scrollRef.current) {
       scrollRef.current.scrollTop = 0
     }
-    // 每翻到新一页，重置本页 XP 计数
+    // 每翻到新一页，重置本页 XP 计数和挑战答案展开状态
     setPageXP(0)
+    setShowChallengeAnswer(false)
   }, [currentPage])
 
   useEffect(() => {
     if (id) storePage(id, currentPage)
   }, [id, currentPage])
+
+  useEffect(() => {
+    if (id && currentPage > maxVisitedPage) {
+      setMaxVisitedPage(currentPage)
+    }
+  }, [id, currentPage, maxVisitedPage])
+
+  useEffect(() => {
+    if (id) storeMaxPage(id, maxVisitedPage)
+  }, [id, maxVisitedPage])
 
   const loadLesson = async () => {
     setLoading(true)
@@ -294,6 +360,16 @@ export default function LessonPage() {
     ? groups.length
     : revealedMap[currentPage] ?? Math.min(1, groups.length)
   const allRevealed = groups.length ? revealedCount >= groups.length : true
+
+  const isChallenge = page?.isChallenge ?? false
+  const visibleGroups = isChallenge
+    ? groups.slice(0, revealedCount).filter((g) => !isAnswerGroup(g))
+    : groups.slice(0, revealedCount)
+  const hiddenGroups = isChallenge
+    ? groups.slice(0, revealedCount).filter((g) => isAnswerGroup(g))
+    : []
+  const challengeAnswerLocked = isChallenge && hiddenGroups.length > 0 && !showChallengeAnswer
+  const canGoNext = allRevealed && !challengeAnswerLocked
 
   const revealNext = () => {
     if (!groups.length) return
@@ -479,9 +555,12 @@ export default function LessonPage() {
                   </div>
                 )
 
+                // 已学过的页面（当前及之前，或曾经访问过的最大页面前）可点击返回，没学的点不了
+                const isClickable = i <= maxVisitedPage || isCompleted
+
                 return (
                   <div key={i}>
-                    {isCompleted ? (
+                    {isClickable ? (
                       <button
                         onClick={() => setCurrentPage(i)}
                         className="focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 rounded-full"
@@ -529,26 +608,69 @@ export default function LessonPage() {
                       </div>
                     )
                   }
-                  return groups.slice(0, revealedCount).map((group: any[], gidx: number) => (
-                    <div
-                      key={`${currentPage}-g${gidx}`}
-                      className="animate-fade-in-up"
-                      style={{ animationDelay: `${Math.min(gidx * 80, 320)}ms` }}
-                    >
-                      <ConceptCard
-                        group={group}
-                        lessonId={lesson.id}
-                        onCheckpointPass={handleCheckpointPass}
-                        onQuizCorrect={handleQuizCorrect}
-                        onWrongAnswer={handleWrongAnswer}
-                      />
-                    </div>
-                  ))
+                  return (
+                    <>
+                      {visibleGroups.map((group: any[], gidx: number) => (
+                        <div
+                          key={`${currentPage}-g${gidx}`}
+                          className="animate-fade-in-up"
+                          style={{ animationDelay: `${Math.min(gidx * 80, 320)}ms` }}
+                        >
+                          <ConceptCard
+                            group={group}
+                            lessonId={lesson.id}
+                            onCheckpointPass={handleCheckpointPass}
+                            onQuizCorrect={handleQuizCorrect}
+                            onWrongAnswer={handleWrongAnswer}
+                          />
+                        </div>
+                      ))}
+
+                      {isChallenge && hiddenGroups.length > 0 && !showChallengeAnswer && (
+                        <div className="mt-6 flex flex-col items-center gap-3 animate-fade-in-up">
+                          <div className="text-sm text-gray-500">代码和讲解已隐藏，请先自己尝试 👇</div>
+                          <button
+                            onClick={() => setShowChallengeAnswer(true)}
+                            className="group relative flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-2xl font-black text-lg shadow-lg shadow-amber-300/40 hover:shadow-xl hover:shadow-amber-300/50 hover:scale-105 transition-all"
+                          >
+                            <span className="absolute inset-0 rounded-2xl bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+                            <Eye className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                            🔓 我已完成尝试，查看参考答案
+                            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                          </button>
+                        </div>
+                      )}
+
+                      {isChallenge && hiddenGroups.length > 0 && showChallengeAnswer && (
+                        <div className="mt-6 space-y-4 md:space-y-5 animate-fade-in-up">
+                          <div className="flex items-center gap-2 text-sm font-bold text-amber-600">
+                            <Sparkles className="w-4 h-4" />
+                            参考答案与思路讲解
+                          </div>
+                          {hiddenGroups.map((group: any[], gidx: number) => (
+                            <div
+                              key={`${currentPage}-answer-g${gidx}`}
+                              className="animate-fade-in-up"
+                              style={{ animationDelay: `${Math.min(gidx * 80, 320)}ms` }}
+                            >
+                              <ConceptCard
+                                group={group}
+                                lessonId={lesson.id}
+                                onCheckpointPass={handleCheckpointPass}
+                                onQuizCorrect={handleQuizCorrect}
+                                onWrongAnswer={handleWrongAnswer}
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </>
+                  )
                 })()}
               </div>
 
               {/* 继续揭示按钮 */}
-              {!allRevealed && (
+              {!allRevealed && !challengeAnswerLocked && (
                 <div className="mt-8 md:mt-10 flex justify-center animate-fade-in-up">
                   <button
                     onClick={revealNext}
@@ -579,27 +701,33 @@ export default function LessonPage() {
                 {currentPage < totalPages - 1 ? (
                   <button
                     onClick={handleNextPage}
-                    disabled={!allRevealed}
+                    disabled={!canGoNext}
                     className={`flex items-center px-7 py-3.5 rounded-2xl font-black text-lg shadow-md transition-all ${
-                      allRevealed
+                      canGoNext
                         ? 'bg-gradient-to-r from-success to-emerald-400 text-white hover:shadow-lg hover:scale-105'
                         : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                     }`}
                   >
-                    {allRevealed ? '下一关' : '先学完当前内容'}
+                    {challengeAnswerLocked ? '先查看参考答案' : canGoNext ? '下一关' : '先学完当前内容'}
                     <ChevronRight className="w-5 h-5 ml-1" />
                   </button>
                 ) : (
                   <button
                     onClick={lesson.progress?.status === 'completed' ? () => nextLesson && navigate(`/student/lessons/${nextLesson.id}`) : handleComplete}
-                    disabled={!allRevealed}
+                    disabled={!canGoNext}
                     className={`flex items-center px-7 py-3.5 rounded-2xl font-black text-lg shadow-md transition-all ${
-                      allRevealed
+                      canGoNext
                         ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-white hover:shadow-lg hover:scale-105'
                         : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                     }`}
                   >
-                    {lesson.progress?.status === 'completed' ? (nextLesson ? '下一课 🏆' : '已完成') : '完成挑战 🏆'}
+                    {challengeAnswerLocked
+                      ? '先查看参考答案'
+                      : lesson.progress?.status === 'completed'
+                        ? nextLesson
+                          ? '下一课 🏆'
+                          : '已完成'
+                        : '完成挑战 🏆'}
                     <ChevronRight className="w-5 h-5 ml-1" />
                   </button>
                 )}
@@ -1003,12 +1131,27 @@ function FillBlankBlock({
         </button>
       </div>
       {answered && (
-        <div
-          className={`mt-3 p-3 rounded-xl text-sm ${
-            correct ? 'bg-success/10 text-success' : 'bg-danger/10 text-danger'
-          }`}
-        >
-          {correct ? '✅ 回答正确！' : `❌ 回答错误。正确答案是：${block.metadata?.answer}`}
+        <div className="mt-3 space-y-3">
+          <div
+            className={`p-3 rounded-xl text-sm ${
+              correct ? 'bg-success/10 text-success' : 'bg-danger/10 text-danger'
+            }`}
+          >
+            {correct ? '✅ 回答正确！' : `❌ 回答错误。正确答案是：${block.metadata?.answer}`}
+          </div>
+          {block.metadata?.explanation && (
+            <div className="p-4 rounded-2xl bg-amber-50 border border-amber-100 text-amber-900">
+              <h5 className="font-bold flex items-center gap-2 mb-2">
+                <Lightbulb className="w-4 h-4" />
+                思路讲解
+              </h5>
+              <div className="text-sm leading-relaxed lesson-content-paged">
+                <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight]}>
+                  {block.metadata.explanation}
+                </ReactMarkdown>
+              </div>
+            </div>
+          )}
         </div>
       )}
     </div>
@@ -1031,10 +1174,15 @@ function QuizBlock({
   const [correct, setCorrect] = useState(false)
   const [selected, setSelected] = useState('')
 
-  const checkAnswer = (answer: string) => {
+  const selectAnswer = (answer: string) => {
+    if (answered) return
     setSelected(answer)
+  }
+
+  const submitAnswer = () => {
+    if (!selected || answered) return
     setAnswered(true)
-    const isCorrect = answer === block.metadata?.answer
+    const isCorrect = selected === block.metadata?.answer
     setCorrect(isCorrect)
     if (isCorrect) onCorrect?.()
     else onWrong?.()
@@ -1067,7 +1215,7 @@ function QuizBlock({
             return (
               <button
                 key={letter}
-                onClick={() => !answered && checkAnswer(letter)}
+                onClick={() => selectAnswer(letter)}
                 disabled={answered}
                 className={`w-full text-left px-5 py-4 rounded-2xl border-2 transition-all flex items-center gap-3 ${
                   answered
@@ -1108,21 +1256,47 @@ function QuizBlock({
             )
           })}
         </div>
+        {!answered && selected && (
+          <div className="mt-5 flex justify-center">
+            <button
+              onClick={submitAnswer}
+              className="px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white font-bold rounded-2xl shadow-lg shadow-primary-300/40 transition-all hover:scale-105"
+            >
+              提交答案
+            </button>
+          </div>
+        )}
+
         {answered && (
-          <div
-            className={`mt-4 p-4 rounded-2xl font-medium ${
-              correct ? 'bg-success/10 text-success' : 'bg-danger/10 text-danger'
-            }`}
-          >
-            {correct ? (
-              <div className="flex items-center gap-2">
-                <Star className="w-5 h-5 fill-current" />
-                答对啦！{mode === 'checkpoint' ? '解锁下一个知识点！' : '真棒！'}
-              </div>
-            ) : (
-              <div className="flex items-center gap-2">
-                <span>❌</span>
-                回答错误。正确答案是 {block.metadata?.answer}
+          <div className="mt-4 space-y-3">
+            <div
+              className={`p-4 rounded-2xl font-medium ${
+                correct ? 'bg-success/10 text-success' : 'bg-danger/10 text-danger'
+              }`}
+            >
+              {correct ? (
+                <div className="flex items-center gap-2">
+                  <Star className="w-5 h-5 fill-current" />
+                  答对啦！{mode === 'checkpoint' ? '解锁下一个知识点！' : '真棒！'}
+                </div>
+              ) : (
+                <div className="flex items-center gap-2">
+                  <span>❌</span>
+                  回答错误。正确答案是 {block.metadata?.answer}
+                </div>
+              )}
+            </div>
+            {block.metadata?.explanation && (
+              <div className="p-4 rounded-2xl bg-amber-50 border border-amber-100 text-amber-900">
+                <h5 className="font-bold flex items-center gap-2 mb-2">
+                  <Lightbulb className="w-4 h-4" />
+                  思路讲解
+                </h5>
+                <div className="text-sm leading-relaxed lesson-content-paged">
+                  <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight]}>
+                    {block.metadata.explanation}
+                  </ReactMarkdown>
+                </div>
               </div>
             )}
           </div>

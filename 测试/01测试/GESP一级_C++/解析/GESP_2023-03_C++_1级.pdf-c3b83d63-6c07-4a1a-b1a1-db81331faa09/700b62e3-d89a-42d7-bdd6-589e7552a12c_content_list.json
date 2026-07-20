@@ -1,0 +1,1038 @@
+[
+    {
+        "type": "text",
+        "text": "GESP C++一级试卷",
+        "bbox": [
+            416,
+            120,
+            581,
+            136
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "（满分：100 分 考试时间：90 分钟）",
+        "bbox": [
+            344,
+            158,
+            650,
+            174
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "学校：",
+        "bbox": [
+            144,
+            193,
+            384,
+            212
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "姓名：",
+        "bbox": [
+            532,
+            193,
+            778,
+            212
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/0ff132f7b993783fc696647cf4b0a45f99b5f878a21eca4de4cadfc2a0c3c90f.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>题目</td><td>一</td><td>二</td><td>三</td><td>总分</td></tr><tr><td>得分</td><td></td><td></td><td></td><td></td></tr></table>",
+        "bbox": [
+            149,
+            219,
+            848,
+            297
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "一、单选题（每题2 分，共 30分）",
+        "text_level": 2,
+        "bbox": [
+            144,
+            344,
+            420,
+            362
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/a100e5aa447af4a76be1b58fd92e2d2b9d177e29ab1ffb2bd8400c34a03c6759.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>答案</td><td>B</td><td>A</td><td>A</td><td>C</td><td>B</td><td>D</td><td>D</td><td>A</td><td>A</td><td>D</td><td>B</td><td>C</td><td>D</td><td>B</td><td>C</td></tr></table>",
+        "bbox": [
+            147,
+            370,
+            919,
+            447
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. 以下不属于计算机输入设备的有（ ）。A．键盘B．音箱C．鼠标D．传感器",
+        "bbox": [
+            144,
+            487,
+            534,
+            633
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2. 计算机系统中存储的基本单位用 B来表示，它代表的是（ ）。A. ByteB. BlockC. BulkD. Bit",
+        "bbox": [
+            142,
+            676,
+            737,
+            820
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3. 常量 7.0的数据类型是（）。",
+        "bbox": [
+            144,
+            864,
+            433,
+            881
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "GESP",
+        "bbox": [
+            179,
+            65,
+            341,
+            93
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_number",
+        "text": "1",
+        "bbox": [
+            838,
+            915,
+            850,
+            926
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. double B. float C. void D. int",
+        "bbox": [
+            142,
+            115,
+            247,
+            225
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4. 下列关于 C++语言的叙述，不正确的是（）。A. 变量定义时可以不初始化B. 变量被赋值之后的类型不变C. 变量没有定义也能够使用D. 变量名必须是合法的标识符",
+        "bbox": [
+            142,
+            272,
+            569,
+            416
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5. 以下不可以作为 C++标识符的是（）。A. x321B. 0x321C. x321\\_D. \\_x321",
+        "bbox": [
+            142,
+            460,
+            510,
+            604
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "6. 以下哪个不是 C++语言的关键字？A. intB. forC. doD. cout",
+        "bbox": [
+            142,
+            648,
+            472,
+            791
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "7. 如果 a、b和c都是 int类型的变量，下列哪个语句不符合C++语法？A. $\\mathrm { ~ c ~ } = \\mathrm { ~ a ~ } + \\mathrm { ~ b ~ } ;$",
+        "bbox": [
+            142,
+            835,
+            784,
+            885
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "GESP",
+        "bbox": [
+            178,
+            65,
+            341,
+            93
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "2",
+        "bbox": [
+            836,
+            915,
+            850,
+            926
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. c += a + b; C. c = a = b; D. c = a ++ b;",
+        "bbox": [
+            142,
+            114,
+            295,
+            196
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "8. 如果用两个 int 类型的变量a和b分别表达长方形的长和宽，则下列哪个表达式不能用来计算长方形的周长？A. a + b \\* 2B. 2 \\* a + 2 \\* bC. a + b + a + bD. b + a \\* 2 + b",
+        "bbox": [
+            139,
+            240,
+            848,
+            414
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "9. 表达式((3 == 0) + 'A' + 1 + 3.0)的结果类型为（）。A. doubleB. intC. charD. bool",
+        "bbox": [
+            141,
+            456,
+            677,
+            601
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "10. 如果 a为int类型的变量，且 a的值为 6，则执行a \\*= 3;之后，a的值会是（）。A. 3B. 6C. 9D. 18",
+        "bbox": [
+            139,
+            644,
+            843,
+            818
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "11. 如果 a和b均为 int类型的变量，下列表达式不能正确判断“a等于 0且b等于0”的是（）",
+        "bbox": [
+            144,
+            860,
+            850,
+            906
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "计算机 GESP",
+        "bbox": [
+            176,
+            65,
+            342,
+            93
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "3",
+        "bbox": [
+            836,
+            915,
+            850,
+            926
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. (a == 0) && (b == 0) B. (a == b == 0) C. (!a) && (!b) D. (a == 0) + (b == 0) == 2",
+        "bbox": [
+            142,
+            114,
+            428,
+            227
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "12. 如果 a为int类型的变量，下列哪个表达式可以正确求出满足“大于等于a且是4 的倍数”的整数中最小的？A. a \\* 4B. a / 4 \\* 4C. (a + 3) / 4 \\* 4D. a - a % 4 + 4",
+        "bbox": [
+            141,
+            271,
+            838,
+            444
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "13. 在下列代码的横线处填写（），可以使得输出是“20 10”。",
+        "bbox": [
+            146,
+            488,
+            717,
+            505
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int a = 10, b = 20;\n    a = ____; // 在此处填入代码\n    b = a / 100;\n    a = a % 100;\n    cout << a << \" \" << b << endl;\n    return 0;\n}\nA. a + b\nB. (a + b) * 100\nC. b * 100 + a\nD. a * 100 + b\n```",
+        "bbox": [
+            144,
+            518,
+            514,
+            803
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "14. 在下列代码的横线处填写（），可以使得输出是“1248”。",
+        "bbox": [
+            144,
+            846,
+            705,
+            863
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "计算机 GESP",
+        "bbox": [
+            176,
+            65,
+            342,
+            93
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "4",
+        "bbox": [
+            836,
+            915,
+            850,
+            926
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```cpp\n1 #include <iostream>\n2 using namespace std;\n3 int main() {\n4    for (int i = 1; i <= 8; ____) // 在此处填入代码\n5    cout << i;\n6    return 0;\n7 }\nA. i++\nB. i *= 2\nC. i += 2\nD. i * 2\n```",
+        "bbox": [
+            146,
+            117,
+            707,
+            362
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "15. 执行以下 C++语言程序后，输出结果是（）。",
+        "bbox": [
+            147,
+            405,
+            579,
+            423
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```asm\n#include <iostream>\nusing namespace std;\nint main() {\n    int sum = 0;\n    for (int i = 1; i <= 20; i++)\n    if (i % 3 == 0 || i % 5 == 0)\n    sum += i;\n    cout << sum << endl;\n    return 0;\n}\nA. 210\nB. 113\nC. 98\nD. 15\n```",
+        "bbox": [
+            146,
+            436,
+            574,
+            739
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "二、判断题（每题2 分，共 20分）",
+        "text_level": 2,
+        "bbox": [
+            144,
+            787,
+            421,
+            804
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/77339ecda9d4f1e82ffc47508bae0b81ffea362e065dc71159ce09ff8228c401.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>答案</td><td>√</td><td>×</td><td>×</td><td>√</td><td>×</td><td>×</td><td>×</td><td>×</td><td>√</td><td>√</td></tr></table>",
+        "bbox": [
+            147,
+            812,
+            789,
+            890
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "GESP",
+        "bbox": [
+            179,
+            66,
+            341,
+            93
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "5",
+        "bbox": [
+            838,
+            916,
+            850,
+            926
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1. 在Windows 系统中通过键盘完成对选定文本移动的按键组合是先 Ctrl+X，移动到目标位置后按 Ctrl+V。",
+        "bbox": [
+            144,
+            146,
+            821,
+            192
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2. 程序员用 C、C++、Python、Scratch 等编写的程序能在 CPU 上直接执行。",
+        "bbox": [
+            144,
+            205,
+            826,
+            223
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3. 在C++语言中，注释不宜写得过多，否则会使得程序运行速度变慢。",
+        "bbox": [
+            144,
+            236,
+            771,
+            255
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4. 在C++语言中，标识符中可以有数字，但不能以数字开头。",
+        "bbox": [
+            144,
+            267,
+            690,
+            286
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5. '3'是一个 int 类型常量。",
+        "bbox": [
+            144,
+            300,
+            403,
+            317
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "6. if语句中的条件表达式的结果必须为bool 类型。",
+        "bbox": [
+            144,
+            331,
+            611,
+            349
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "7. for 语句的循环体至少会执行一次。",
+        "bbox": [
+            146,
+            362,
+            489,
+            380
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "8. 如果 a为int类型的变量，则赋值语句a = a + 3;是错误的，因为这条语句会导致 a无意义。",
+        "bbox": [
+            144,
+            394,
+            833,
+            439
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "9. 如果 a 为 int 类型的变量，则表达式(a / 4 == 2)和表达式(a >= 8 && a<= 11)的结果总是相同的。",
+        "bbox": [
+            144,
+            453,
+            830,
+            498
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "10. 表达式(3.5 \\* 2)的计算结果为 7.0，且结果类型为 double。",
+        "bbox": [
+            146,
+            512,
+            715,
+            530
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "三、编程题（每题25 分，共50分）",
+        "text_level": 2,
+        "bbox": [
+            144,
+            579,
+            431,
+            596
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/9af7abf2de3bb081320955de3631da780741ecc1d3868b8776281f551e123fd7.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>题号</td><td>1</td><td>2</td></tr><tr><td>答案</td><td></td><td></td></tr></table>",
+        "bbox": [
+            147,
+            605,
+            327,
+            683
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1. 每月天数",
+        "text_level": 2,
+        "bbox": [
+            147,
+            722,
+            263,
+            741
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "【问题描述】",
+        "text_level": 2,
+        "bbox": [
+            154,
+            753,
+            267,
+            772
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "小明刚刚学习了每月有多少天，以及如何判断平年和闰年，想到可以使用编程方法求出给定的月份有多少天。你能做到吗？",
+        "bbox": [
+            144,
+            785,
+            850,
+            833
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "【输入描述】",
+        "text_level": 2,
+        "bbox": [
+            154,
+            845,
+            267,
+            863
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "输入一行，包含两个整数，分别表示一个日期的年、月。",
+        "bbox": [
+            184,
+            876,
+            685,
+            895
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "国计算机 GESP",
+        "bbox": [
+            178,
+            65,
+            342,
+            93
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "6",
+        "bbox": [
+            836,
+            916,
+            850,
+            926
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "【输出描述】",
+        "text_level": 2,
+        "bbox": [
+            156,
+            114,
+            265,
+            133
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n输出一行，包含一个整数，表示输入月份有多少天。\n【样例输入 1】\n2022 1\n【样例输出 1】\n31\n【样例输入 2】\n2020 2\n【样例输出 2】\n29\n```",
+        "bbox": [
+            147,
+            143,
+            645,
+            417
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "【参考程序】",
+        "text_level": 2,
+        "bbox": [
+            156,
+            426,
+            265,
+            447
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int y = 0, m = 0;\n    cin >> y >> m;\n    bool leap = false; // 判断闰年\n    if (y % 400 == 0)\n    leap = true;\n    if (y % 4 == 0 && y % 100 != 0)\n    leap = true;\n    if (m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12)\n    cout << 31 << endl; // 大月\n    else if (m == 4 || m == 6 || m == 9 || m == 11)\n    cout << 30 << endl; // 小月\n    else if (leap)\n    cout << 29 << endl; // 闰年2月\n    else\n    cout << 28 << endl; // 平年2月\n    return 0;\n}\n```",
+        "bbox": [
+            152,
+            454,
+            828,
+            825
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2. 长方形面积",
+        "text_level": 2,
+        "bbox": [
+            147,
+            835,
+            284,
+            853
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "【问题描述】",
+        "text_level": 2,
+        "bbox": [
+            156,
+            866,
+            265,
+            884
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "GESP",
+        "bbox": [
+            179,
+            65,
+            341,
+            93
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "page_number",
+        "text": "7",
+        "bbox": [
+            838,
+            915,
+            850,
+            926
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "小明刚刚学习了如何计算长方形面积。他发现，如果一个长方形的长和宽都是整数，它的面积一定也是整数。现在，小明想知道如果给定长方形的面积，有多少种可能的长方形，满足长和宽都是整数？",
+        "bbox": [
+            144,
+            115,
+            850,
+            189
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "如果两个长方形的长相等、宽也相等，则认为是同一种长方形。约定长方形的长大于等于宽。正方形是长方形的特例，即长方形的长和宽可以相等。",
+        "bbox": [
+            146,
+            202,
+            850,
+            248
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "【输入描述】",
+        "text_level": 2,
+        "bbox": [
+            154,
+            261,
+            267,
+            279
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "输入一行，包含一个整数??，表示长方形的面积。约定2 ≤ ?? ≤ 1000。",
+        "bbox": [
+            184,
+            293,
+            800,
+            310
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "【输出描述】",
+        "bbox": [
+            154,
+            324,
+            267,
+            341
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "输出一行，包含一个整数??，表示有??种可能的长方形。",
+        "bbox": [
+            186,
+            355,
+            670,
+            373
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "【样例输入 1】",
+        "bbox": [
+            154,
+            386,
+            282,
+            404
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4",
+        "bbox": [
+            146,
+            419,
+            164,
+            434
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "【样例输出 1】",
+        "bbox": [
+            154,
+            449,
+            280,
+            467
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2",
+        "bbox": [
+            147,
+            482,
+            163,
+            497
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "【样例解释1】",
+        "bbox": [
+            154,
+            511,
+            280,
+            529
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2种长方形面积为 4，它们的长宽分别为2×2、4×1。",
+        "bbox": [
+            184,
+            544,
+            665,
+            561
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "【样例输入2】",
+        "bbox": [
+            154,
+            574,
+            282,
+            592
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "6",
+        "bbox": [
+            147,
+            607,
+            163,
+            621
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "【样例输出 2】",
+        "bbox": [
+            154,
+            637,
+            280,
+            655
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2",
+        "bbox": [
+            147,
+            669,
+            163,
+            684
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "【样例解释2】",
+        "bbox": [
+            154,
+            700,
+            280,
+            718
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2种长方形面积为 6，它们的长宽分别为3×2、6×1。",
+        "bbox": [
+            184,
+            732,
+            667,
+            749
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "【参考程序】",
+        "bbox": [
+            154,
+            763,
+            265,
+            780
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int area = 0, cnt = 0;\n    cin >> area;\n    for (int w = 1; w * w <= area; w++) {\n```",
+        "bbox": [
+            149,
+            788,
+            847,
+            901
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "GESP",
+        "bbox": [
+            179,
+            65,
+            342,
+            93
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "page_number",
+        "text": "8",
+        "bbox": [
+            838,
+            915,
+            850,
+            926
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "GESP",
+        "bbox": [
+            179,
+            65,
+            341,
+            93
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "9",
+        "bbox": [
+            838,
+            915,
+            850,
+            925
+        ],
+        "page_idx": 8
+    }
+]

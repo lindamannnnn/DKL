@@ -1,0 +1,2498 @@
+[
+    [
+        {
+            "type": "header",
+            "bbox": [
+                0.109,
+                0.067,
+                0.415,
+                0.12
+            ],
+            "angle": 0,
+            "content": "中国计算机学会\nCCF\nGESP"
+        },
+        {
+            "type": "header",
+            "bbox": [
+                0.442,
+                0.07,
+                0.889,
+                0.122
+            ],
+            "angle": 0,
+            "content": "CCF 编程能力等级认证\nGrade Examination of Software Programming"
+        },
+        {
+            "type": "doc_title",
+            "bbox": [
+                0.387,
+                0.146,
+                0.614,
+                0.178
+            ],
+            "angle": 0,
+            "content": "C++ 一级"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.413,
+                0.19,
+                0.583,
+                0.213
+            ],
+            "angle": 0,
+            "content": "2025年03月",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.236,
+                0.449,
+                0.255
+            ],
+            "angle": 0,
+            "content": "1 单选题（每题2分，共30分）",
+            "merge_prev": false
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.279,
+                0.271,
+                0.721,
+                0.308
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>答案</td><td>D</td><td>D</td><td>D</td><td>C</td><td>C</td><td>B</td><td>C</td><td>D</td><td>D</td><td>D</td><td>D</td><td>C</td><td>A</td><td>A</td><td>C</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.324,
+                0.894,
+                0.476
+            ],
+            "angle": 0,
+            "content": "第1题 2025年春节有两件轰动全球的事件，一个是DeepSeek横空出世，另一个是贺岁片《哪吒2》票房惊人，入了全球票房榜。下面关于DeepSeek与《哪吒2》的描述成立的是( )。\n□ A.《哪吒2》是一款新型操作系统\n□ B. DeepSeek是深海钻探软件\n□ C.《哪吒2》可以生成新的软件\n□ D. DeepSeek可以根据《哪吒2》的场景生成剧情脚本",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.488,
+                0.648,
+                0.623
+            ],
+            "angle": 0,
+            "content": "第2题在某集成开发环境中编辑一个源代码文件时不可以执行下面（）操作。  \n□A.修改变量定义  \n□B.保存代码修改  \n□C.撤销代码修改  \n□D.插入执行截图",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.636,
+                0.403,
+                0.769
+            ],
+            "angle": 0,
+            "content": "第3题 在C++中，下列可以做变量的是( )。\n□ A. Var-1\n□ B. $1\n□ C.%%1\n□ D._Var_1",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.782,
+                0.408,
+                0.916
+            ],
+            "angle": 0,
+            "content": "第4题 以下哪个是C++语言的关键字？（）\n□ A.abs\n□ B.cin\n□ C.do\n□ D.endl",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.093,
+                0.928,
+                0.75,
+                0.944
+            ],
+            "angle": 0,
+            "content": "第 5 题 下面的框架在 L1 和 L2 标记的两行处分别填写选项中的代码，哪组不能通过编译（）。",
+            "merge_prev": false
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.383,
+                0.143,
+                0.618,
+                0.185
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.416,
+                0.19,
+                0.58,
+                0.214
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.235,
+                0.445,
+                0.256
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.325,
+                0.89,
+                0.338
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.344,
+                0.548,
+                0.357
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.106,
+                0.375,
+                0.363,
+                0.387
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.104,
+                0.404,
+                0.323,
+                0.416
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.106,
+                0.433,
+                0.347,
+                0.444
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.106,
+                0.462,
+                0.49,
+                0.474
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.099,
+                0.491,
+                0.643,
+                0.503
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.106,
+                0.52,
+                0.243,
+                0.532
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.106,
+                0.549,
+                0.242,
+                0.562
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.106,
+                0.58,
+                0.243,
+                0.592
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.104,
+                0.608,
+                0.243,
+                0.621
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.637,
+                0.4,
+                0.65
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.101,
+                0.665,
+                0.185,
+                0.681
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.102,
+                0.695,
+                0.166,
+                0.711
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.724,
+                0.185,
+                0.74
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.104,
+                0.755,
+                0.194,
+                0.769
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.784,
+                0.404,
+                0.797
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.813,
+                0.172,
+                0.828
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.842,
+                0.17,
+                0.858
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.102,
+                0.871,
+                0.168,
+                0.888
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.901,
+                0.179,
+                0.916
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.932,
+                0.746,
+                0.942
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "code",
+            "bbox": [
+                0.107,
+                0.063,
+                0.357,
+                0.18
+            ],
+            "angle": 0,
+            "content": "int main() {\n    int i = 0;\n    break;\n    return 0;\n}"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.102,
+                0.196,
+                0.147,
+                0.211
+            ],
+            "angle": 0,
+            "content": "□ A."
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.128,
+                0.224,
+                0.325,
+                0.263
+            ],
+            "angle": 0,
+            "content": "1 do {\n2 } while (i != 0);"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.103,
+                0.279,
+                0.146,
+                0.294
+            ],
+            "angle": 0,
+            "content": "□ B.",
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.128,
+                0.306,
+                0.361,
+                0.347
+            ],
+            "angle": 0,
+            "content": "1 for (; i < 10; i++) {\n2 }"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.103,
+                0.363,
+                0.147,
+                0.377
+            ],
+            "angle": 0,
+            "content": "□ C.",
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.128,
+                0.389,
+                0.29,
+                0.432
+            ],
+            "angle": 0,
+            "content": "1 if (i == 0) {\n2 }"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.103,
+                0.446,
+                0.147,
+                0.461
+            ],
+            "angle": 0,
+            "content": "D."
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.128,
+                0.474,
+                0.282,
+                0.514
+            ],
+            "angle": 0,
+            "content": "1 | switch (i) {\n2 }"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.528,
+                0.499,
+                0.663
+            ],
+            "angle": 0,
+            "content": "第6题 下面C++语句（）执行后的输出是__ 0322$$。\n□ A. printf(\"_ %2d%02d$$\", 3, 22)\n□ B. printf(\"_ %02d%2d$$\", 3, 22)\n□ C. printf(\"_ %02d%02d$$$\", 3, 22)\n□ D. printf(\"_ %02d%02d$$$\", 3, 22)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.86,
+                0.403,
+                0.936
+            ],
+            "angle": 0,
+            "content": "第8题 C++表达式 16 / 4 % 2 的值是( )。\n□ A. 8\n□ B. 4",
+            "merge_prev": false
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.101,
+                0.197,
+                0.148,
+                0.213
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.101,
+                0.281,
+                0.147,
+                0.297
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.101,
+                0.364,
+                0.147,
+                0.381
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.101,
+                0.447,
+                0.147,
+                0.465
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.529,
+                0.495,
+                0.542
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.104,
+                0.558,
+                0.409,
+                0.572
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.104,
+                0.589,
+                0.408,
+                0.602
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.104,
+                0.617,
+                0.435,
+                0.631
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.646,
+                0.452,
+                0.661
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.859,
+                0.4,
+                0.875
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.101,
+                0.89,
+                0.16,
+                0.906
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.101,
+                0.92,
+                0.161,
+                0.936
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "text",
+            "bbox": [
+                0.099,
+                0.061,
+                0.164,
+                0.107
+            ],
+            "angle": 0,
+            "content": "□C.2 □D.0",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.119,
+                0.69,
+                0.256
+            ],
+            "angle": 0,
+            "content": "第9题 N是C++的正整数，值为12，则cout << (N % 3 + N / 5) 的输出是( )。\n□ A. 6.4\n□ B. 2.4\n□ C. 6\n□ D. 2",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.267,
+                0.403,
+                0.282
+            ],
+            "angle": 0,
+            "content": "第 10 题 下面 C++ 代码执行后的输出是()。",
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.095,
+                0.295,
+                0.486,
+                0.335
+            ],
+            "angle": 0,
+            "content": "int N = 10;\nprintf(\"{N} {*N}={%d*%d}\", N, N, N * N);"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.099,
+                0.349,
+                0.287,
+                0.454
+            ],
+            "angle": 0,
+            "content": "□A. \\(10^{*}10 = \\{10^{*}10\\}\\) □B. \\(100 = 10\\) □C. \\(\\mathsf{N}^*\\mathsf{N} = 100\\) □D. \\(\\{\\mathsf{N}\\} *\\{\\mathsf{N}\\} = \\{10^{*}10\\}\\)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.468,
+                0.629,
+                0.484
+            ],
+            "angle": 0,
+            "content": "第 11 题 执行下面的 C++ 代码，在键盘上先后输入 100 和 200，输出是（）。",
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.101,
+                0.496,
+                0.514,
+                0.599
+            ],
+            "angle": 0,
+            "content": "int first,second;\ncout << \"请输入第1个正整数：\";\ncin >> first;\ncout << \"请输入第2个正整数：\";\ncin >> second;\ncout << (first / second * second) << endl;"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.098,
+                0.615,
+                0.179,
+                0.719
+            ],
+            "angle": 0,
+            "content": "□A.200  \n□B.100  \n□C.1  \n□D.0",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.093,
+                0.732,
+                0.854,
+                0.748
+            ],
+            "angle": 0,
+            "content": "第 12 题 下面 C++ 代码执行后，将输出能被 2 整除且除以 7 余数为 2 的数。下列选项不能实现的是（）。",
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.096,
+                0.761,
+                0.408,
+                0.816
+            ],
+            "angle": 0,
+            "content": "for (int i = 0; i < 100; i++)\n    if\n    cout << i << \" \";\n   "
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.098,
+                0.831,
+                0.419,
+                0.936
+            ],
+            "angle": 0,
+            "content": "□ A. ((i % 2 == 0) && (i % 7 == 2))\n□ B. (((!(i % 2)) && (i % 7 == 2))\n□ C. (((!(i % 2)) && (!(i % 7)))\n□ D. ((i % 2 != 1) && (i % 7 == 2))"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.101,
+                0.063,
+                0.161,
+                0.085
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.099,
+                0.092,
+                0.161,
+                0.115
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.096,
+                0.12,
+                0.685,
+                0.135
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.151,
+                0.171,
+                0.165
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.104,
+                0.18,
+                0.171,
+                0.196
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.209,
+                0.161,
+                0.226
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.101,
+                0.238,
+                0.161,
+                0.255
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.096,
+                0.269,
+                0.4,
+                0.281
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.351,
+                0.269,
+                0.365
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.38,
+                0.209,
+                0.395
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.41,
+                0.218,
+                0.424
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.439,
+                0.287,
+                0.453
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.47,
+                0.624,
+                0.482
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.1,
+                0.617,
+                0.176,
+                0.637
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.1,
+                0.645,
+                0.175,
+                0.668
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.675,
+                0.161,
+                0.697
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.1,
+                0.705,
+                0.16,
+                0.726
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.735,
+                0.771,
+                0.745
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.822,
+                0.734,
+                0.853,
+                0.748
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.061,
+                0.407,
+                0.078
+            ],
+            "angle": 0,
+            "content": "第13题 下面 \\(\\mathrm{C}++\\) 代码执行后输出是（）。",
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.097,
+                0.09,
+                0.443,
+                0.162
+            ],
+            "angle": 0,
+            "content": "int tnt = 0;\nfor (int i = -1000; i < 1000; i++)\n    tnt += i;\ncout << tnt << endl;"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.1,
+                0.176,
+                0.191,
+                0.281
+            ],
+            "angle": 0,
+            "content": "□A.-1000  \n□B.0  \n□C.999  \n□D.1000"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.294,
+                0.422,
+                0.31
+            ],
+            "angle": 0,
+            "content": "第 14 题 下面 C++ 代码执行后输出的是（）。",
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.097,
+                0.322,
+                0.39,
+                0.395
+            ],
+            "angle": 0,
+            "content": "int i;\nfor (i = 1; i < 100; i += 5)\n    continue;\ncout << i << endl;"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.101,
+                0.409,
+                0.176,
+                0.515
+            ],
+            "angle": 0,
+            "content": "□A.101   \n□B.100   \n□C.99   \n□D.96"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.526,
+                0.422,
+                0.542
+            ],
+            "angle": 0,
+            "content": "第15题 下面 \\(\\mathrm{C}++\\) 代码执行后输出的是（）。",
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.102,
+                0.556,
+                0.435,
+                0.708
+            ],
+            "angle": 0,
+            "content": "int tnt = 0;\nfor (int i = 5; i < 100; i += 5){\n    if (i % 2 == 0)\n    continue;\n    tnt += 1;\n    if (i % 3 == 0 && i % 7 == 0)\n    break;\n}\ncout << tnt << endl;"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.1,
+                0.722,
+                0.178,
+                0.827
+            ],
+            "angle": 0,
+            "content": "□ A. 500\n□ B. 450\n□ C. 10\n□ D. 1"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.093,
+                0.842,
+                0.447,
+                0.862
+            ],
+            "angle": 0,
+            "content": "2 判断题（每题 2 分，共 20 分）"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.357,
+                0.877,
+                0.644,
+                0.915
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>题号</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>答案</td><td>√</td><td>×</td><td>×</td><td>√</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.93,
+                0.753,
+                0.946
+            ],
+            "angle": 0,
+            "content": "第 1 题 C++、Python都是高级编程语言，它们的每条语句最终都要通过机器指令来完成。（）",
+            "merge_prev": false
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.063,
+                0.403,
+                0.076
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.297,
+                0.418,
+                0.308
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.529,
+                0.418,
+                0.54
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.094,
+                0.842,
+                0.445,
+                0.862
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.932,
+                0.749,
+                0.945
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.062,
+                0.651,
+                0.077
+            ],
+            "angle": 0,
+            "content": "第2题在 \\(\\mathrm{C}++\\) 中表达式 \\(N * 2 \\% N\\) 中如果 \\(N\\) 的值为正整数，则其值为2。（）",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.091,
+                0.62,
+                0.107
+            ],
+            "angle": 0,
+            "content": "第 3 题 执行如下C++代码如果在键盘上输入10，执行后将输出20。（）",
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.097,
+                0.119,
+                0.352,
+                0.191
+            ],
+            "angle": 0,
+            "content": "1 char N;\n2 printf(\"请输入正整数：\");\n3 cin >> N;\n4 printf(\"%d\\n\", N * 2);"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.206,
+                0.572,
+                0.222
+            ],
+            "angle": 0,
+            "content": "第 4 题 删除下面 C++ 代码中的 continue 不影响程序的执行效果。（）",
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.099,
+                0.234,
+                0.409,
+                0.371
+            ],
+            "angle": 0,
+            "content": "for (int i = 0; i < 100; i++) {\n    if (i % 2 == 0) {\n    printf(\"偶数\");\n    continue;\n    }\n    else \n    printf(\"奇数\");\n}"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.386,
+                0.74,
+                0.401
+            ],
+            "angle": 0,
+            "content": "第 5 题 下面 C++ 代码执行时将报错，因为所在位置应该是变量名，而不可以做变量名。（）",
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.097,
+                0.414,
+                0.397,
+                0.454
+            ],
+            "angle": 0,
+            "content": "1 for (int _ = 0; _ < 100; _++)  \n2 cout << \"*\" << endl;"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.469,
+                0.485,
+                0.485
+            ],
+            "angle": 0,
+            "content": "第6题 下面 \\(\\mathrm{C}++\\) 代码被执行后，将先后输出3和5。（）",
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.097,
+                0.498,
+                0.406,
+                0.538
+            ],
+            "angle": 0,
+            "content": "1 for (int i = 3; i < 5; i += 2)\n2 printf(\"%d \", i);"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.095,
+                0.552,
+                0.506,
+                0.568
+            ],
+            "angle": 0,
+            "content": "第 7 题 下面的 C++ 代码执行后将先后输出 7 个 true。（）",
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.097,
+                0.582,
+                0.45,
+                0.621
+            ],
+            "angle": 0,
+            "content": "1 for (int i = 0; i < 10; i++)\n2 cout << (i * 2 < i * i) << \" \";"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.635,
+                0.844,
+                0.651
+            ],
+            "angle": 0,
+            "content": "第8题 在C++代码中，user_Name、_userName、user-Name、userName_都是合法的变量名。（）",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.664,
+                0.542,
+                0.68
+            ],
+            "angle": 0,
+            "content": "第9题 C++语言中 continue 语句可以来提前结束循环。（）",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.092,
+                0.694,
+                0.903,
+                0.728
+            ],
+            "angle": 0,
+            "content": "第 10 题 C++ 中定义整型变量 N，执行语句 scanf(\"%d\", &N); cout << N / 3 * 5; 时输入 3.6，则输出是 6。（）",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.093,
+                0.744,
+                0.46,
+                0.764
+            ],
+            "angle": 0,
+            "content": "3 编程题（每题25分，共50分）"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.093,
+                0.778,
+                0.223,
+                0.795
+            ],
+            "angle": 0,
+            "content": "3.1 编程题1",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.107,
+                0.809,
+                0.243,
+                0.824
+            ],
+            "angle": 0,
+            "content": "- 时间限制：1.0 s",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.107,
+                0.839,
+                0.277,
+                0.853
+            ],
+            "angle": 0,
+            "content": "- 内存限制：512.0 MB",
+            "merge_prev": false
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.096,
+                0.062,
+                0.649,
+                0.076
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.091,
+                0.618,
+                0.106
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.208,
+                0.569,
+                0.219
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.388,
+                0.737,
+                0.4
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.47,
+                0.482,
+                0.483
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.096,
+                0.553,
+                0.504,
+                0.567
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.636,
+                0.842,
+                0.65
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.666,
+                0.539,
+                0.679
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.096,
+                0.695,
+                0.901,
+                0.708
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.092,
+                0.714,
+                0.107,
+                0.728
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.745,
+                0.457,
+                0.763
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.093,
+                0.778,
+                0.223,
+                0.796
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.111,
+                0.811,
+                0.24,
+                0.823
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.112,
+                0.84,
+                0.273,
+                0.852
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "bbox": [
+                0.095,
+                0.678,
+                0.905,
+                0.707
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>1</td><td>3</td></tr></table>"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.093,
+                0.06,
+                0.288,
+                0.076
+            ],
+            "angle": 0,
+            "content": "3.1.1 图书馆里的老鼠"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.093,
+                0.088,
+                0.234,
+                0.103
+            ],
+            "angle": 0,
+            "content": "3.1.2 题目描述"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.092,
+                0.117,
+                0.897,
+                0.15
+            ],
+            "angle": 0,
+            "content": "图书馆里有 n 本书，不幸的是，还混入了一只老鼠，老鼠每 x 小时能啃光一本书，假设老鼠在啃光一本书之前，不会啃另一本。请问 y 小时后图书馆里还剩下多少本完整的书。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.163,
+                0.234,
+                0.178
+            ],
+            "angle": 0,
+            "content": "3.1.3 输入格式"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.192,
+                0.47,
+                0.207
+            ],
+            "angle": 0,
+            "content": "三行，第一行一个正整数 \\(n\\) ，表示图书馆里书的数量；",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.221,
+                0.501,
+                0.236
+            ],
+            "angle": 0,
+            "content": "第二行，一个正整数 \\(x\\) ，表示老鼠啃光一本书需要的时间；",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.251,
+                0.405,
+                0.266
+            ],
+            "angle": 0,
+            "content": "第三行，一个正整数 \\(y\\) ，表示经过的总时间；",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.093,
+                0.281,
+                0.441,
+                0.296
+            ],
+            "angle": 0,
+            "content": "输入数据保证 y 小时后至少会剩下一本完整的书。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.093,
+                0.309,
+                0.233,
+                0.325
+            ],
+            "angle": 0,
+            "content": "3.1.4 输出格式"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.092,
+                0.338,
+                0.552,
+                0.354
+            ],
+            "angle": 0,
+            "content": "一行，一个整数，表示 y 小时后图书馆里还剩下多少本完整的书。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.366,
+                0.196,
+                0.382
+            ],
+            "angle": 0,
+            "content": "3.1.5 样例"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.393,
+                0.252,
+                0.409
+            ],
+            "angle": 0,
+            "content": "3.1.5.1 输入样例1"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.095,
+                0.42,
+                0.904,
+                0.48
+            ],
+            "angle": 0,
+            "content": "1 | 10\n2 | 2\n3 | 3"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.49,
+                0.252,
+                0.506
+            ],
+            "angle": 0,
+            "content": "3.1.5.2 输出样例1"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.095,
+                0.516,
+                0.905,
+                0.545
+            ],
+            "angle": 0,
+            "content": "1 | 8"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.555,
+                0.254,
+                0.571
+            ],
+            "angle": 0,
+            "content": "3.1.5.3 输入样例2"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.652,
+                0.254,
+                0.668
+            ],
+            "angle": 0,
+            "content": "3.1.5.4 输出样例2"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.718,
+                0.231,
+                0.734
+            ],
+            "angle": 0,
+            "content": "3.1.6 数据范围"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.093,
+                0.747,
+                0.687,
+                0.763
+            ],
+            "angle": 0,
+            "content": "对于所有测试点，保证 \\(1 \\leq n, x, y \\leq 1,000\\) ，保证 \\(y\\) 小时后至少会剩下一本完整的书。",
+            "merge_prev": false
+        },
+        {
+            "type": "inline_formula",
+            "bbox": [
+                0.258,
+                0.748,
+                0.393,
+                0.761
+            ],
+            "latex": "",
+            "score": 0.7017
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.06,
+                0.285,
+                0.076
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.088,
+                0.231,
+                0.103
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.119,
+                0.894,
+                0.129
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.137,
+                0.516,
+                0.147
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.162,
+                0.231,
+                0.179
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.099,
+                0.195,
+                0.466,
+                0.205
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.224,
+                0.498,
+                0.234
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.099,
+                0.254,
+                0.4,
+                0.264
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.097,
+                0.283,
+                0.437,
+                0.293
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.096,
+                0.31,
+                0.229,
+                0.324
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.34,
+                0.548,
+                0.351
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.094,
+                0.365,
+                0.195,
+                0.384
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.393,
+                0.251,
+                0.409
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.491,
+                0.251,
+                0.506
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.555,
+                0.252,
+                0.572
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.653,
+                0.251,
+                0.669
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.718,
+                0.228,
+                0.734
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.75,
+                0.255,
+                0.76
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.394,
+                0.75,
+                0.683,
+                0.76
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "bbox": [
+                0.094,
+                0.854,
+                0.906,
+                0.944
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>1</td><td>40</td></tr><tr><td>2</td><td>60</td></tr><tr><td>3</td><td>30</td></tr><tr><td>4</td><td>70</td></tr><tr><td>5</td><td>90</td></tr></table>"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.06,
+                0.231,
+                0.076
+            ],
+            "angle": 0,
+            "content": "3.1.7 参考程序"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.096,
+                0.086,
+                0.902,
+                0.305
+            ],
+            "angle": 0,
+            "content": "#include <bits/stdc++.h>\nusing namespace std;\nint main() {\n    int n, x, y, ans;\n    cin >> n >> x >> y;\n    assert(1 <= n && n <= 1000 && 1 <= x && x <= 1000 && 1 <= y && y <= 1000);\n    ans = n - y / x - 1 + (y % x == 0);\n    assert(ans >= 1);\n    cout << ans << '\\n';\n    return 0;\n}"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.319,
+                0.225,
+                0.336
+            ],
+            "angle": 0,
+            "content": "3.2 编程题2"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.106,
+                0.35,
+                0.243,
+                0.365
+            ],
+            "angle": 0,
+            "content": "- 时间限制：1.0 s",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.107,
+                0.38,
+                0.277,
+                0.395
+            ],
+            "angle": 0,
+            "content": "- 内存限制：512.0 MB",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.408,
+                0.234,
+                0.424
+            ],
+            "angle": 0,
+            "content": "3.2.8 四舍五入"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.435,
+                0.233,
+                0.451
+            ],
+            "angle": 0,
+            "content": "3.2.9 题目描述"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.093,
+                0.465,
+                0.88,
+                0.498
+            ],
+            "angle": 0,
+            "content": "四舍五入是一种常见的近似计算方法。现在，给定 \\(n\\) 个整数，你需要将每个整数四舍五入到最接近的整十数。例如，43四舍五入后为40，58四舍五入后为60。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.512,
+                0.243,
+                0.528
+            ],
+            "angle": 0,
+            "content": "3.2.10 输入格式"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.541,
+                0.548,
+                0.556
+            ],
+            "angle": 0,
+            "content": "共 \\(n + 1\\) 行，第一行，一个整数 \\(n\\) ，表示接下来输入的整数个数。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.093,
+                0.57,
+                0.562,
+                0.585
+            ],
+            "angle": 0,
+            "content": "接下来 n 行，每行一个整数  \\( a_{1}, \\cdots, a_{n} \\) ，表示需要四舍五入的整数。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.598,
+                0.242,
+                0.614
+            ],
+            "angle": 0,
+            "content": "3.2.11 输出格式"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.093,
+                0.628,
+                0.486,
+                0.643
+            ],
+            "angle": 0,
+            "content": "n 行，每行一个整数，表示每个整数四舍五入后的结果。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.656,
+                0.204,
+                0.672
+            ],
+            "angle": 0,
+            "content": "3.2.12 样例"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.683,
+                0.261,
+                0.699
+            ],
+            "angle": 0,
+            "content": "3.2.12.5 输入样例1",
+            "merge_prev": false
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.095,
+                0.709,
+                0.903,
+                0.816
+            ],
+            "angle": 0,
+            "content": "1 | 5\n2 | 43\n3 | 58\n4 | 25\n5 | 67\n6 | 90"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.827,
+                0.261,
+                0.844
+            ],
+            "angle": 0,
+            "content": "3.2.12.6 输出样例1"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.094,
+                0.058,
+                0.231,
+                0.077
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.093,
+                0.318,
+                0.225,
+                0.339
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.109,
+                0.351,
+                0.241,
+                0.366
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.111,
+                0.381,
+                0.273,
+                0.394
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.407,
+                0.23,
+                0.424
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.435,
+                0.231,
+                0.452
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.468,
+                0.876,
+                0.478
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.099,
+                0.485,
+                0.42,
+                0.494
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.511,
+                0.24,
+                0.528
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.544,
+                0.543,
+                0.554
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.572,
+                0.557,
+                0.583
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.598,
+                0.239,
+                0.614
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.63,
+                0.482,
+                0.641
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.656,
+                0.203,
+                0.673
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.096,
+                0.683,
+                0.258,
+                0.698
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.827,
+                0.26,
+                0.845
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.061,
+                0.24,
+                0.076
+            ],
+            "angle": 0,
+            "content": "3.2.13 数据范围"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.094,
+                0.09,
+                0.475,
+                0.104
+            ],
+            "angle": 0,
+            "content": "对于所有测试点，保证  \\( 1 \\leq n \\leq 100, 1 \\leq a_{i} \\leq 10000 \\) 。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.094,
+                0.117,
+                0.241,
+                0.133
+            ],
+            "angle": 0,
+            "content": "3.2.14 参考程序"
+        },
+        {
+            "type": "code",
+            "bbox": [
+                0.097,
+                0.144,
+                0.902,
+                0.347
+            ],
+            "angle": 0,
+            "content": "#include <bits/stdc++.h>\nusing namespace std;\nint main() {\n    int n; cin >> n; assert(1 <= n && n <= 100);\n    for (int i = 1, x; i <= n; i++) {\n    cin >> x; assert(1 <= x && x <= 10000);\n    cout << (x + 5) / 10 * 10 << '\\n';\n    }\n    return 0;\n}"
+        },
+        {
+            "type": "inline_formula",
+            "bbox": [
+                0.258,
+                0.09,
+                0.468,
+                0.102
+            ],
+            "latex": "",
+            "score": 0.6799
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.059,
+                0.238,
+                0.076
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.098,
+                0.092,
+                0.255,
+                0.102
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.469,
+                0.098,
+                0.471,
+                0.101
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.095,
+                0.116,
+                0.24,
+                0.135
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ]
+]

@@ -11,6 +11,7 @@ export interface LessonPage {
   title: string
   blocks: ContentBlock[]
   hasCheckpoint: boolean
+  isChallenge?: boolean
 }
 
 // 智能拆分 Markdown 大段内容为合适大小的块。
@@ -127,6 +128,44 @@ function readTaggedBlock(
 }
 
 /**
+ * 从当前位置读取 explanation 注释（如果存在）
+ * 支持单行：<!-- explanation: xxx -->
+ * 支持多行：<!-- explanation:\nxxx\n-->
+ */
+function readExplanation(lines: string[], startIdx: number): { explanation: string; nextIdx: number } {
+  let i = startIdx
+  let explanation = ''
+  if (i < lines.length && lines[i].trim().startsWith('<!-- explanation:')) {
+    const firstLine = lines[i].trim()
+    // 单行形式
+    if (firstLine.endsWith('-->')) {
+      explanation = firstLine
+        .replace(/^<!-- explanation:\s*/, '')
+        .replace(/\s*-->$/, '')
+        .trim()
+      i++
+    } else {
+      // 多行形式
+      const parts: string[] = []
+      const firstContent = firstLine.replace(/^<!-- explanation:\s*/, '').trim()
+      if (firstContent) parts.push(firstContent)
+      i++
+      while (i < lines.length && !lines[i].trim().endsWith('-->')) {
+        parts.push(lines[i])
+        i++
+      }
+      if (i < lines.length) {
+        const lastLine = lines[i].trim().replace(/\s*-->$/, '')
+        if (lastLine) parts.push(lastLine)
+        i++
+      }
+      explanation = parts.join('\n').trim()
+    }
+  }
+  return { explanation, nextIdx: i }
+}
+
+/**
  * 解析一个 checkpoint 块内部的 quiz
  */
 function parseCheckpointQuiz(lines: string[], startIdx: number): { block: ContentBlock; nextIdx: number } | null {
@@ -147,13 +186,14 @@ function parseCheckpointQuiz(lines: string[], startIdx: number): { block: Conten
       answer = lines[i].trim().replace('<!-- answer:', '').replace('-->', '').trim()
       i++
     }
+    const { explanation, nextIdx } = readExplanation(lines, i)
     return {
       block: {
         type: 'quiz',
         content: quizLines.join('\n').trim(),
-        metadata: { type: 'choice', answer },
+        metadata: { type: 'choice', answer, explanation },
       },
-      nextIdx: i,
+      nextIdx,
     }
   }
 
@@ -170,13 +210,14 @@ function parseCheckpointQuiz(lines: string[], startIdx: number): { block: Conten
       quizLines.push(lines[i])
       i++
     }
+    const { explanation, nextIdx } = readExplanation(lines, i)
     return {
       block: {
         type: 'quiz',
         content: quizLines.join('\n').trim(),
-        metadata: { type: 'fill', answer },
+        metadata: { type: 'fill', answer, explanation },
       },
-      nextIdx: i,
+      nextIdx,
     }
   }
 
@@ -300,12 +341,14 @@ export function parseLessonMarkdown(raw: string): ContentBlock[] {
         answer = lines[i].trim().replace('<!-- answer:', '').replace('-->', '').trim()
         i++
       }
+      const { explanation, nextIdx } = readExplanation(lines, i)
 
       blocks.push({
         type: 'quiz',
         content: quizLines.join('\n').trim(),
-        metadata: { type: 'choice', answer },
+        metadata: { type: 'choice', answer, explanation },
       })
+      i = nextIdx
       continue
     }
 
@@ -323,12 +366,14 @@ export function parseLessonMarkdown(raw: string): ContentBlock[] {
         quizLines.push(lines[i])
         i++
       }
+      const { explanation, nextIdx } = readExplanation(lines, i)
 
       blocks.push({
         type: 'quiz',
         content: quizLines.join('\n').trim(),
-        metadata: { type: 'fill', answer },
+        metadata: { type: 'fill', answer, explanation },
       })
+      i = nextIdx
       continue
     }
 
@@ -471,6 +516,7 @@ export function parseLessonPages(raw: string): LessonPage[] {
           title: currentTitle,
           blocks,
           hasCheckpoint: blocks.some((b) => b.type === 'checkpoint'),
+          isChallenge: /^挑战\s*\d/.test(currentTitle),
         })
       }
       currentTitle = line.replace('## ', '').trim()
@@ -489,6 +535,7 @@ export function parseLessonPages(raw: string): LessonPage[] {
       title: currentTitle,
       blocks,
       hasCheckpoint: blocks.some((b) => b.type === 'checkpoint'),
+      isChallenge: /^挑战\s*\d/.test(currentTitle),
     })
   }
 

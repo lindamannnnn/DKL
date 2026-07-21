@@ -40,9 +40,9 @@
 
 ### 01 走进 C++ 之后
 
-- 程序有固定骨架五件套：`#include <iostream>`、`using namespace std;`、`int main()`、`cout`、`return 0;`
+- 程序有固定骨架五件套：`#include <bits/stdc++.h>`、`using namespace std;`、`int main()`、`cout`、`return 0;`
 - `main()` 是程序入口，电脑从这里开始执行
-- `#include <iostream>` 是打开输入输出工具箱
+- `#include <bits/stdc++.h>` 是打开万能工具箱（全课程统一使用这个头文件）
 - `cout << ... << endl;` 是小喇叭，让电脑输出文字
 - `cin >> 变量;` 是小耳朵，让用户输入数字
 - `int` 是装整数的盒子
@@ -63,7 +63,7 @@
 ### 03 小数运算 之后
 
 - `double` 是装小数的盒子
-- 保留 n 位小数：`fixed << setprecision(n)`，并且要加 `#include <iomanip>`
+- 保留 n 位小数：`fixed << setprecision(n)`（`bits/stdc++.h` 已包含所需工具，不用另加头文件）
 - 整数变小数：给其中一个数穿 `(double)` 外套，如 `(double)a / b`
 - 四舍五入保留小数和数学课类似
 - `//` 是单行注释，`/* */` 是多行注释
@@ -176,7 +176,7 @@
 
 ### 17 C 风格输入输出 之后
 
-- `printf` / `scanf` 需要 `#include <cstdio>`
+- `printf` / `scanf` 也用 `#include <bits/stdc++.h>`（课程统一头文件）
 - `printf("...%d...", n);` 中 `%d` 是整数占位符
 - `scanf("%d", &n);` 变量前面必须加 `&`
 - `%f` 用来 `printf` 输出小数，`%lf` 用来 `scanf` 读 double

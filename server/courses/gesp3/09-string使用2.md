@@ -1,6 +1,6 @@
 # 课程09：string 使用2
 
-> 🎯 目标：学会用 substr 精准剪出子串，用 reverse 倒转字符串，掌握回文判断这个经典本领。
+> 🎯 目标：学会用 substr 精准剪出子串，用 reverse 倒转字符串，掌握回文判断的两种方法（双指针、逆序比较），还会 sort 字符排序和遍历拼接删字符。
 
 ---
 
@@ -169,6 +169,122 @@ A. `"level"`
 B. `"hello"`
 C. `"world"`
 <!-- answer: A -->
+<!-- end-checkpoint -->
+
+---
+
+## 卡片：双指针回文
+
+<!-- card type:teacher -->
+🧑‍🏫 判断回文还有一招更快的方法——**双指针**，不用复制、不用倒车 👈👉
+
+左指针 `l` 站最左边（0 号位），右指针 `r` 站最右边（`s.size()-1` 号位），两人向中间夹逼，每走一步比对一次：
+
+- 不一样 → 肯定不是回文，马上收工，后面的都不用比了！
+- 一样 → 左指针右移、右指针左移，继续比
+
+循环条件 `l < r`：两个指针碰头或擦肩而过，就说明全部比完了。
+<!-- end-card -->
+
+<!-- demo -->
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string s = "racecar";
+    int l = 0, r = s.size() - 1;
+    bool ok = true;
+    while (l < r) { if (s[l] != s[r]) { ok = false; break; } l++; r--; }
+    cout << (ok ? "YES" : "NO") << endl;
+    return 0;
+}
+```
+<!-- end-demo -->
+
+---
+
+## 检查点：指针碰头没
+
+<!-- checkpoint -->
+<!-- quiz: choice -->
+双指针判断回文时，while 循环继续比对的条件是？
+A. `l < r`
+B. `l > r`
+C. `l == r`
+<!-- answer: A -->
+<!-- end-checkpoint -->
+
+---
+
+## 卡片：sort 排排坐
+
+<!-- card type:teacher -->
+🧑‍🏫 想给字符串里的字符按字典序排队？用 `sort(s.begin(), s.end())` 🎵
+
+`s.begin()` 是队伍最前面的起点，`s.end()` 是一直走到尾巴的终点——sort 从起点走到终点，把字符按 a→z 从小到大排整齐！
+<!-- end-card -->
+
+<!-- demo -->
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string s = "hello";
+    sort(s.begin(), s.end());
+    cout << s << endl;   // ehllo
+    return 0;
+}
+```
+<!-- end-demo -->
+
+---
+
+## 检查点：排序后是啥
+
+<!-- checkpoint -->
+<!-- quiz: choice -->
+执行 `string s = "cab"; sort(s.begin(), s.end());` 后，s 的内容是？
+A. `"cab"`
+B. `"abc"`
+C. `"bac"`
+<!-- answer: B -->
+<!-- end-checkpoint -->
+
+---
+
+## 卡片：删掉指定字符
+
+<!-- card type:teacher -->
+🧑‍🏫 想删掉字符串里所有不想要的字符？用**遍历拼接法** 🧹
+
+准备一个新空串，一个字符一个字符看：不是要删的，就 `+=` 拼到新串上；是要删的，直接跳过。看完一圈，新串就是删干净的结果！
+<!-- end-card -->
+
+<!-- demo -->
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string s = "a1b2c3", ans = "";
+    for (char c : s)
+        if (!isdigit(c)) ans += c;   // 数字跳过不拼
+    cout << ans << endl;   // abc
+    return 0;
+}
+```
+<!-- end-demo -->
+
+---
+
+## 检查点：拼接留下谁
+
+<!-- checkpoint -->
+<!-- quiz: choice -->
+用遍历拼接法删除指定字符时，遇到要删的字符应该怎么做？
+A. 拼到新串上
+B. 直接跳过
+C. 停止循环
+<!-- answer: B -->
 <!-- end-checkpoint -->
 
 ---

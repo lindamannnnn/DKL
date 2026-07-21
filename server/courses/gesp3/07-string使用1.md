@@ -1,6 +1,6 @@
 # 课程07：string 使用1
 
-> 🎯 目标：认识更好用的 string，会用 `+` 拼接、`==` 比较、size 求长度、find 查找、replace 替换。
+> 🎯 目标：认识更好用的 string，会用 `+` 拼接、`==` 比较、size 求长度、find 查找、replace 替换、拆分句子、字符串与数字互转。
 
 ---
 
@@ -58,6 +58,44 @@ A. `"ab"`
 B. `"cd"`
 C. `"abcd"`
 <!-- answer: C -->
+<!-- end-checkpoint -->
+
+---
+
+## 卡片：更多初始化
+
+<!-- card type:teacher -->
+🧑‍🏫 string 还有两个小花招 🎩
+
+- `string s(5, 'a')`：一口气造出 5 个 'a'，得到 "aaaaa"
+- `s.length()` 和 `s.size()` 是双胞胎，量长度完全一样！
+<!-- end-card -->
+
+<!-- demo -->
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string s(5, 'a');
+    cout << s << endl;          // aaaaa
+    cout << s.length() << endl; // 5
+    cout << s.size();           // 5（和 length 一样）
+    return 0;
+}
+```
+<!-- end-demo -->
+
+---
+
+## 检查点：造出什么
+
+<!-- checkpoint -->
+<!-- quiz: choice -->
+执行 `string s(3, 'x');` 后，s 的内容是？
+A. `"xxx"`
+B. `"x3"`
+C. `"3x"`
+<!-- answer: A -->
 <!-- end-checkpoint -->
 
 ---
@@ -169,6 +207,87 @@ int main() {
 A. `"hi world"`
 B. `"hihello world"`
 C. `"hello hi"`
+<!-- answer: A -->
+<!-- end-checkpoint -->
+
+---
+
+## 卡片：增删清空
+
+<!-- card type:teacher -->
+🧑‍🏫 魔法袋的四件整理工具 🧰
+
+- `s.clear()`：把袋子倒空
+- `s.empty()`：袋子空了吗？空了回答 true
+- `s.insert(位置, "内容")`：在指定位置前塞入内容
+- `s.erase(起点, 个数)`：从起点删掉指定个数的字符
+<!-- end-card -->
+
+<!-- demo -->
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string s = "heworld";
+    s.insert(2, "llo ");    // 变成 hello world
+    s.erase(5, 6);          // 删掉 " world"，剩 hello
+    cout << s << " " << s.empty() << endl;  // hello 0
+    s.clear();
+    cout << s.empty();      // 1（倒空了）
+    return 0;
+}
+```
+<!-- end-demo -->
+
+---
+
+## 检查点：袋子空了吗
+
+<!-- checkpoint -->
+<!-- quiz: choice -->
+执行 `string s = "abc"; s.clear();` 后，`s.empty()` 返回的是？
+A. true
+B. false
+C. 报错
+<!-- answer: A -->
+<!-- end-checkpoint -->
+
+---
+
+## 卡片：数字变身串
+
+<!-- card type:teacher -->
+🧑‍🏫 数字和字符串可以互相变身 🔄
+
+- `to_string(123)`：数字 123 → 字符串 "123"
+- `stoi("456")`：字符串 → int 整数 456
+- `stod("3.14")`：字符串 → double 小数 3.14
+<!-- end-card -->
+
+<!-- demo -->
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string s = to_string(123);
+    cout << s + "!" << endl;  // 123!（字符串拼接）
+    int n = stoi("456");
+    cout << n + 1;            // 457（整数加法）
+    return 0;
+}
+```
+<!-- end-demo -->
+
+---
+
+## 检查点：变身加加看
+
+<!-- checkpoint -->
+<!-- quiz: choice -->
+`stoi("38") + 2` 的结果是？
+A. 40
+B. "382"
+C. 报错
 <!-- answer: A -->
 <!-- end-checkpoint -->
 
@@ -308,6 +427,82 @@ pos += n.size();
 - 刚换上的新内容不用再检查，直接跳过
 - 这样既能换干净，又不会陷入死循环
 <!-- end-card -->
+
+---
+
+## 卡片：把句子拆成词
+
+<!-- card type:teacher -->
+🧑‍🏫 string 没有现成的"切开"按钮，但有位快递分拣员 **istringstream** 📦
+
+把一句话交给它，它按空格把单词一个个分出来，用 `ss >> word` 取件，取完自动下班！
+<!-- end-card -->
+
+<!-- demo -->
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string line = "I love C++";
+    istringstream ss(line);
+    string word;
+    while (ss >> word) cout << word << endl;
+    return 0;
+}
+```
+<!-- end-demo -->
+
+---
+
+## 检查点：分出几个词
+
+<!-- checkpoint -->
+<!-- quiz: choice -->
+执行 `istringstream ss("a b c");` 后，用 `ss >> word` 一共能取出几个单词？
+A. 1
+B. 3
+C. 0
+<!-- answer: B -->
+<!-- end-checkpoint -->
+
+---
+
+## 卡片：按逗号切开
+
+<!-- card type:teacher -->
+🧑‍🏫 遇到逗号、斜杠这类分隔符，就手动切：一个字符一个字符看 👀
+
+- 不是分隔符 → 拼进当前小段
+- 是分隔符 → 小段完成，输出后清空重来
+- 走到末尾再多走一步，不然最后一段会漏掉！
+<!-- end-card -->
+
+<!-- demo -->
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string s = "a,b,c", cur = "";
+    for (int i = 0; i <= s.size(); i++)
+        if (i == s.size() || s[i] == ',') { cout << cur << endl; cur = ""; }
+        else cur += s[i];
+    return 0;
+}
+```
+<!-- end-demo -->
+
+---
+
+## 检查点：多走一步为啥
+
+<!-- checkpoint -->
+<!-- quiz: choice -->
+手动按逗号切分时，循环要走到 `i == s.size()` 才停，主要是为了？
+A. 输出最后一段
+B. 加快速度
+C. 跳过逗号
+<!-- answer: A -->
+<!-- end-checkpoint -->
 
 ---
 

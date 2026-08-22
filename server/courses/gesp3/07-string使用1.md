@@ -139,6 +139,19 @@ C. 4
 
 ---
 
+## 卡片：两种读整行
+
+<!-- card type:teacher -->
+🧑‍🏫 读一整行有两个长得像的写法，别搞混 🤔
+
+- `cin.getline(s, 100)`：s 是**字符数组**（第 06 课），要写格子数
+- `getline(cin, s)`：s 是 **string**（本课），不用写格子数
+
+收件人不同，括号里的写法就不一样，都只用 `>>` 才是读一个单词！
+<!-- end-card -->
+
+---
+
 ## 卡片：find 找一找
 
 <!-- card type:teacher -->
@@ -212,15 +225,13 @@ C. `"hello hi"`
 
 ---
 
-## 卡片：增删清空
+## 卡片：清空与查空
 
 <!-- card type:teacher -->
-🧑‍🏫 魔法袋的四件整理工具 🧰
+🧑‍🏫 两件整理工具 🧰
 
 - `s.clear()`：把袋子倒空
-- `s.empty()`：袋子空了吗？空了回答 true
-- `s.insert(位置, "内容")`：在指定位置前塞入内容
-- `s.erase(起点, 个数)`：从起点删掉指定个数的字符
+- `s.empty()`：袋子空了吗？空了回答 true（是），没空回答 false（否）
 <!-- end-card -->
 
 <!-- demo -->
@@ -228,12 +239,10 @@ C. `"hello hi"`
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-    string s = "heworld";
-    s.insert(2, "llo ");    // 变成 hello world
-    s.erase(5, 6);          // 删掉 " world"，剩 hello
-    cout << s << " " << s.empty() << endl;  // hello 0
+    string s = "abc";
+    cout << s.empty() << endl;  // 0（false，没空）
     s.clear();
-    cout << s.empty();      // 1（倒空了）
+    cout << s.empty();          // 1（true，倒空了）
     return 0;
 }
 ```
@@ -251,6 +260,74 @@ B. false
 C. 报错
 <!-- answer: A -->
 <!-- end-checkpoint -->
+
+---
+
+## 卡片：塞入与删除
+
+<!-- card type:teacher -->
+🧑‍🏫 还有两件整理工具 🧰
+
+- `s.insert(位置, "内容")`：在指定位置**前面**塞入内容
+- `s.erase(起点, 个数)`：从起点开始，删掉指定个数的字符
+
+记口诀：insert 给位置，erase 给起点和个数！
+<!-- end-card -->
+
+<!-- demo -->
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string s = "heworld";
+    s.insert(2, "llo ");    // 变成 hello world
+    s.erase(5, 6);          // 删掉 " world"
+    cout << s << endl;      // hello
+    return 0;
+}
+```
+<!-- end-demo -->
+
+---
+
+## 检查点：删掉剩啥
+
+<!-- checkpoint -->
+<!-- quiz: choice -->
+执行 `string s = "abcd"; s.erase(1, 2);` 后，s 的内容是？
+A. `"ad"`
+B. `"bc"`
+C. `"acd"`
+<!-- answer: A -->
+<!-- end-checkpoint -->
+
+---
+
+## 卡片：尾巴上加料
+
+<!-- card type:teacher -->
+🧑‍🏫 `s.append(...)` 把内容接到 string 尾巴上 🍱
+
+- `s.append("XYZ")`：直接接一段文字
+- `s.append(s2, pos, len)`：接 s2 从 pos 号位起、共 len 个字符
+
+和 `+` 拼接效果一样，只是写法更清楚！
+<!-- end-card -->
+
+<!-- demo -->
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string s = "abc";
+    s.append("XYZ");          // abcXYZ
+    string t = "012345";
+    s.append(t, 1, 2);        // 接 t 的 1~2 号位：12
+    cout << s << endl;        // abcXYZ12
+    return 0;
+}
+```
+<!-- end-demo -->
 
 ---
 
@@ -371,6 +448,53 @@ if (pos == string::npos) cout << -1 << endl;
 
 ---
 
+## 卡片：括号里的小动作
+
+<!-- card type:teacher -->
+🧑‍🏫 挑战 2 里会出现一行"怪代码"：
+
+`while ((pos = s.find(o, pos)) != string::npos)`
+
+它不是印错！拆成两行你就认识了：
+
+```cpp
+pos = s.find(o, pos);      // 第一步：先把查找结果存进 pos
+if (pos != string::npos)   // 第二步：再拿 pos 去判断
+```
+
+合并写法是"老程序员的缩写"：括号里先算赋值，再拿结果去比较。
+判断用的还是 `!=`，一个 `=` 只是"先存进去"的意思！
+<!-- end-card -->
+
+<!-- demo -->
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string s = "aXbXc";
+    int pos = s.find("X", 0);   // 先存进 pos
+    if (pos != string::npos)     // 再判断
+        cout << "X 在 " << pos << " 号位";  // X 在 1 号位
+    return 0;
+}
+```
+<!-- end-demo -->
+
+---
+
+## 检查点：先存再比
+
+<!-- checkpoint -->
+<!-- quiz: choice -->
+执行 `pos = s.find("ab", 0);` 时，电脑先做什么？
+A. 先把查找结果存进 pos
+B. 先拿 pos 和 npos 比较
+C. 先输出 pos
+<!-- answer: A -->
+<!-- end-checkpoint -->
+
+---
+
 ## 挑战 2：替换所有子串
 
 <!-- card type:computer -->
@@ -426,6 +550,8 @@ pos += n.size();
 
 - 刚换上的新内容不用再检查，直接跳过
 - 这样既能换干净，又不会陷入死循环
+
+while 条件里 `(pos = s.find(o, pos))` 是"先存再比"的缩写：先把查找结果存进 `pos`，再拿它和 `string::npos` 比较，找到就继续循环，找不到就停。
 <!-- end-card -->
 
 ---
@@ -436,6 +562,8 @@ pos += n.size();
 🧑‍🏫 string 没有现成的"切开"按钮，但有位快递分拣员 **istringstream** 📦
 
 把一句话交给它，它按空格把单词一个个分出来，用 `ss >> word` 取件，取完自动下班！
+
+`while (ss >> word)` 的意思是：取到词就是 true 继续循环，取完了就是 false 自动停。
 <!-- end-card -->
 
 <!-- demo -->

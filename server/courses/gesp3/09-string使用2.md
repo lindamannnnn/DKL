@@ -56,10 +56,10 @@ int main() {
 <!-- checkpoint -->
 <!-- quiz: choice -->
 执行 `string s = "abcdef";` 后，`s.substr(2, 3)` 的结果是？
-A. `"bcd"`
-B. `"cde"`
+A. `"cde"`
+B. `"bcd"`
 C. `"def"`
-<!-- answer: B -->
+<!-- answer: A -->
 <!-- end-checkpoint -->
 
 ---
@@ -93,9 +93,9 @@ int main() {
 <!-- quiz: choice -->
 执行 `string s = "helloworld";` 后，`s.substr(5)` 的结果是？
 A. `"hello"`
-B. `"world"`
-C. `"oworld"`
-<!-- answer: B -->
+B. `"oworld"`
+C. `"world"`
+<!-- answer: C -->
 <!-- end-checkpoint -->
 
 ---
@@ -252,6 +252,46 @@ C. `"bac"`
 
 ---
 
+## 卡片：挨个看的新写法
+
+<!-- card type:teacher -->
+🧑‍🏫 for 循环还有一种"偷懒写法"——**范围 for** 🎁
+
+`for (char c : s)`：不用数号码牌（下标），直接把 s 里的字符**一个个拿出来**，每次拿到的就叫 c。
+
+和老三段式 for 对照：
+- 老写法 `for (int i = 0; i < s.size(); i++)`：用号码牌 i 去拿 `s[i]`
+- 新写法 `for (char c : s)`：电脑自动挨个递给你，拿到的就是字符本身
+<!-- end-card -->
+
+<!-- demo -->
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string s = "abc";
+    for (char c : s) cout << c << " ";  // a b c
+    cout << endl;
+    return 0;
+}
+```
+<!-- end-demo -->
+
+---
+
+## 检查点：拿到的是谁
+
+<!-- checkpoint -->
+<!-- quiz: choice -->
+执行 `string s = "hey"; for (char c : s) cout << c;` 后，屏幕输出的是？
+A. `hey`
+B. `s`
+C. `c`
+<!-- answer: A -->
+<!-- end-checkpoint -->
+
+---
+
 ## 卡片：删掉指定字符
 
 <!-- card type:teacher -->
@@ -286,6 +326,34 @@ B. 直接跳过
 C. 停止循环
 <!-- answer: B -->
 <!-- end-checkpoint -->
+
+---
+
+## 卡片：尾巴加料（回顾）
+
+<!-- card type:teacher -->
+🧑‍🏫 第 07 课学过 `append` 接尾巴，这里再记一遍 🍱
+
+- `s.append("XYZ")`：直接接一段文字
+- `s.append(s2, pos, len)`：接 s2 从 pos 号位起、共 len 个字符
+
+和 `+` 拼接一样好用！
+<!-- end-card -->
+
+<!-- demo -->
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string s = "abc";
+    s.append("XYZ");          // abcXYZ
+    string t = "012345";
+    s.append(t, 1, 2);        // 接 t 的 1~2 号位：12
+    cout << s << endl;        // abcXYZ12
+    return 0;
+}
+```
+<!-- end-demo -->
 
 ---
 
@@ -420,7 +488,7 @@ reverse(rev.begin(), rev.end());
 > 💪 全部通过就能获得本课徽章！
 <!-- end-card -->
 
-<!-- problem: 6134d2a0-9d73-42b4-8d44-c73e9c463f05 -->
+<!-- problem: 9cdde036-3e93-462c-ad1a-f83ab53e987d -->
 <!-- problem: 656eb4c6-42d5-43dd-805d-5df187bd59b4 -->
 <!-- problem: 2753cfba-ff69-4136-a0c5-1fefe872ada0 -->
 <!-- problem: e19e6e30-74a6-435f-a7af-e70b6d93e1b3 -->

@@ -1,0 +1,862 @@
+pack,rel_path,title,testpoints,in_db
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\10,"单词翻转",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\100,"图像旋转 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\101,"正负数问题",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\102,"矩阵转置 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\103,"地球人口承载力估计",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\104,"河中跳房子 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\105,"计算(a+b)/c的值 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\106,"统计数字字符个数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\107,"Lake Counting ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\108,"计算(a+b)*c的值\_",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\109,"图像模糊处理 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\110,"最小函数值 (minval)",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\111,"合法C标识符 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\112,"信使 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\114,"温度表达转化 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\115,"骑马修栅栏 (fence)",8,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\116,"走出迷宫 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\117,"输出亲朋字符串 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\118,"计算多项式的值",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\119,"密码翻译 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\120,"计算并联电阻的阻值 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\121,"与圆相关的计算 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\122,"献给阿尔吉侬的花束 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\123,"最优乘车 (travel)",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\124,"配对碱基链 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\125,"小明的账单 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\127,"看病 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\128,"甲流疫情死亡率",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\129,"抓住那头牛 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\130,"铲雪车 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\131,"石头剪子布 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\132,"基因相关性 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\133,"鱼塘钓鱼(fishing）",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\134,"走迷宫 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\135,"计算分数的浮点数值 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\138,"求最长不下降序列 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\14,"完全背包问题 ",21,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\140,"数字金字塔 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\142,"加密的病历单 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\143,"浮点数向零舍入 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\145,"整理药名 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\146,"均值 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\147,"整数奇偶排序 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\148,"分数线划定 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\149,"病人排队 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\15,"空格分隔输出 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\150,"最高的分数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\151,"求整数的和与均值 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\152,"合影效果 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\153,"与指定数字相同的数的个数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\155,"整数的个数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\156,"菲波那契数列 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\157,"乘方计算 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\158,"单词排序 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\159,"奥运奖牌计数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\16,"判断字符串是否为回文 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\160,"明明的随机数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\161,"最大跨度值 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\162,"统计字符数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\163,"满足条件的数累加 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\164,"出现次数超过一半的数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\165,"奇数求和 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\166,"菲波那契数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\167,"放苹果 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\168,"人口增长 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\169,"流感传染 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\17,"家谱 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\170,"救援 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\171,"移动路线 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\173,"吃糖果 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\174,"上台阶 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\176,"全排列 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\177,"求分数序列和 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\178,"踩方格 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\179,"药房管理 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\18,"保留12位小数的浮点数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\181,"津津的储蓄计划 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\182,"统计满足条件的4位数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\184,"正常血压 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\185,"山区建小学 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\186,"滑雪 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\187,"转进制  ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\188,"输出绝对值 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\189,"最大子矩阵 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\19,"01背包问题 ",20,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\190,"最长上升子序列 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\191,"倒序数  ",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\192,"判断一个数能否同时被3和5整除 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\193,"三角形最佳路径问题 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\194,"收集瓶盖赢大奖 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\195,"求f(x,n)  ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\196,"最低通行费 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\197,"大整数减法 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\200,"判断能否被3，5，7整除 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\201,"大整数加法 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\202,"奇偶ASCII值判断 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\204,"登山 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\205,"字符串逆序  ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\206,"奇偶数判断 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\207,"怪盗基德的滑翔翼 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\208,"Hermite多项式  ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\21,"刻录光盘 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\210,"最大上升子序列和 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\211,"整数大小比较 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\212,"digit函数  ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\213,"晶晶赴约会 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\214,"数字组合 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\215,"计算2的N次方 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\217,"买书 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\218,"求10000以内n的阶乘 ",16,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\219,"分段函数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\22,"打印ASCII码 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\220,"宠物小精灵之收服 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\222,"大整数的因子 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\223,"成绩排序 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\224,"糖果 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\225,"简单计算器 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\226,"奇数单增序列 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\227,"计算字符串距离 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\228,"点和正方形的关系 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\229,"求平均年龄 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\23,"挖地雷 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\230,"求一元二次方程 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\233,"最大数输出 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\234,"大整数乘法 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\235,"阶乘和 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\236,"计算邮资 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\237,"Charm Bracelet ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\238,"公共子序列 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\239,"谁考了第k名 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\24,"验证子串 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\240,"判断闰年 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\241,"三角形判断 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\242,"除以13 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\243,"开餐馆 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\244,"大盗阿福 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\245,"鸡蛋的硬度 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\246,"高精度乘法",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\247,"最长公共子上升序列 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\249,"高精除 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\25,"最短路 ",7,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\250,"鸣人的影分身 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\251,"股票买卖 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\252,"Maximum sum ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\254,"车厢重组 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\255,"昆虫繁殖 ",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\256,"求逆序对 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\257,"自然数的拆分 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\259,"排队接水 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\26,"整型与布尔型的转换",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\262,"集合的划分 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\263,"求小数的某一位 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\265,"幂的末尾 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\266,"计算星期几 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\267,"余数相同问题 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\268,"数字反转 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\27,"团伙 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\272,"级数求和 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\273,"计算多项式的值 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\274,"求出e的值 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\275,"数1的个数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\277,"求阶乘的和 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\279,"画矩形 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\28,"最长最短单词 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\281,"第n小的质数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\283,"不定方程求解 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\284,"牛的旅行 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\285,"分成互质组 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\286,"金币 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\287,"最短路径问题 ",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\289,"最大子矩阵 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\290,"最小花费 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\291,"与指定数字相同的数的个数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\292,"An Easy Problem ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\293,"一笔画问题 ",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\295,"开关灯 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\296,"向量点积计算 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\297,"电池的寿命 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\3,"城市路 ",11,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\30,"单词的长度 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\300,"计算书费 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\301,"亲戚 ",11,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\302,"金银岛 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\304,"书架 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\307,"城市公交网建设问题 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\308,"Ride to Office ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\309,"括弧匹配检验\_",6,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\31,"打印字符 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\310,"最大值和最小值的差 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\312,"表达式括号匹配  ",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\313,"不高兴的津津 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\314,"Crossing River  ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\315,"计算 ",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\316,"白细胞计数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\317,"输出前k大的数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\318,"字符串匹配问题 ",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\319,"不与最大数相同的数字之和 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\32,"友好城市 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\320,"2011 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\321,"最短网络 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\322,"查找特定的值 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\323,"最小新整数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\324,"奖金 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\326,"矩阵交换行 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\327,"求排列的逆序数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\328,"最长平台 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\329,"中缀表达式值 ",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\33,"珍珠 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\330,"区间合并 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\331,"直方图 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\332,"车厢调度 (train)",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\336,"一元三次方程求解 ",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\337,"分解因数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\34,"最长单词 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\342,"菲波那契数列 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\343,"拦截导弹问题 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\344,"细胞 ",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\345,"2的幂次方表示 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\346,"求最大公约数问题 ",6,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\347,"光荣的梦想 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\348,"分数求和 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\349,"爬楼梯 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\35,"字符菱形 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\350,"循环比赛日程表 ",8,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\352,"扩号匹配问题 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\353,"黑白棋子的移动 ",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\354,"放苹果 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\355,"汉诺塔问题 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\356,"取余运算 ",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\357,"判断元素是否存在 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\358,"周末舞会",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\359,"因子分解 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\36,"输出浮点数",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\361,"围圈报数",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\362,"LETTERS ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\363,"Blah数集",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\364,"最少步数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\365,"马走日 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\366,"取石子游戏 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\367,"求后序遍历 ",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\368,"找树根和孩子 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\369,"迷宫 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\37,"连续出现的字符 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\370,"连通块",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\372,"棋盘问题 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\374,"开关灯问题加强版",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\375,"CFF炸药",20,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\377,"接竹竿",33,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\378,"传纸条",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\38,"庆功会 ",20,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\381,"最大公约数和最小公倍数问题",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\383,"基因相关性 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\384,"矩阵取数游戏",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\386,"杨辉三角形",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\387,"级数求和",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\389,"瑞士轮",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\39,"计算浮点数相除的余 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\390,"选数",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\391,"王国的比赛",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\392,"奥运奖牌计数",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\395,"判断是否为两位数",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\402,"最大跨度值",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\403,"正常血压",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\404,"含k个3的数",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\405,"画矩形",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\406,"最长平台",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\41,"求正整数2和n之间的完全数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\42,"繁忙的都市 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\421,"货币系统",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\424,"查找元素",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\425,"FBI树",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\427,"画圣诞树",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\43,"潜水员 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\432,"调手表",8,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\433,"搭积木",6,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\434,"矩阵求和",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\436,"字符串S的子序列",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\437,"0是第几个输入的数",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\438,"OJ题量比拼",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\439,"寻找OJ密码",20,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\44,"局域网 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\440,"OJ平台利用",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\441,"小Tu的药丸",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\442,"昆虫繁殖",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\443,"OJ作业",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\445,"OJ积分购物",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\449,"解密参赛码",14,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\450,"序列修改",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\457,"寻找正确版本",7,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\458,"数字三角形",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\46,"等差数列末项计算 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\461,"滑雪",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\462,"【NOIP2012-J3】摆花",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\464,"帝国老鼠病毒",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\465,"伪质数",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\466,"查找二叉树",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\472,"最小字典序",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\473,"【NOIP2010-S2】乌龟棋",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\475,"硬币问题",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\476,"因数之和为 n 的最小正数",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\48,"编辑距离 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\480,"众数",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\481,"军事机密",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\484,"【NOIP2011-J2】统计单词数",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\486,"素数对",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\487,"【NOIP2012-S2】Vigenère 密码",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\488,"走台阶",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\49,"计算三角形面积 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\492,"输油管道问题",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\493,"士兵站队问题",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\494,"数字三角形",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\495,"斐波那契数列",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\496,"骨牌铺法",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\498,"【CSP2020-S1】儒略日",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\5,"字符串p型编码 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\500,"【USACO2007Jan】解题",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\502,"【CSP2020-J2】直播获奖",20,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\504,"组合+判断素数（递归入门）",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\505,"【USACO2.1】健康的荷斯坦奶牛",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\507,"CFF炸药",20,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\509,"接竹竿",33,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\51,"计算2的幂 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\510,"【NOIP2008-S3】传纸条",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\511,"【NOIP2001-J2】最大公约数和最小公倍数问题",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\513,"【NOIP2007-S3】矩阵取数游戏",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\514,"奇偶数判断",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\517,"【NOIP2004-S1】津津的储蓄计划",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\518,"【NOIP2004-J1】不高兴的津津",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\519,"【NOIP2002-J1】级数求和",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\52,"求1+2+3.+...  ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\520,"【NOIP2011-J1】数字反转",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\521,"【NOIP2003-J3】瑞士轮",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\522,"【NOIP2002-J2】选数",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\523,"【NOI Online 2022-J1】王国比赛",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\526,"判断三角形",8,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\529,"求阶乘和",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\53,"橱窗布置 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\530,"倒数累加",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\531,"查找最值",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\532,"洗牌问题",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\533,"计算鞍点",15,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\534,"数组逆序重存放",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\535,"求逆序对",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\536,"字符串逆序",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\537,"整数去重",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\538,"分离整数的各个数",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\539,"判断能否被3.5.7整除",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\54,"复制书稿 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\540,"判断一个数能否同时被3和5整除",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\542,"奇偶ASCII码判断",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\543,"判断字符串是否回文",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\544,"第K小整数",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\545,"同行列对角线的格",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\547,"基因相关性",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\549,"开关灯问题",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\55,"A*B问题 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\550,"加密的病历单",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\552,"奇数单增序列",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\553,"合影效果",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\558,"今天是星期几？",7,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\559,"数位组合最大值",9,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\564,"系统升级",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\566,"组队问题",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\567,"服务器的维护",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\57,"最大数max(x,y,z) ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\578,"字符序列模式识别",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\58,"货币系统 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\580,"密码破译",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\581,"阶乘和",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\582,"极值问题",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\583,"反对称串",25,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\586,"骑车与走路",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\589,"求平均年龄",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\59,"反向输出一个三位数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\590,"球弹跳高度的计算",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\593,"画矩形",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\595,"金币",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\599,"排序练习",11,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\60,"连接格点 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\603,"大象喝水",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\604,"有一门课不及格的学生",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\605,"与指定数字相同的数的个数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\606,"最高分数的学生姓名 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\607,"删除单词后缀 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\608,"找第一个只出现一次的字符 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\609,"基因相关性 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\61,"联络员 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\610,"分苹果 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\611,"鸡尾酒疗法  ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\612,"将字符串中的小写字母转换成大写字母 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\63,"计算球的体积 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\64,"分组背包 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\66,"计算线段长度 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\68,"乘积最大 ",6,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\7,"保留3位小数的浮点数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\73,"判断数正负 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\74,"斐波那契数列  ",15,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\75,"苹果和虫子",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\76,"和为给定数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\77,"输出第二个整数",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\78,"图像相似度 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\80,"计算鞍点 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\81,"二叉树遍历 ",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\82,"月度开销 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\83,"矩阵乘法 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\84,"字符三角形 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\86,"二叉树输出 ",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\87,"矩阵加法 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\88,"不重复地输出数 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\89,"对齐输出 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\9,"最长公共子序列 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\90,"产生数(Produce)",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\91,"查找最接近的元素 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\93,"计算矩阵边缘元素之和 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\94,"网线主管 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\96,"同行列对角线的格 ",10,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\97,"家庭问题",5,no
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\98,"带余除法 ",10,no
+hydro,hydro\csptm\2468,"[CSP-J2019] 数字游戏",20,no
+hydro,hydro\csptm\2469,"[CSP-J2019] 公交换乘",20,no
+hydro,hydro\csptm\2470," [CSP-J2019] 纪念品",20,no
+hydro,hydro\csptm\2471,"[CSP-J2019] 加工零件",20,no
+hydro,hydro\csptm\2472,"[CSP-S2019] 格雷码",20,no
+hydro,hydro\csptm\2473,"[CSP-S2019] 树上的数",20,no
+hydro,hydro\csptm\2474,"[CSP-S2019] 括号树",20,no
+hydro,hydro\csptm\2475," [CSP-S2019] Emiya 家今天的饭",25,no
+hydro,hydro\csptm\2476,"[CSP-S2019] 划分",25,no
+hydro,hydro\csptm\2477,"[CSP-S2019] 树的重心",10,no
+hydro,hydro\csptm\2478,"[CSP-J2020] 优秀的拆分",20,no
+hydro,hydro\csptm\2479,"[CSP-J2020] 直播获奖",20,no
+hydro,hydro\csptm\2480,"[CSP-J2020] 表达式",20,no
+hydro,hydro\csptm\2481,"[CSP-J2020] 方格取数",20,no
+hydro,hydro\csptm\2482,"[CSP-S2020] 儒略日",10,no
+hydro,hydro\csptm\2483," [CSP-S2020] 函数调用",20,no
+hydro,hydro\csptm\2484," [CSP-S2020] 动物园",20,no
+hydro,hydro\csptm\2485," [CSP-S2020] 贪吃蛇",20,no
+hydro,hydro\csptm\2486," [CSP-J 2021] 分糖果",10,no
+hydro,hydro\csptm\2487," [CSP-J 2021] 插入排序",25,no
+hydro,hydro\csptm\2488," [CSP-J 2021] 网络连接",20,no
+hydro,hydro\csptm\2489," [CSP-J 2021] 小熊的果篮",10,no
+hydro,hydro\csptm\2490," [CSP-S 2021] 廊桥分配",20,no
+hydro,hydro\csptm\2491," [CSP-S 2021] 括号序列",20,no
+hydro,hydro\csptm\2492,"[CSP-S 2021] 回文",25,no
+hydro,hydro\csptm\2493," [CSP-S 2021] 交通规划",20,no
+hydro,hydro\csptm\2494," [CSP-J 2022] 乘方",10,no
+hydro,hydro\csptm\2495,"[CSP-J 2022] 解密",10,no
+hydro,hydro\csptm\2496," [CSP-J 2022] 逻辑表达式",20,no
+hydro,hydro\csptm\2497,"[CSP-J 2022] 上升点列",20,no
+hydro,hydro\csptm\2498,"[CSP-S 2022] 假期计划",20,no
+hydro,hydro\csptm\2499," [CSP-S 2022] 策略游戏",20,no
+hydro,hydro\csptm\2500," [CSP-S 2022] 星战",20,no
+hydro,hydro\csptm\2501," [CSP-S 2022] 数据传输",25,no
+hydro,hydro\csptm\2502,"[CSP-J 2023] 小苹果",10,no
+hydro,hydro\csptm\2503," [CSP-J 2023] 公路",20,no
+hydro,hydro\csptm\2504,"[CSP-J 2023] 一元二次方程",10,no
+hydro,hydro\csptm\2505," [CSP-J 2023] 旅游巴士",20,no
+hydro,hydro\csptm\2506," [CSP-S 2023] 密码锁",10,no
+hydro,hydro\csptm\2507,"[CSP-S 2023] 消消乐",20,no
+hydro,hydro\csptm\2508," [CSP-S 2023] 结构体",20,no
+hydro,hydro\csptm\2509,"[CSP-S 2023] 种树",20,no
+hydro,hydro\csptm\2510," [CSP-J 2024] 扑克牌",10,no
+hydro,hydro\csptm\2511,"[CSP-J 2024] 地图探险",10,no
+hydro,hydro\csptm\2512," [CSP-J 2024] 小木棍",10,no
+hydro,hydro\csptm\2513,"[CSP-J 2024] 接龙",20,no
+hydro,hydro\csptm\2514," [CSP-S 2024] 决斗",20,no
+hydro,hydro\csptm\2515,"[CSP-S 2024] 超速检测",10,no
+hydro,hydro\csptm\2516," [CSP-S 2024] 染色",20,no
+hydro,hydro\csptm\2517," [CSP-S 2024] 擂台游戏",25,no
+炼石noip,炼石noip\6893,"炼石计划NOIP模拟赛第1套题目T1 岛屿",13,no
+炼石noip,炼石noip\6894,"炼石计划NOIP模拟赛第1套题目T2 小朋友",29,no
+炼石noip,炼石noip\6895,"炼石计划NOIP模拟赛第1套题目T3 列表",21,no
+炼石noip,炼石noip\6896,"炼石计划NOIP模拟赛第1套题目T4 种植",20,no
+炼石noip,炼石noip\6898,"炼石计划NOIP模拟赛第2套题目T2 乘法",20,no
+炼石noip,炼石noip\6899,"炼石计划NOIP模拟赛第2套题目T3 循环",15,no
+炼石noip,炼石noip\6900,"炼石计划NOIP模拟赛第2套题目T4 轰炸",33,no
+炼石noip,炼石noip\6901,"炼石计划NOIP模拟赛第3套题目T1 打表",10,no
+炼石noip,炼石noip\6902,"炼石计划NOIP模拟赛第3套题目T2 命运的X",10,no
+炼石noip,炼石noip\6903,"炼石计划NOIP模拟赛第3套题目T3 统计",10,no
+炼石noip,炼石noip\6905,"炼石计划NOIP模拟赛第4套题目T1 前端",9,no
+炼石noip,炼石noip\6906,"炼石计划NOIP模拟赛第4套题目T2 组合数问题",26,no
+炼石noip,炼石noip\6907,"炼石计划NOIP模拟赛第4套题目T3 软件工程",19,no
+炼石noip,炼石noip\6908,"炼石计划NOIP模拟赛第4套题目T4 字符串",18,no
+炼石noip,炼石noip\6909,"炼石计划NOIP模拟赛第5套题目T1 公约数神庙",10,no
+炼石noip,炼石noip\6910,"炼石计划NOIP模拟赛第5套题目T2 栈法师",10,no
+炼石noip,炼石noip\6911,"炼石计划NOIP模拟赛第5套题目T3 城堡考古",20,no
+炼石noip,炼石noip\6912,"炼石计划NOIP模拟赛第5套题目T4 生命之树",52,no
+炼石noip,炼石noip\6913,"炼石计划NOIP模拟赛第6套题目T1 Alice 和璀璨花",20,no
+炼石noip,炼石noip\6914,"炼石计划NOIP模拟赛第6套题目T2 Bob 与幸运日",10,no
+炼石noip,炼石noip\6915,"炼石计划NOIP模拟赛第6套题目T3 Charlie 的运输网",20,no
+炼石noip,炼石noip\6916,"炼石计划NOIP模拟赛第6套题目T4 David 与和谐号",22,no
+炼石noip,炼石noip\6917,"炼石计划NOIP模拟赛第7套题目T1 公司的供应链",8,no
+炼石noip,炼石noip\6918,"炼石计划NOIP模拟赛第 7 套题目T2 宇宙的卷积",5,no
+炼石noip,炼石noip\6919,"炼石计划NOIP模拟赛第 7 套题目T3 舰队的远征",20,no
+炼石noip,炼石noip\6920,"炼石计划NOIP模拟赛第 7 套题目T4 军团的阵列线",18,no
+炼石noip,炼石noip\6921,"炼石计划NOIP模拟赛第8套题目T1 养蛊神器",19,no
+炼石noip,炼石noip\6922,"炼石计划NOIP模拟赛第8套题目T2 导航神器",20,no
+炼石noip,炼石noip\6923,"炼石计划NOIP模拟赛第8套题目T3 扰乱神器",33,no
+炼石noip,炼石noip\6924,"炼石计划NOIP模拟赛第8套题目T4 阵列神器",10,no
+炼石noip,炼石noip\6925,"炼石计划NOIP模拟赛第9套题目T1 序列加法机",22,no
+炼石noip,炼石noip\6926,"炼石计划NOIP模拟赛第9套题目T2 字符串构造机",10,no
+炼石noip,炼石noip\6927,"炼石计划NOIP模拟赛第9套题目T3 快速排序机",10,no
+炼石noip,炼石noip\6928,"炼石计划NOIP模拟赛第9套题目T4 格子衫染色机",37,no
+炼石noip,炼石noip\6929,"炼石计划NOIP模拟赛第10套题目T1 JKP 挑战赛",38,no
+炼石noip,炼石noip\6930,"炼石计划NOIP模拟赛第10套题目T2 兵蚁排序",20,no
+炼石noip,炼石noip\6931,"炼石计划NOIP模拟赛第10套题目T3 人口局 DBA",36,no
+炼石noip,炼石noip\6932,"炼石计划NOIP模拟赛第10套题目T4 银行的源起",37,no
+炼石noip,炼石noip\6933,"炼石计划NOIP模拟赛第11套题目T1 BOSS 树",61,no
+炼石noip,炼石noip\6934,"炼石计划NOIP模拟赛第11套题目T2 黄金树的召唤",10,no
+炼石noip,炼石noip\6935,"炼石计划NOIP模拟赛第11套题目T3 二进制回文字符串",11,no
+炼石noip,炼石noip\6936,"炼石计划NOIP模拟赛第11套题目T4 皮卡丘",20,no
+炼石noip,炼石noip\6937,"炼石计划NOIP模拟赛第12套题目T1 送信卒",14,no
+炼石noip,炼石noip\6938,"炼石计划NOIP模拟赛第12套题目T2 星际联邦",58,no
+炼石noip,炼石noip\6939,"炼石计划NOIP模拟赛第12套题目T3 对称旅行者",20,no
+炼石noip,炼石noip\6940,"炼石计划NOIP模拟赛第12套题目T4 和平精英",70,no
+炼石noip,炼石noip\6941,"炼石计划NOIP模拟赛第13套题目T1 共轭树图",26,no
+炼石noip,炼石noip\6942,"炼石计划NOIP模拟赛第13套题目T2 摆烂合唱",13,no
+炼石noip,炼石noip\6943,"炼石计划NOIP模拟赛第13套题目T3 对称旅行者",10,no
+炼石noip,炼石noip\6944,"炼石计划NOIP模拟赛第13套题目T4 神奇园艺师",20,no
+炼石noip,炼石noip\6945,"炼石计划NOIP模拟赛第14套题目T1 变形怪",80,no
+炼石noip,炼石noip\6946,"炼石计划NOIP模拟赛第14套题目T2 忍者小队",20,no
+炼石noip,炼石noip\6947,"炼石计划NOIP模拟赛第14套题目T3 尘埃下的神话",9,no
+炼石noip,炼石noip\6948,"炼石计划NOIP模拟赛第14套题目T4 怪盗德基",24,no
+炼石noip,炼石noip\6949,"炼石计划NOIP模拟赛第15套题目T1 括号问号",10,no
+炼石noip,炼石noip\6950,"炼石计划NOIP模拟赛第15套题目T2 狗卡",23,no
+炼石noip,炼石noip\6951,"炼石计划NOIP模拟赛第15套题目T3 均衡区间",20,no
+炼石noip,炼石noip\6952,"炼石计划NOIP模拟赛第15套题目T4 喵了个喵了个喵",47,no
+炼石noip,炼石noip\6953,"炼石计划NOIP模拟赛第16套题目T1 远行",45,no
+炼石noip,炼石noip\6955,"炼石计划NOIP模拟赛第16套题目T3 树棋",9,no
+炼石noip,炼石noip\6956,"炼石计划NOIP模拟赛第16套题目T4 大胃王争霸",10,no
+炼石noip,炼石noip\6957,"炼石计划NOIP模拟赛第16.5套题目T1 家具运输",10,no
+炼石noip,炼石noip\6958,"炼石计划NOIP模拟赛第16.5套题目T2 取石子",10,no
+炼石noip,炼石noip\6959,"炼石计划NOIP模拟赛第16.5套题目T3 选取字符串",19,no
+炼石noip,炼石noip\6960,"炼石计划NOIP模拟赛第16.5套题目T4 蚂蚁搬家",50,no
+炼石noip,炼石noip\6961,"炼石计划NOIP模拟赛第17套题目T1 Imbalance",20,no
+炼石noip,炼石noip\6962,"炼石计划NOIP模拟赛第17套题目T2 原子",13,no
+东方博宜OJ-1042题,东方博宜OJ-1042题\1000,"【入门】环游世界之背包问题",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1001,"【入门】奖品采购",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1002,"【入门】起止位置",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1004,"【入门】邻接点",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1007,"【入门】区间分数",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1008,"【入门】评奖要求",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1011,"【入门】订做校服",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1012,"【入门】求区间和",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1013,"【入门】找数",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1015,"【基础】回家 Bessie Come Home USACO",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1016,"【入门】当总统",6,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1017,"【基础】统计组合方式",6,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1018,"【入门】比当前数大的最小回文数",6,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1024,"【入门】明明的步行",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1025,"【基础】乐乐的数",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1026,"【基础】统计数字",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1027,"【基础】阅读大赛 USACO",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1028,"【提高】机器翻译",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1035,"【入门】鸡飞狗不跳",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1036,"【入门】污染治理",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1037,"【入门】卫星照片 USACO 2005 NOV",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1038,"【入门】迷宫的路径数量",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1040,"【入门】石子合并（2）",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\1041,"【基础】石子合并（环形2）",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\190,"【基础】整数的拼接",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\269,"【提高】拦截导弹的系统数量求解",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\270,"【基础】合唱队形求解",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\271,"【提高】简单背包问题",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\272,"【入门】考试成绩的分布情况",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\273,"【入门】二分查找",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\274,"【基础】小 X 与位运算(bignum)",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\312,"【提高】分数计算",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\355,"【提高】素数分解",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\356,"【提高】小X学游泳",11,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\357,"【提高】方格取数",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\367,"【入门】公交卡充值问题",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\384,"【入门】合法的变量名",7,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\391,"【入门】10进制转D进制",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\400,"【基础】自然数的分解",7,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\407,"【基础】迷宫的第一条出路",6,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\408,"【基础】走出迷宫的最少步数",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\412,"【入门】标题统计",21,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\413,"【基础】龙虎斗",26,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\415,"【提高】素数环2",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\416,"【提高】卫星照片 USACO",17,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\446,"【入门】校门外的树",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\451,"【入门】字符串对比",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\452,"【基础】字符串编辑",12,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\458,"【提高】花生采摘",11,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\459,"【提高】棋盘",21,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\460,"【基础】纪念品分组",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\461,"【基础】接水问题",11,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\462,"【入门】括号匹配",7,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\463,"【基础】取扑克牌",6,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\481,"【基础】整数的拼接-2",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\496,"【基础】骑士的金币",11,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\498,"【入门】春游",15,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\499,"【基础】斗地主",16,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\500,"【入门】BMI",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\501,"【基础】小X与三角形",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\502,"【提高】小X与游戏",11,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\503,"【基础】小X与队列",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\504,"【基础】人工智能",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\505,"【提高】基因锁",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\506,"【基础】小X与机器人",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\507,"【基础】小X与正方形",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\508,"【提高】小X与神牛",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\509,"【入门】小 X 与机器人 (betago)",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\510,"【基础】小 X 与机器人2",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\511,"【基础】小 X 与数字(ten)",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\512,"【基础】小 X 与小和尚(sum)",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\513,"【基础】小 X 玩游戏(game)",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\514,"【提高】小 X 与煎饼达人(flip)",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\515,"【入门】小X放骨牌",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\516,"【基础】小X数字母",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\517,"【提高】小 X 学游泳(swim)",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\519,"【基础】小X转进制",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\520,"【基础】龟兔赛跑",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\521,"【提高】密码锁",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\522,"【提高】房屋积水",12,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\523,"【基础】任务调度",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\524,"【提高】基因组分析",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\525,"【入门】数列求和-2",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\526,"【基础】幸运数字",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\527,"【基础】洗牌",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\528,"【基础】字符串替换",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\529,"【基础】夏令营小旗手",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\530,"【入门】中间值",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\531,"【基础】分数计数",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\532,"【基础】连续数的和",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\533,"【提高】买木头",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\534,"【基础】加数",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\536,"【提高】洗牌2",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\537,"【入门】成绩（score）",6,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\538,"【基础】图书管理员（librarian）",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\539,"【入门】买铅笔（pencil）",20,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\540,"【基础】回文日期（date）",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\543,"【基础】黑色星期五（friday） USACO",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\545,"【入门】国王",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\546,"【入门】滑翔翼",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\547,"【基础】游戏",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\548,"【基础】奖牌整理",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\549,"【基础】扫雷",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\555,"【入门】扫地机器人",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\556,"【基础】连续非素数的最长度",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\558,"【基础】最大部分和（连续部分和）",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\559,"【基础】简单单词接龙",7,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\561,"【提高】求和",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\562,"【提高】推销员",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\563,"【入门】珠心算测验",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\564,"【基础】比例简化",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\653,"【入门】全部排列问题",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\654,"【入门】暑假的旅行计划3",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\655,"【入门】组合+判断素数",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\656,"【提高】高精度除单精度",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\657,"【入门】数字统计",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\658,"【入门】导弹拦截",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\659,"【入门】质因数分解",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\660,"【基础】寻宝",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\661,"【提高】表达式求值",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\712,"【入门】小蓝的体重",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\713,"【入门】闯关大冒险",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\714,"【入门】买礼物？",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\715,"【入门】足球决赛",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\716,"【入门】输出个位为5或者个位为8数",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\717,"【入门】奇偶数选大王",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\718,"【入门】采摘活动",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\719,"【入门】声音识别",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\720,"【入门】对角线求和",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\721,"【基础】英文统计",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\722,"【基础】单词接龙",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\723,"【基础】同构数",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\724,"【入门】购买贺年卡",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\725,"【提高】破译密码",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\726,"【基础】跳房子 USACO",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\727,"【入门】饮料的价格",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\728,"【基础】排桌椅",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\729,"【入门】ISBN号码",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\757,"【基础】芯片测试  ",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\758,"【提高】01子串",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\759,"【提高】AtoB",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\760,"【入门】矩形面积交  ",7,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\761,"【入门】夏令营小旗手",8,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\762,"【基础】阿尔法乘积  ",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\763,"【基础】摆动序列",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\764,"【基础】分解质因数  ",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\765,"【基础】龟兔赛跑预测  ",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\766,"【基础】水下探测器",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\767,"【基础】小猫吃鱼",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\768,"【入门】ISBN号码",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\769,"【提高】传球游戏",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\770,"【提高】小蓝的预算方案",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\771,"【提高】完美的代价 ",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\772,"【入门】比较字符串 ",12,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\773,"【基础】报时助手",20,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\774,"【入门】s01串 ",20,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\776,"【提高】和为T  ",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\777,"【基础】猴子分苹果  ",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\778,"【基础】集合运算 ",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\779,"【基础】黑色星期五",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\780,"【基础】寂寞的数  ",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\781,"【提高】删除多余括号",7,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\782,"【基础】输出米字形  ",6,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\783,"【基础】数的划分 ",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\785,"【入门】完数判断",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\786,"【入门】薪水计算  ",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\787,"【入门】整除问题  ",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\788,"【入门】友好数  ",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\790,"【提高】单词接龙的最长长度",6,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\791,"【提高】黑白无常  ",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\792,"【入门】买杯子",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\793,"【入门】有几天",20,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\794,"【提高】Bessie的体重问题",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\795,"【提高】bonbon",7,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\801,"【基础】数字和",6,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\814,"【基础】多重背包（1）",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\815,"【提高】多重背包（2）",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\816,"【基础】小明买书",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\817,"【基础】开心的金明",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\818,"【基础】砝码称重",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\819,"【提高】最长上升子序列LIS（2）",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\820,"【入门】二分查找左侧边界",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\821,"【入门】二分查找右侧边界",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\822,"【入门】二分查找满足条件的数",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\824,"【基础】同时出现的数",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\831,"【提高】混合背包",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\832,"【基础】分组背包问题",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\835,"【提高】跳石头",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\836,"【基础】愤怒的奶牛 USACO",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\837,"【基础】背包问题求方案数",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\839,"【基础】拯救指挥部",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\841,"【基础】DNA序列判重",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\844,"【基础】相似的奶牛 USACO",8,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\845,"【基础】数字三角形 USACO",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\846,"【基础】麦香牛肉 USACO",7,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\852,"【提高】立方体积木Cube Stacking USACO",11,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\855,"【基础】最短网络 Agri-Net  USACO",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\856,"【提高】关押罪犯",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\857,"【基础】Out of Hay S USACO",11,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\860,"【入门】数字游戏",20,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\861,"【基础】公交换乘",20,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\862,"【提高】纪念品",20,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\863,"【基础】贪婪的送礼者Greedy Gift Givers(USACO1.1)",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\864,"【基础】回文平方数 Palindromic Squares ",8,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\865,"【基础】双重回文数 Dual Palindromes USACO",8,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\866,"【基础】混合牛奶 Mixing Milk USACO",8,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\867,"【基础】修理牛棚 Barn Repair USACO",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\868,"【提高】回文质数 Prime Palindromes USACO",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\869,"【基础】特殊的质数肋骨 Superprime Rib USACO",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\870,"【基础】集合 Subset Sums USACO",7,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\873,"【提高】高精度减法4",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\877,"【基础】子串统计",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\878,"【基础】邮票 ",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\879,"【基础】新生舞会",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\880,"【基础】最大纯色正方形",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\882,"【基础】算24点（2）",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\889,"【入门】贝贝的选择",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\890,"【入门】标准零件",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\891,"【基础】奖学金",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\91,"【入门】判断成绩等级",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\914,"【提高】加工零件",20,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\915,"【提高】摆渡车",20,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\916,"【基础】螺旋矩阵",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\917,"【入门】记数问题",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\919,"【基础】棋盘方格",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\925,"【入门】猜先",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\926,"【入门】投篮",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\927,"【提高】跳马 ",19,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\929,"【入门】选班委",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\930,"【基础】天平",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\931,"【基础】半质数",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\932,"【提高】收银员找零钱",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\933,"【基础】分数",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\946,"【入门】幸运的字符串",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\947,"【基础】重叠的字符串",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\948,"【入门】人数统计",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\952,"【入门】身份证",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\953,"【入门】缺失的数字",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\954,"【基础】信息传递 ",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\956,"【基础】人数清点",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\958,"【基础】相似数",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\960,"【入门】查找最小的k个元素",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\961,"【入门】统计数字出现次数",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\963,"【入门】奇数位偶数位和与差 ",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\966,"【入门】木瓜地 USACO",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\968,"【入门】城市之间的最短路",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\969,"【基础】银河英雄传说",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\970,"【基础】食物链",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\971,"【基础】最短距离和路径问题",20,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\973,"【入门】两点之间的最短路径",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\974,"【基础】最少的手续费",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\975,"【入门】有负权边的最短路",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\976,"【入门】图的dfs遍历",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\977,"【入门】图的bfs遍历",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\978,"【基础】骑马修栅栏 USACO",6,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\979,"【入门】欧拉路",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\980,"【入门】铲雪车snow",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\981,"【入门】合并石子",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\982,"【入门】石子合并（环形）",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\983,"【基础】能量项链",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\984,"【入门】计算能力",9,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\985,"【入门】子矩阵求和",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\986,"【基础】倒水",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\988,"【基础】二进制折半交换",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\992,"【入门】黑色联通块",20,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\994,"【入门】道路规划",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\995,"【基础】素数个数",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\996,"【入门】公交乘车",5,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\997,"【入门】码头的集装箱",8,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\998,"【入门】货币问题",10,yes
+东方博宜OJ-1042题,东方博宜OJ-1042题\999,"【入门】最大卡路里",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\154,"Pell数列 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\175,"计算分数加减表达式的值 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\180,"判断整除 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\199,"拦截导弹 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\2,"拦截导弹 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\203,"阿克曼(Ackmann)函数  ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\216,"采药 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\231,"奖学金 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\248,"回文数 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\258,"组合的输出 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\260,"位数问题 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\261,"数的计数 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\269,"角谷猜想 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\276,"与7无关的数 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\280,"数字统计 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\288,"陶陶摘苹果 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\29,"合唱队形 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\294,"单词接龙 ",9,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\299,"装箱问题 ",7,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\311,"接水问题 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\333,"铺地毯 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\334,"统计数字 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\338,"删数问题 ",6,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\339,"均分纸牌 ",5,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\340,"活动选择 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\371,"八皇后 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\373,"红与黑 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\396,"求满足条件的整数个数",9,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\40,"食物链 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\417,"【NOIP1996-S4】砝码称重",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\426,"奇怪的电梯",5,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\45,"混合背包 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\474,"【NOIP2005-J3】采药",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\478,"机器翻译",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\489,"蜜蜂路线",5,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\490,"【NOIP2002-J4】过河卒",5,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\491,"统计数字",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\497,"位数问题",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\499,"【USACO2007Jan】排队",8,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\503,"【CSP2020-J4】方格取数",20,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\506,"【NOIP2004-J2】花生采摘",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\512,"【NOIP2001-S1】铺地毯",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\515,"【NOIP2008-J1】ISBN号码",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\541,"判断整除",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\551,"年龄与疾病",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\577,"字符统计",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\592,"与7无关的数",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\594,"质因数分解",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\596,"陶陶摘苹果",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\613,"校门外的树 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\62,"素数个数 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\71,"合并石子 ",5,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\8,"机器分配 ",10,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\92,"奇怪的电梯",5,yes
+hydro,hydro\01\01\001-一本通基础-613\export_y_zui\99,"合并果子 ",10,yes

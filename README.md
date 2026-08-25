@@ -2,13 +2,15 @@
 
 面向 4-6 年级小学生的 AI 辅助 C++ 信奥学习平台，对标 GESP C++ 1-8 级。
 
+> **📌 给招聘方/面试官**：如果你是从 FDE（Forward Deployed Engineer）岗位角度评估这个仓库，请直接阅读 **[docs/FDE_PORTFOLIO.md](docs/FDE_PORTFOLIO.md)** —— 那里从"模糊需求拆解、AI 生产落地与幻觉控制、可复算的评测体系（Evals）、多租户交付"四个维度，完整说明了本项目体现的工程能力。下面是常规项目说明。
+
 ## 核心功能
 
 - **Markdown 课件渲染**：上传 Markdown 课件后自动解析为分页式互动课件
 - **在线代码编辑器**：基于 Monaco Editor，固定 C++ 语言
 - **JudgeServer 判题**：支持 IOI 赛制部分分，返回每个测试点结果
-- **AI 竞赛教练**：结合课时/题目上下文进行答疑和代码点评
-- **题库系统**：按 GESP 等级 → 分类 → 题目的层级结构浏览
+- **AI 竞赛教练**：规则引擎 + 事实知识库 + LLM 三层护栏，结合课时上下文答疑与代码点评
+- **题库系统**：1500+ 道带测试数据的可判题，按 GESP 等级 → 分类层级浏览
 - **课程与课时**：课程大厅、课程详情、课时学习、课后编程练习
 - **模拟考试**：考试创建、答题、提交、评分、统计
 - **教师后台**：课程/题目/班级/考试管理
@@ -21,7 +23,7 @@
 | 后端 | Node.js + Express + Prisma ORM + PostgreSQL |
 | 缓存/队列 | Redis |
 | 判题沙箱 | JudgeServer (Docker) |
-| AI | 大模型 API（OpenAI / DeepSeek / Kimi） |
+| AI | 大模型 API（OpenAI / DeepSeek / Kimi），三层护栏架构 |
 | 部署 | Docker Compose（开发） |
 
 ## 目录结构
@@ -30,7 +32,7 @@
 DKL/
 ├── client/          # 前端（学生端 + 教师后台）
 ├── server/          # 后端 API 服务
-├── docs/            # 题库分类总表等文档
+├── docs/            # 文档（含 FDE_PORTFOLIO.md 项目能力说明、评测报告、题库盘点）
 ├── hydroj/          # 外部题库原始数据
 ├── docker-compose.yml
 └── README.md

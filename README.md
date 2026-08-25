@@ -2,140 +2,83 @@
 
 面向 4-6 年级小学生的 AI 辅助 C++ 信奥学习平台，对标 GESP C++ 1-8 级。
 
-> **📌 给招聘方/面试官**：如果你是从 FDE（Forward Deployed Engineer）岗位角度评估这个仓库，请直接阅读 **[docs/FDE_PORTFOLIO.md](docs/FDE_PORTFOLIO.md)** —— 那里从"模糊需求拆解、AI 生产落地与幻觉控制、可复算的评测体系（Evals）、多租户交付"四个维度，完整说明了本项目体现的工程能力。下面是常规项目说明。
+## 这个项目在解决什么问题
+
+让没有 C++ 教学能力的家长或机构，也能让孩子在家**系统、正确地**自学信奥。孩子看的是一页一个知识点的微课，写完代码立刻有判题结果，卡住了有 AI 老师答疑——而这个 AI 老师经过专门约束，不会胡说、不会直接给答案、不会讲超纲内容。
 
 ## 核心功能
 
-- **Markdown 课件渲染**：上传 Markdown 课件后自动解析为分页式互动课件
-- **在线代码编辑器**：基于 Monaco Editor，固定 C++ 语言
-- **JudgeServer 判题**：支持 IOI 赛制部分分，返回每个测试点结果
-- **AI 竞赛教练**：规则引擎 + 事实知识库 + LLM 三层护栏，结合课时上下文答疑与代码点评
+- **Markdown 微课渲染**：上传 Markdown 自动解析为分页互动课件（故事卡片 / 可运行代码 / 检查点 / 测验）
+- **在线判题**：Monaco 编辑器 + JudgeServer 沙箱，支持 IOI 部分分，逐测试点返回结果
+- **AI 竞赛教练**：结合当前课时与题目上下文答疑、点评代码，带完整的事实准确性护栏
 - **题库系统**：1500+ 道带测试数据的可判题，按 GESP 等级 → 分类层级浏览
-- **课程与课时**：课程大厅、课程详情、课时学习、课后编程练习
-- **模拟考试**：考试创建、答题、提交、评分、统计
-- **教师后台**：课程/题目/班级/考试管理
+- **激励系统**：经验值 / 等级 / 周连胜 / 徽章墙 / 完成庆祝动画
+- **模拟考试**：创建、答题、倒计时、评分、统计全流程
+- **教师后台**：课程 / 题目 / 班级 / 考试管理，多租户数据隔离
 
 ## 技术栈
 
 | 层级 | 技术 |
 |------|------|
-| 前端 | React 18 + TypeScript + Tailwind CSS + Vite + Monaco Editor |
+| 前端 | React 18 + TypeScript + Vite + Tailwind CSS + Monaco Editor |
 | 后端 | Node.js + Express + Prisma ORM + PostgreSQL |
-| 缓存/队列 | Redis |
-| 判题沙箱 | JudgeServer (Docker) |
-| AI | 大模型 API（OpenAI / DeepSeek / Kimi），三层护栏架构 |
-| 部署 | Docker Compose（开发） |
+| 缓存 | Redis |
+| 判题沙箱 | JudgeServer（Docker，IOI 部分分） |
+| AI | OpenAI / DeepSeek / Kimi（三层护栏架构） |
+| 部署 | Docker Compose |
 
-## 目录结构
+## 几个有代表性的设计
 
-```
-DKL/
-├── client/          # 前端（学生端 + 教师后台）
-├── server/          # 后端 API 服务
-├── docs/            # 文档（含 FDE_PORTFOLIO.md 项目能力说明、评测报告、题库盘点）
-├── hydroj/          # 外部题库原始数据
-├── docker-compose.yml
-└── README.md
-```
+**AI 教练的三层护栏。** 直接拿大模型教小孩是危险的——实测发现它会讲反 `cin`/`cout`、直接给答案、超前讲解。所以做了三层：高频语法问题走预置事实知识库（不调 LLM）→ 编译错误走规则引擎（确定性匹配）→ 其余才走 LLM，且系统提示词里写死了"防超纲、防编造、不给完整答案"，并注入当前课时上下文限定讲解范围。
 
-## 开发启动
+**用"虚拟学生"评测课件质量。** 课件好不好不靠感觉。建了两个水平不同的智能体学生人设 + 一套客观测量准则（禁止凭空打分、测"能否独立解题"时必须遮住示例代码、每条结论要给出证据位置），逐课产出评测报告，反向驱动课件修复。
+
+**题库数据流水线。** 从多个公开 OJ 源抓取 → 清洗（修 markdown 转义、配对 in/out 测试数据、兼容 `.ans` 扩展名）→ 按 GESP 1-8 级分级 → 幂等导入 → 校验。目前库内 1500+ 道可判题。
+
+更完整的架构与设计取舍见 [docs/PROJECT_OVERVIEW.md](docs/PROJECT_OVERVIEW.md)。
+
+## 本地运行
+
+需先启动 Docker Desktop，然后：
 
 ```bash
-# 1. 启动基础设施（PG + Redis + JudgeServer）
+# 1. 基础设施（PostgreSQL + Redis + JudgeServer）
 docker compose up -d
 
-# 2. 启动后端
+# 2. 后端
 cd server
 npm install
 npx prisma migrate dev
 npx prisma db seed
 npx tsx src/index.ts
 
-# 3. 启动前端
+# 3. 前端
 cd client
 npm install
-npx vite --port 3000 --host 0.0.0.0
+npx vite --port 3000
 ```
 
-## 默认端口
+| 服务 | 地址 | 测试账号 |
+|------|------|----------|
+| 前端 | http://localhost:3000 | 学生 `student@dkl.local / 123456` |
+| 后端 API | http://localhost:4001 | 教师 `teacher@dkl.local / teacher123` |
+| JudgeServer | http://localhost:8080 | |
 
-| 服务 | 地址 |
-|------|------|
-| 前端 | http://localhost:3000 |
-| 后端 API | http://localhost:4001 |
-| JudgeServer | http://localhost:8080 |
-| PostgreSQL | localhost:5432 |
-| Redis | localhost:6379 |
+## 目录结构
 
-## 默认测试账号
-
-| 角色 | 邮箱 | 密码 |
-|------|------|------|
-| 学生 | student@dkl.local | student123 |
-| 教师 | teacher@dkl.local | teacher123 |
-| 管理员 | admin@dkl.local | admin123 |
-
-## 关键页面路由
-
-| 页面 | 路由 |
-|------|------|
-| 课程大厅 | `/student/courses` |
-| 题库（等级入口） | `/student/problems` |
-| 等级详情（按分类） | `/student/problems/level/:level` |
-| 题目详情 | `/student/problems/:id` |
-| 课时学习 | `/student/lessons/:id` |
-| 个人中心 | `/student/dashboard` |
-| 考试列表 | `/student/exams` |
-| 教师后台 | `/teacher/*` |
-
-## 课件系统（微课格式）
-
-平台采用专为 4-6 年级小学生设计的微课课件格式：
-
-- **一页一概念**：每个 `## ` 标题对应一个知识点
-- **少文字**：每页正文不超过 2 行，多用 emoji 和图标
-- **必互动**：每页包含知识卡片、代码演示或检查点
-- **Checkpoint 锁页**：检查点内的测验必须答对才能继续
-- **故事化开场**：用故事/角色/问题引入，降低儿童自学门槛
-
-格式规范见：`server/courses/MICRO_LESSON_FORMAT.md`
-
-儿童版课件示例：`server/courses/gesp1-micro/01-走进C++.md`
-
-课件导入脚本：`server/src/scripts/import-gesp1.ts`
-
-> ✅ GESP 1级（01-18 课）已按微课格式重写，结构为「普通课 2 道挑战 + 5 道课后作业；练习课 5 道挑战 + 5 道课后作业」，并通过小学生体验官评审入库，**已冻结**。
->
-> ✅ GESP 2级（01-16 课）已完成，含「循环模拟与易错点专项」补课，双智能体测评与 5 套真题闭卷验证通过，**已冻结**（2026-07-20）。
->
-> ⏳ GESP 3级内容准备中（标准教案已就位）。
-
-## 正向反馈系统
-
-- 完成课时：全屏 confetti 庆祝 + 经验值 + 徽章
-- 周连胜：每周完成任意一课 +1，断周重置为 1
-- 通过题目：右上角徽章获得通知
-- 答对测验/检查点：经验值飘字动画
-- 个人中心：等级、经验条、连续学习天数、徽章墙
-
-## 课程地图
-
-- 课程详情页采用像素风冒险地图，S 形蜿蜒路径
-- 1-8 级 GESP 课程对应 8 套不同地形主题（草原 → 沙漠 → 森林 → 雪山 → 火山 → 沼泽 → 深渊 → 星河）
-- 地图背景图：`client/public/maps/map-level-{1-8}.png`
-- AI 生成 prompt：`docs/AI_MAP_PROMPTS.md`
-
-## 题库数据
-
-- 当前已导入 **东方博宜 OJ 1-1042 题**
-- 按 GESP 1-8 级分级，每道题已标注分类 tags
-- 导入脚本：`server/src/scripts/reimport-dongfangboyi.ts`
+```
+DKL/
+├── client/          # 前端（学生端 + 教师后台）
+├── server/          # 后端 API（含课件解析器、AI 服务、判题封装、题库导入脚本）
+├── docs/            # 项目文档、评测报告、题库盘点
+├── hydroj/          # 题库原始数据（不入库）
+└── docker-compose.yml
+```
 
 ## 相关文档
 
-- `CLAUDE.MD` — 面向 AI 助手的项目说明与进度记录
-- `DEV_PLAN.md` — 开发执行计划
-- `CHANGELOG.md` — 近期开发日志
-- `CONTEXT.md` — 会话切换用上下文摘要
-- `plan.md` — 完整产品方案
-- `docs/agents/elementary-student-persona.md` — 零基础小学生体验官人设
+- `docs/PROJECT_OVERVIEW.md` — 架构与设计取舍（AI 护栏 / 评测体系 / 题库工程详解）
+- `CLAUDE.MD` — 项目说明与逐日开发记录
+- `DEV_PLAN.md` — 开发计划与完成度
+- `CHANGELOG.md` — 开发日志
+- `server/courses/MICRO_LESSON_FORMAT.md` — 微课格式规范

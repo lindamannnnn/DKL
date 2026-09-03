@@ -54,7 +54,8 @@ router.get('/stats', async (_req, res) => {
   try {
     const rows = await prisma.$queryRawUnsafe(`
       SELECT level, type, count(*) AS n FROM knowledge_chunks
-      WHERE tenant_id = 'default' GROUP BY level, type ORDER BY level::int
+      WHERE tenant_id = 'default' GROUP BY level, type
+      ORDER BY (CASE WHEN level = '' THEN 99 ELSE level::int END), type
     `) as any[]
     const byLevel = rows.map((r: any) => ({
       level: String(r.level),

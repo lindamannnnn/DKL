@@ -32,10 +32,11 @@ interface AskResp {
 interface StatRow { level: string; type: string; n: number }
 
 const TYPE_LABEL: Record<string, string> = {
-  course: '微课',
   lesson_plan: '教案',
+  outline: '大纲',
+  template: '算法模板',
+  reference: '参考文档',
   syllabus: '考纲',
-  exam: '真题',
 }
 
 const SUGGESTIONS = [
@@ -114,9 +115,8 @@ export default function KnowledgeSearchPage() {
               知识快查
             </h1>
             <p className="text-sm text-gray-500 mt-1">
-              GESP 1-8 级知识库检索（RAG）。微课 {stats.filter(s => s.type === 'course').reduce((a, b) => a + Number(b.n), 0)} +
-              教案 {stats.filter(s => s.type === 'lesson_plan').reduce((a, b) => a + Number(b.n), 0)} +
-              考纲 + 真题 共 {totalChunks} 个知识块
+              GESP 1-8 级知识库检索（RAG）· 共 {totalChunks} 个知识片段
+              {stats.filter(s => Number(s.n) > 0).map(s => `${TYPE_LABEL[s.type] || s.type} ${s.n}`).join(' + ')}
             </p>
           </div>
 

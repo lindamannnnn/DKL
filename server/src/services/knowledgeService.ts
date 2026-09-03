@@ -27,6 +27,8 @@ const AI_MODEL = process.env.AI_MODEL || 'glm-4-flash'
 const EMBED_MODEL = process.env.AI_EMBED_MODEL || 'embedding-3'
 const EMBED_DIM = 1024
 const VEC_FIELD = 'embedding'
+// 本地 embedding 微服务（bge-m3，免费离线）；不可用时退回 API
+const LOCAL_EMBED_URL = (process.env.LOCAL_EMBED_URL || 'http://127.0.0.1:8765').replace(/\/$/, '')
 
 function http() {
   return axios.create({
@@ -36,8 +38,19 @@ function http() {
   })
 }
 
-/** 文本向量化（OpenAI 兼容 /embeddings） */
+/** 文本向量化：优先本地 bge-m3 微服务，失败退智谱 embedding API */
 export async function embedTexts(texts: string[]): Promise<number[][]> {
+  // 每次尝试本地（不永久锁死，embed_server 可能稍后启动/恢复）
+  try {
+    const res = await axios.post(`${LOCAL_EMBED_URL}/embed`, { texts }, { timeout: 30000 })
+    const data = res.data
+    if (data && Array.isArray(data.vectors) && data.vectors.length === texts.length) {
+      return data.vectors
+    }
+    console.warn('[knowledge] 本地 embed 返回异常，退回 API')
+  } catch (e: any) {
+    console.warn('[knowledge] 本地 embed 不可用，退智谱 API:', e.message)
+  }
   const client = http()
   const out: number[][] = []
   // 每批最多 32 条

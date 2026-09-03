@@ -1,7 +1,7 @@
 services:
-  # PostgreSQL 数据库
+  # PostgreSQL 数据库（含 pgvector 扩展，供知识快查 RAG 向量检索）
   postgres:
-    image: postgres:16-alpine
+    image: pgvector/pgvector:pg16
     container_name: dkl-postgres
     restart: unless-stopped
     environment:
@@ -45,6 +45,13 @@ services:
       - judger_debug=0
     ports:
       - "8080:8080"
+    healthcheck:
+      # 覆盖镜像自带的 QDUOJ 心跳检查（需要完整 OJ 后端，独立部署不适用）：
+      # 用带 token 的 POST /ping 验证判题服务真实可用
+      test: ["CMD-SHELL", "python3 -c \"import hashlib,requests; t=hashlib.sha256('dkl_judge_token_change_me'.encode()).hexdigest(); r=requests.post('http://127.0.0.1:8080/ping',headers={'X-Judge-Server-Token':t},timeout=3); exit(0 if r.status_code==200 else 1)\""]
+      interval: 30s
+      timeout: 5s
+      retries: 3
     depends_on:
       - postgres
 

@@ -15,6 +15,7 @@ import achievementRoutes from './routes/achievements'
 import mistakeRoutes from './routes/mistakes'
 import examRoutes from './routes/exams'
 import leaderboardRoutes from './routes/leaderboard'
+import knowledgeRoutes from './routes/knowledge'
 
 dotenv.config()
 
@@ -109,6 +110,7 @@ app.use('/api/achievements', achievementRoutes)
 app.use('/api/mistakes', mistakeRoutes)
 app.use('/api/exams', examRoutes)
 app.use('/api/leaderboard', leaderboardRoutes)
+app.use('/api/knowledge', knowledgeRoutes)
 
 // 404 处理
 app.use((_req, res) => {

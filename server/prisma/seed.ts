@@ -61,6 +61,21 @@ async function main() {
   })
   console.log('✅ 学生:', student.username)
 
+  // 4.5 创建开发默认用户（authMiddleware 在开发模式无 token/无效 token 时兜底使用，必须存在，否则提交评测外键报错）
+  await prisma.user.upsert({
+    where: { id: 'dev-user-id' },
+    update: {},
+    create: {
+      id: 'dev-user-id',
+      tenantId: tenant.id,
+      email: 'dev@dkl.local',
+      username: '开发默认用户',
+      password: '$2a$10$Y8JzDKqdCsJ9n5L1MTgX7e3wT967/vd5qyC0NbhUf3fFhlNWirg5a', // student123
+      role: 'student',
+    },
+  })
+  console.log('✅ 开发默认用户: dev-user-id')
+
   // 5. 创建演示课程：GESP 1级
   const course = await prisma.course.upsert({
     where: { id: 'gesp-1-demo' },

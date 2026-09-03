@@ -16,6 +16,7 @@ import ExamListPage from './pages/ExamListPage'
 import ExamPage from './pages/ExamPage'
 import ExamResultPage from './pages/ExamResultPage'
 import AchievementsPage from './pages/AchievementsPage'
+import KnowledgeSearchPage from './pages/KnowledgeSearchPage'
 import ErrorBoundary from './components/ErrorBoundary'
 
 // 教师后台
@@ -52,6 +53,7 @@ function App() {
           <Route path="exams/:id" element={<ExamPage />} />
           <Route path="exams/:id/result" element={<ExamResultPage />} />
           <Route path="achievements" element={<AchievementsPage />} />
+          <Route path="knowledge" element={<KnowledgeSearchPage />} />
         </Route>
 
         {/* 教师后台 */}

@@ -1,12 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
-import { useNavigate, useLocation } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import {
   BookOpen,
   ChevronRight,
   Flame,
-  Trophy,
   Sparkles,
-  LogOut,
   Star,
   Zap,
   Target,
@@ -15,11 +13,11 @@ import {
   Compass,
   Map,
   Scroll,
-  Shield,
-  Sword,
   Flag,
   Lock,
+  BookOpenCheck,
 } from 'lucide-react'
+import GuildNav from '../components/GuildNav'
 import client from '../api/client'
 
 interface Course {
@@ -117,36 +115,8 @@ function FadeInCard({ children, delay = 0 }: { children: React.ReactNode; delay?
   )
 }
 
-function NavButton({
-  icon,
-  label,
-  active,
-  onClick,
-}: {
-  icon: React.ReactNode
-  label: string
-  active: boolean
-  onClick: () => void
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-bold transition-all ${
-        active
-          ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-[0_0_12px_rgba(245,158,11,0.3)]'
-          : 'text-amber-100/70 hover:text-amber-100 hover:bg-white/5 border border-transparent'
-      }`}
-    >
-      {icon}
-      {label}
-    </button>
-  )
-}
-
 export default function CourseHallPage() {
   const navigate = useNavigate()
-  const location = useLocation()
-  const isActive = (path: string) => location.pathname.startsWith(path)
   const [courses, setCourses] = useState<Course[]>([])
   const [stats, setStats] = useState<UserStats | null>(null)
   const [loading, setLoading] = useState(true)
@@ -170,16 +140,6 @@ export default function CourseHallPage() {
     } finally {
       setLoading(false)
     }
-  }
-
-  const handleLogout = () => {
-    localStorage.removeItem('token')
-    localStorage.removeItem('dkl_token')
-    localStorage.removeItem('user')
-    localStorage.removeItem('dkl_user')
-    localStorage.removeItem('tenantId')
-    localStorage.removeItem('dkl_tenantId')
-    navigate('/login')
   }
 
   const handleStartWeeklyLesson = () => {
@@ -224,51 +184,8 @@ export default function CourseHallPage() {
         ))}
       </div>
 
-      {/* 顶部导航栏：木质冒险者公会风格 */}
-      <nav className="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b-4 border-amber-900/50 shadow-[0_4px_24px_rgba(0,0,0,0.5)]">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-          <div
-            className="text-xl font-black text-amber-400 cursor-pointer flex items-center gap-2 tracking-wide"
-            onClick={() => navigate('/student/courses')}
-          >
-            <span className="text-2xl filter drop-shadow-[0_0_8px_rgba(251,191,36,0.6)]">🗺️</span>
-            <span className="drop-shadow-md">DKL 冒险公会</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <NavButton
-              icon={<Map className="w-4 h-4" />}
-              label="冒险地图"
-              active={isActive('/student/courses')}
-              onClick={() => navigate('/student/courses')}
-            />
-            <NavButton
-              icon={<Sword className="w-4 h-4" />}
-              label="试炼场"
-              active={isActive('/student/problems')}
-              onClick={() => navigate('/student/problems')}
-            />
-            <NavButton
-              icon={<Trophy className="w-4 h-4" />}
-              label="竞技场"
-              active={isActive('/student/exams')}
-              onClick={() => navigate('/student/exams')}
-            />
-            <NavButton
-              icon={<Shield className="w-4 h-4" />}
-              label="我的徽章"
-              active={isActive('/student/dashboard')}
-              onClick={() => navigate('/student/dashboard')}
-            />
-            <button
-              onClick={handleLogout}
-              className="ml-2 p-2 text-amber-100/50 hover:text-red-400 hover:bg-red-500/10 rounded-xl transition-colors"
-              title="退出登录"
-            >
-              <LogOut className="w-4 h-4" />
-            </button>
-          </div>
-        </div>
-      </nav>
+      {/* 顶部导航栏：木质冒险者公会风格（共享组件） */}
+      <GuildNav />
 
       {/* ========== 冒险者公会任务板 Hero ========== */}
       <div className="relative overflow-hidden">
@@ -431,6 +348,72 @@ export default function CourseHallPage() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* ========== 智慧书库入口（知识快查） ========== */}
+      <div className="max-w-6xl mx-auto px-4 mt-6 relative z-10">
+        <FadeInCard>
+          <div
+            role="button"
+            tabIndex={0}
+            aria-label="进入智慧书库，搜索 GESP 知识答案"
+            className="group relative overflow-hidden rounded-3xl border-2 border-amber-500/30 bg-gradient-to-r from-slate-900 via-slate-900 to-amber-950/60 cursor-pointer transition-all duration-300 hover:border-amber-400/60 hover:shadow-[0_0_40px_rgba(251,191,11,0.25)] hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
+            onClick={() => navigate('/student/knowledge')}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault()
+                navigate('/student/knowledge')
+              }
+            }}
+          >
+            {/* 羊皮纸纹理衬底 */}
+            <div
+              className="absolute inset-0 opacity-[0.04] pointer-events-none"
+              style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.5'/%3E%3C/svg%3E")`,
+              }}
+            />
+            {/* 发光精灵点缀 */}
+            <div className="absolute top-1/2 -translate-y-1/2 right-8 w-40 h-40 rounded-full bg-amber-500/10 blur-2xl pointer-events-none group-hover:bg-amber-400/20 transition-all" />
+
+            <div className="relative flex flex-col sm:flex-row sm:items-center gap-5 p-6 md:p-7">
+              {/* 书库徽章 */}
+              <div className="flex items-center gap-4 sm:gap-5">
+                <div className="w-16 h-16 shrink-0 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-600 flex items-center justify-center shadow-[0_0_20px_rgba(251,191,11,0.45)] border border-amber-300/50">
+                  <BookOpenCheck className="w-8 h-8 text-white" />
+                </div>
+                <div className="min-w-0">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="px-2.5 py-0.5 bg-amber-500/15 border border-amber-500/30 rounded-full text-amber-300 text-xs font-black tracking-wider">
+                      公会藏书阁
+                    </span>
+                    <Sparkles className="w-3.5 h-3.5 text-amber-400/80" />
+                  </div>
+                  <h2 className="text-xl md:text-2xl font-black text-white tracking-tight drop-shadow-md">
+                    智慧书库
+                  </h2>
+                </div>
+              </div>
+
+              {/* 文案 + 行动按钮 */}
+              <div className="flex-1 sm:text-left">
+                <p className="text-amber-100/70 text-sm md:text-base leading-relaxed">
+                  冒险路上遇到难题？打开智慧书库，快速搜索全部知识，
+                  <span className="text-amber-300 font-bold">让 AI 向导带你解开谜题</span>，继续前进！
+                </p>
+              </div>
+              <div className="flex items-center gap-2 shrink-0">
+                <span className="hidden lg:inline text-amber-300/70 text-sm font-bold">
+                  检索 GESP 1-8 级
+                </span>
+                <span className="flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-black text-sm shadow-lg transition-all group-hover:scale-[1.03] active:scale-[0.97]">
+                  去查答案
+                  <ChevronRight className="w-4 h-4" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </FadeInCard>
       </div>
 
       {/* ========== 课程地图 ========== */}

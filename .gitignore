@@ -69,3 +69,12 @@ gesp_syllabus.pdf
 模板1.html
 wsl-install.log
 *.db
+
+# Python cache & ad-hoc logs (rag-gesp eval 过程产物不入库)
+__pycache__/
+rag-gesp/*_log*.txt
+rag-gesp/_expr_*.py
+rag-gesp/_sample_corpus.py
+rag-gesp/_kill_log*.txt
+client/test_*.cjs
+server/get_lesson_*.ts

@@ -4,6 +4,49 @@
 
 ---
 
+## [已发布] 2026-09-05 — 仓库清理：rag-gesp 开发/面试目录移出产品仓库
+
+### 变更
+- 将 `rag-gesp/`（RAG 语料构建/embedding 服务/评测脚本/面试材料）从 git 全部移除，并从全历史抹除（filter-branch + force push）。
+- 产品 RAG 功能代码（`server/src/routes/knowledge.ts`、`services/knowledgeService.ts`、`client/src/pages/KnowledgeSearchPage.tsx`）保留，功能不受影响。
+- `.gitignore` 追加整目录忽略 `rag-gesp/`；目录文件本地保留。
+- 提交数 30 → 26（空提交被清理），推送至 origin/master。
+
+### 说明
+面试背题材料（README 讲稿 / INTERVIEW_QA 追问清单 / 评测报告）属个人求职资产，与产品仓库分离管理。
+
+---
+
+## [已发布] 2026-09-04 — 智慧书库：RAG 知识检索 + AI 问答 + 编程老师讲解
+
+### 新增
+- **智慧书库页**（`/student/knowledge`）：冒险公会风格，"问 AI 向导 / 翻查典籍 / 老师课堂"三模式，默认 AI 问答。
+- **混合检索**：pgvector 向量（bge-m3 1024 维）+ pg_trgm 关键词，RRF 融合；含级别/术语/相关度三层硬闸门防幻觉。
+- **AI 问答**：检索 top6 → LLM 带 [来源] 回答，来源可展开原文。
+- **编程老师讲解（teach）**：同一批检索资料换"老师人设"重新讲解，六段结构（一句话听懂/生活例子/核心逻辑/代码逐行/常见坑/自己试试）；支持 SSE 流式（长输出不超时、打字机显示）与"换简单说法/换个例子"重讲。
+- **GuildNav 共享导航**：冒险大厅与智慧书库共用公会风格顶导航。
+
+### 变更
+- 前端 axios 超时 30s → 120s（兜底长请求）；AI 回答区改 markdown 渲染（代码块高亮）。
+- 后端新增 `POST /api/knowledge/teach`（同步 JSON 或 `stream:true` SSE 流式）。
+
+### 待办
+- 其余学生页（题库/考试/我的徽章）仍用旧浅色 Layout，待统一为暗色公会风。
+
+---
+
+## [已发布] 2026-09-03 — 知识快查 RAG 全链路打通（后端 + 混合检索 + 问答）
+
+### 新增
+- `POST /api/knowledge/search`（混合检索）、`/ask`（RAG 问答）、`/stats`（语料统计）。
+- 本地 bge-m3 embedding 微服务（`rag-gesp/embed_server.py`，:8765），向量化入库 3876 片（含模板/考纲）。
+- 语料来源：标准教案 103 篇 + code-master 算法库 270+ 篇 + 官方考纲（build_corpus.py 切块）。
+
+### 说明
+本节涉及的 `rag-gesp/` 工具目录已于 2026-09-05 从仓库移除（见该日记录）；运行时的检索/问答代码在 `server/src/services/knowledgeService.ts`。
+
+---
+
 ## [未发布] 2026-07-23（续）— 15 课改为纯知识课
 
 ### 决策

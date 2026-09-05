@@ -101,6 +101,7 @@ DKL/
     │   │   ├── ExamResultPage.tsx    # 考试结果
     │   │   ├── MistakesPage.tsx
     │   │   ├── AchievementsPage.tsx
+    │   │   ├── KnowledgeSearchPage.tsx  # 智慧书库：知识检索 + AI 问答 + 编程老师讲解
     │   │   └── teacher/        # 教师后台页面
     │   │       ├── TeacherLayout.tsx
     │   │       ├── TeacherCoursesPage.tsx
@@ -112,6 +113,7 @@ DKL/
     │   │       └── TeacherReportsPage.tsx
     │   ├── components/         # 可复用组件
     │   │   ├── Layout.tsx      # 布局（导航栏+内容区）
+    │   │   ├── GuildNav.tsx    # 冒险公会共享导航（大厅/书库）
     │   │   ├── LessonContent.tsx    # 课件内容渲染
     │   │   ├── CodeBlock.tsx        # 可运行代码块
     │   │   ├── QuizBlock.tsx        # 互动题组件
@@ -160,6 +162,7 @@ Mistake         -- 错题本
 Exam            -- 模拟考试
 ExamProblem     -- 考试题目关联（含分值）
 StudentExam     -- 学生考试记录（答案/结果/分数）
+KnowledgeChunk  -- 知识库片段（RAG，含 level/type/source/title/heading/content/embedding）
 ```
 
 所有业务表含 `tenant_id` 字段，实现多租户隔离。
@@ -191,7 +194,15 @@ StudentExam     -- 学生考试记录（答案/结果/分数）
   - `/teacher/*` — 教师后台
 - 共用组件库和 API 客户端
 
-### 5. 题库来源
+### 5. 智慧书库（RAG 知识库）
+- **定位**：把 GESP 1-8 级教案/算法模板/官方考纲做成可检索知识库，学生查资料/问 AI/让老师讲解知识点。
+- **存储**：`knowledge_chunks` 表（level/type/source/title/heading/content + embedding vector(1024)），PostgreSQL + pgvector，HNSW 向量索引 + gin_trgm 关键词索引。
+- **检索**：向量通道（本地 bge-m3 embedding 微服务）+ 关键词通道（pg_trgm 相似度）→ RRF 融合。
+- **防幻觉**：检索后强制三层闸门（相关度/术语/级别，任一不过直接拒答，不靠 prompt 自觉）；回答强制附真实来源。
+- **讲解（teach）**：同一批检索资料换老师人设 prompt 重新生成六段式讲解，SSE 流式输出（长文本不超时）。
+- **注意**：语料构建/embedding/评测脚本在本地 `rag-gesp/`（不入仓库）；线上代码只依赖 `server/src/services/knowledgeService.ts`。
+
+### 6. 题库来源
 - **JudgeServer 本身不带任何题目**
 - 平台自建题库管理系统
 - 用户提供课件时配套题目

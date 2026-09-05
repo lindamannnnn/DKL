@@ -72,9 +72,9 @@ wsl-install.log
 
 # Python cache & ad-hoc logs (rag-gesp eval 过程产物不入库)
 __pycache__/
-rag-gesp/*_log*.txt
-rag-gesp/_expr_*.py
-rag-gesp/_sample_corpus.py
-rag-gesp/_kill_log*.txt
 client/test_*.cjs
 server/get_lesson_*.ts
+
+
+# 面试/开发工具目录：不入产品仓库（本地保留，防误推）
+rag-gesp/
